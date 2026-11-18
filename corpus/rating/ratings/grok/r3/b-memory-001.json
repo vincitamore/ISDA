@@ -1,0 +1,36 @@
+{
+  "doc": "b-memory-001",
+  "family": "grok",
+  "rater": "r3",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 160,
+      "intensity": "Stock"
+    },
+    "dialectica": {
+      "compressed": 340,
+      "intensity": "Original"
+    },
+    "rhetorica": {
+      "compressed": 210,
+      "intensity": "Selected"
+    },
+    "arithmetica": {
+      "compressed": 680,
+      "intensity": "Original"
+    },
+    "geometria": {
+      "compressed": 95,
+      "intensity": "Selected"
+    },
+    "musica": {
+      "compressed": 115,
+      "intensity": "Stock"
+    },
+    "astronomia": {
+      "compressed": 175,
+      "intensity": "Selected"
+    }
+  }
+}

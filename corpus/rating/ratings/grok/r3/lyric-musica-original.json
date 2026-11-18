@@ -1,0 +1,44 @@
+{
+  "doc": "lyric-musica-original",
+  "family": "grok",
+  "rater": "r3",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 175,
+      "intensity": "Original",
+      "evidence": "Coinage 'fathers-forth'; compounds 'couple-colour','Fresh-firecoal chestnut-falls'; stress marks 'áll trádes'; dense asyndetic triples—'fold, fallow, and plough'; 'gear and tackle and trim'."
+    },
+    "dialectica": {
+      "compressed": 100,
+      "intensity": "Implied",
+      "evidence": "Move from 'All things counter, original, spare, strange' / 'fickle, freckled' and antithetical pairs to 'He fathers-forth whose beauty is past change'—standard mutable-many→immutable-One doxological inference."
+    },
+    "rhetorica": {
+      "compressed": 200,
+      "intensity": "Selected",
+      "evidence": "Chosen instances: brinded-cow skies, stippled trout rose-moles, firecoal chestnuts, finches' wings, pieced fold/fallow/plough, trades' gear; then abstract pairs; concrete→class→God→'Praise him' order."
+    },
+    "arithmetica": {
+      "compressed": 310,
+      "intensity": "Original",
+      "evidence": "Atomic claims: glory for dappled things; skies couple-colour as brinded cow; trout rose-moles in stipple; chestnut-falls firecoal; finches' wings; landscape plotted; all trades' gear; He fathers-forth; beauty past change; Praise him."
+    },
+    "geometria": {
+      "compressed": 85,
+      "intensity": "Selected",
+      "evidence": "Title 'Pied Beauty'; two blocks (ll.1–6 catalog / ll.7–10 reflective); progressive indent levels; final 'Praise him.' isolated far right as orphan close."
+    },
+    "musica": {
+      "compressed": 220,
+      "intensity": "Original",
+      "evidence": "Alliterative stress-clusters ('Fresh-firecoal chestnut-falls; finches' wings'); antithetical pair cadence 'swift, slow; sweet, sour; adazzle, dim'; marked stresses; litany pace then snap close."
+    },
+    "astronomia": {
+      "compressed": 165,
+      "intensity": "Original",
+      "evidence": "Arc: open 'Glory be…dappled things' → concrete cascade → 'áll trádes' widen → abstract counter/fickle → freckled aporia → rapid pairs → 'beauty is past change' pivot → isolated 'Praise him.'"
+    }
+  },
+  "notes": "Hopkins Pied Beauty; telos is the poem's explicit move; musica/grammatica carry original load; dialectica is traditional Christian inference under public devotional substrate."
+}

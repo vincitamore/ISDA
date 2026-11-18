@@ -1,0 +1,970 @@
+{
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://bereanbible.com/bsb.txt",
+    "license": "public domain",
+    "format": "tab-separated verse-per-line; chapters assembled as running prose with verse numbers dropped"
+  },
+  "documents": [
+    {
+      "id": "a-law-exodus-20",
+      "ref": "Exodus 20",
+      "genre": "law",
+      "sha256": "77c9133b02deed0d356bf25c4f76bcd40115f5b744b7af54df70a2e3b1c185c0",
+      "bytes": 2901,
+      "words": 563
+    },
+    {
+      "id": "a-law-leviticus-1",
+      "ref": "Leviticus 1",
+      "genre": "law",
+      "sha256": "0ad90ef4dc826b278c5ff03c9caf24e5c3936d10fc0287a5f3fdf5be30d56efe",
+      "bytes": 2393,
+      "words": 476
+    },
+    {
+      "id": "a-law-leviticus-11",
+      "ref": "Leviticus 11",
+      "genre": "law",
+      "sha256": "70a6ae80c4f09d3176989245f127fb8fc653ac3f175dfcf3bce866067d19deae",
+      "bytes": 5046,
+      "words": 927
+    },
+    {
+      "id": "a-law-leviticus-16",
+      "ref": "Leviticus 16",
+      "genre": "law",
+      "sha256": "ae388f32931d388a93afd9fba9739cfd3477a88e8c457e10f4025a6badfbb90c",
+      "bytes": 5330,
+      "words": 1039
+    },
+    {
+      "id": "a-law-leviticus-19",
+      "ref": "Leviticus 19",
+      "genre": "law",
+      "sha256": "71e5aff9ce4e30782893e67757eafdd8e35a50fd54365b4b8455edcca9dc86d0",
+      "bytes": 4221,
+      "words": 832
+    },
+    {
+      "id": "a-law-leviticus-23",
+      "ref": "Leviticus 23",
+      "genre": "law",
+      "sha256": "b09c7608c2d52d3715f40eb06ec0002b77c04bec00bc10af4b275be942851898",
+      "bytes": 6028,
+      "words": 1162
+    },
+    {
+      "id": "a-law-leviticus-25",
+      "ref": "Leviticus 25",
+      "genre": "law",
+      "sha256": "0e2d02c126262d099fcc3f132d5f0bf99d692065d93c18eb48cd77dddac12bd4",
+      "bytes": 7019,
+      "words": 1351
+    },
+    {
+      "id": "a-law-numbers-6",
+      "ref": "Numbers 6",
+      "genre": "law",
+      "sha256": "72337c67eee843575988a1c41abb7f37406d103333bdaea2002d9d573b502a5e",
+      "bytes": 3615,
+      "words": 691
+    },
+    {
+      "id": "a-law-deuteronomy-4",
+      "ref": "Deuteronomy 4",
+      "genre": "law",
+      "sha256": "f66c241e83c6635085d9e167e23f362735a08541f3392b307b686c02bb89ed61",
+      "bytes": 7040,
+      "words": 1387
+    },
+    {
+      "id": "a-law-deuteronomy-5",
+      "ref": "Deuteronomy 5",
+      "genre": "law",
+      "sha256": "7968bc5cada5362997af6bdc1e5fcab6c755626fd04ff5ce8fb767627adf14f3",
+      "bytes": 4240,
+      "words": 840
+    },
+    {
+      "id": "a-law-deuteronomy-6",
+      "ref": "Deuteronomy 6",
+      "genre": "law",
+      "sha256": "6c9dcaddcf992652d797cc23511b90438eccaae4cf01dae58af5c573e8209f9a",
+      "bytes": 3128,
+      "words": 616
+    },
+    {
+      "id": "a-law-deuteronomy-15",
+      "ref": "Deuteronomy 15",
+      "genre": "law",
+      "sha256": "b1dafa7ffd4cb54ae4c086cf7586af41ecba6a149e1ec3d2de4f1cc8d680b067",
+      "bytes": 3237,
+      "words": 643
+    },
+    {
+      "id": "a-law-deuteronomy-24",
+      "ref": "Deuteronomy 24",
+      "genre": "law",
+      "sha256": "c35676a9d3acfe93ab9636dff36782d09d49375671f030e9572f841b307378eb",
+      "bytes": 3062,
+      "words": 601
+    },
+    {
+      "id": "a-law-deuteronomy-28",
+      "ref": "Deuteronomy 28",
+      "genre": "law",
+      "sha256": "1ff69a26b28be5bfb600ad3e19a8c4d62b0aa925ffdb5d1c847a9a848fc1b887",
+      "bytes": 9541,
+      "words": 1831
+    },
+    {
+      "id": "a-law-deuteronomy-30",
+      "ref": "Deuteronomy 30",
+      "genre": "law",
+      "sha256": "6b6957586357ba1f177e6478e56186464d2c62a06dcb29889cdd28a6cf603f53",
+      "bytes": 3042,
+      "words": 599
+    },
+    {
+      "id": "a-narrative-genesis-1",
+      "ref": "Genesis 1",
+      "genre": "narrative",
+      "sha256": "f5062d71f2c09adc49ae32813d2ae44822d3f17b0a345755e860625dbc3bf94a",
+      "bytes": 4006,
+      "words": 749
+    },
+    {
+      "id": "a-narrative-genesis-12",
+      "ref": "Genesis 12",
+      "genre": "narrative",
+      "sha256": "f6531c9f184adeb5617ae6c4d77896bdf33724674da19b24097e0c9a2929de34",
+      "bytes": 2483,
+      "words": 480
+    },
+    {
+      "id": "a-narrative-genesis-22",
+      "ref": "Genesis 22",
+      "genre": "narrative",
+      "sha256": "8ca8c331569c8d6e9ca15fb9ca42eb3753747e7b3046fbe35614c953fa0696d9",
+      "bytes": 3007,
+      "words": 549
+    },
+    {
+      "id": "a-narrative-genesis-37",
+      "ref": "Genesis 37",
+      "genre": "narrative",
+      "sha256": "801aed1eb54207fce492fdad544c367c40199e6c5c2e46c85adab0b343bb7aa9",
+      "bytes": 4634,
+      "words": 871
+    },
+    {
+      "id": "a-narrative-genesis-45",
+      "ref": "Genesis 45",
+      "genre": "narrative",
+      "sha256": "a657143384666c6a27dce7dce6658727fd34016a631fd30d582c2c341b531a1e",
+      "bytes": 3706,
+      "words": 687
+    },
+    {
+      "id": "a-narrative-exodus-3",
+      "ref": "Exodus 3",
+      "genre": "narrative",
+      "sha256": "ffa690481e4b3a255c0870fce0cc458183cafaf3ca7a1820cf39451ebc8afa1c",
+      "bytes": 3633,
+      "words": 700
+    },
+    {
+      "id": "a-narrative-exodus-14",
+      "ref": "Exodus 14",
+      "genre": "narrative",
+      "sha256": "07ed6d655c8987c65da2767dc9aeb94ab6442c5316b2bd05a075977cc560c221",
+      "bytes": 4409,
+      "words": 815
+    },
+    {
+      "id": "a-narrative-ruth-1",
+      "ref": "Ruth 1",
+      "genre": "narrative",
+      "sha256": "d166c8a2c374c178f6ab5ea581cdbfd7ba20c6b6ada8ad4a8c0b546634cfc7de",
+      "bytes": 3118,
+      "words": 596
+    },
+    {
+      "id": "a-narrative-1-samuel-17",
+      "ref": "1 Samuel 17",
+      "genre": "narrative",
+      "sha256": "d85791cb7554c5b11445135060ce3bdfa8d3380a79219e2fdc6f10f62eb9d524",
+      "bytes": 8335,
+      "words": 1552
+    },
+    {
+      "id": "a-narrative-2-samuel-11",
+      "ref": "2 Samuel 11",
+      "genre": "narrative",
+      "sha256": "676893130075284e7e6215de25931c973265bb12511bc32fc8e03cc78e9531be",
+      "bytes": 3855,
+      "words": 740
+    },
+    {
+      "id": "a-narrative-1-kings-18",
+      "ref": "1 Kings 18",
+      "genre": "narrative",
+      "sha256": "4ab8636883e2ab873c5381145a0ac30db80c1dc8e63ff22a448826a81ed6cb59",
+      "bytes": 6781,
+      "words": 1291
+    },
+    {
+      "id": "a-narrative-nehemiah-2",
+      "ref": "Nehemiah 2",
+      "genre": "narrative",
+      "sha256": "cedbc0a138356daa27a650542adec7365896e3007ffa2b572f846e0c1c206161",
+      "bytes": 3371,
+      "words": 661
+    },
+    {
+      "id": "a-narrative-esther-4",
+      "ref": "Esther 4",
+      "genre": "narrative",
+      "sha256": "7d43d3d17b46f25837bde8139171f3a98024dd6d403c2d7cfca2ebb437f3a24d",
+      "bytes": 2582,
+      "words": 482
+    },
+    {
+      "id": "a-narrative-acts-2",
+      "ref": "Acts 2",
+      "genre": "narrative",
+      "sha256": "7bfe234114eee57afce7bfd496ba4c20c1d06730b3045b6ade65ea44459d4374",
+      "bytes": 5064,
+      "words": 932
+    },
+    {
+      "id": "a-narrative-acts-27",
+      "ref": "Acts 27",
+      "genre": "narrative",
+      "sha256": "f59f04164cb2cf440af20fbe61f0e3b75b125262d8c5145789ccb3aacaa40e87",
+      "bytes": 5273,
+      "words": 974
+    },
+    {
+      "id": "a-poetry-psalm-1",
+      "ref": "Psalm 1",
+      "genre": "poetry",
+      "sha256": "807ecd55e811cf22219bcfd43f480c209079dbd5c7c5bc9031cc12770d472be9",
+      "bytes": 610,
+      "words": 123
+    },
+    {
+      "id": "a-poetry-psalm-8",
+      "ref": "Psalm 8",
+      "genre": "poetry",
+      "sha256": "6153b78762b395642bad069d1ebad2ef0dea442ac48eca77abe10ea71119677a",
+      "bytes": 860,
+      "words": 169
+    },
+    {
+      "id": "a-poetry-psalm-19",
+      "ref": "Psalm 19",
+      "genre": "poetry",
+      "sha256": "52ca82df6744c320253752d73d82626cd5e0b48574ca4196a31d84186570b64e",
+      "bytes": 1439,
+      "words": 265
+    },
+    {
+      "id": "a-poetry-psalm-23",
+      "ref": "Psalm 23",
+      "genre": "poetry",
+      "sha256": "2169f1f9b4a1b10943e9d5de43612f8837c4ae284f26207fe4b853f345c6f461",
+      "bytes": 595,
+      "words": 120
+    },
+    {
+      "id": "a-poetry-psalm-42",
+      "ref": "Psalm 42",
+      "genre": "poetry",
+      "sha256": "2c7945bcdb0c7c034b57fabca69d60cb606ac5ab32e900052814cc133c5a7ffb",
+      "bytes": 1336,
+      "words": 269
+    },
+    {
+      "id": "a-poetry-psalm-46",
+      "ref": "Psalm 46",
+      "genre": "poetry",
+      "sha256": "4dc7c83fe495c321af70c9445e1f78681ac64c2bc43dcc6a7b1fadcd4b0a600a",
+      "bytes": 1039,
+      "words": 197
+    },
+    {
+      "id": "a-poetry-psalm-51",
+      "ref": "Psalm 51",
+      "genre": "poetry",
+      "sha256": "c82a69b29052ae1ffac563dbc757eda439f09aa7ca669a6d74b1b2ebc4673db8",
+      "bytes": 1748,
+      "words": 327
+    },
+    {
+      "id": "a-poetry-psalm-90",
+      "ref": "Psalm 90",
+      "genre": "poetry",
+      "sha256": "136d645a3c2114edab9b4c9ca13c721a58ec2c68f95f25130880e9f3529d15c8",
+      "bytes": 1522,
+      "words": 297
+    },
+    {
+      "id": "a-poetry-psalm-103",
+      "ref": "Psalm 103",
+      "genre": "poetry",
+      "sha256": "bcf7d1d693e9866f5533b525e6ada831582847e57cd05d6e523a09e8abcc739f",
+      "bytes": 1812,
+      "words": 340
+    },
+    {
+      "id": "a-poetry-psalm-104",
+      "ref": "Psalm 104",
+      "genre": "poetry",
+      "sha256": "1d2e51efd0b06263fd43115669ea025b4f8ef755fabfb805751f35a09f7c6fd7",
+      "bytes": 2938,
+      "words": 555
+    },
+    {
+      "id": "a-poetry-psalm-121",
+      "ref": "Psalm 121",
+      "genre": "poetry",
+      "sha256": "136441fa8dc7b43d2e410b4ecc3fc3f2b90f7ee2ae6561ee3850b6b52130bc13",
+      "bytes": 542,
+      "words": 106
+    },
+    {
+      "id": "a-poetry-psalm-137",
+      "ref": "Psalm 137",
+      "genre": "poetry",
+      "sha256": "96780b0c70240a8a99e3d25a8b24aec97e4a970e56b9973d1fe294aa016bcede",
+      "bytes": 755,
+      "words": 146
+    },
+    {
+      "id": "a-poetry-psalm-139",
+      "ref": "Psalm 139",
+      "genre": "poetry",
+      "sha256": "b5d163ac71d463337c18f3f39290bb71500cd3da4c0f4bc263f21bca6367faf1",
+      "bytes": 1945,
+      "words": 395
+    },
+    {
+      "id": "a-poetry-psalm-148",
+      "ref": "Psalm 148",
+      "genre": "poetry",
+      "sha256": "25a3fcf0afc8fe9d7aa15063bfd9270b2432617cbf56cdf22738134f5ce00461",
+      "bytes": 1057,
+      "words": 190
+    },
+    {
+      "id": "a-poetry-song-of-solomon-2",
+      "ref": "Song of Solomon 2",
+      "genre": "poetry",
+      "sha256": "c36c1be27bd3301be1583e702f096da471bbb94052b3ec01648829fc9839e90e",
+      "bytes": 1723,
+      "words": 330
+    },
+    {
+      "id": "a-wisdom-proverbs-1",
+      "ref": "Proverbs 1",
+      "genre": "wisdom",
+      "sha256": "2f81aeacabb3b2266b83cdc8e0230e10678eacde6f1a5cb4b99cefe3bccc2af5",
+      "bytes": 2681,
+      "words": 496
+    },
+    {
+      "id": "a-wisdom-proverbs-3",
+      "ref": "Proverbs 3",
+      "genre": "wisdom",
+      "sha256": "f28c32fca4f5f3198a70bf50642df9887ba42e898aa82e0dd33d14676a3d8ad7",
+      "bytes": 2662,
+      "words": 508
+    },
+    {
+      "id": "a-wisdom-proverbs-8",
+      "ref": "Proverbs 8",
+      "genre": "wisdom",
+      "sha256": "7876705dd24cee90965b18cf7d87940b1fbdb189a6acef37c816f1e5c05642a2",
+      "bytes": 2745,
+      "words": 502
+    },
+    {
+      "id": "a-wisdom-proverbs-10",
+      "ref": "Proverbs 10",
+      "genre": "wisdom",
+      "sha256": "70480d863aafe3c762b9037407bfd0d3d61e5a340a284305e352964a90bb1f5d",
+      "bytes": 2692,
+      "words": 499
+    },
+    {
+      "id": "a-wisdom-proverbs-15",
+      "ref": "Proverbs 15",
+      "genre": "wisdom",
+      "sha256": "56bd6202599833eb436381d9d43049cc90763c9f041a4387471145a416ac2e34",
+      "bytes": 2692,
+      "words": 505
+    },
+    {
+      "id": "a-wisdom-proverbs-26",
+      "ref": "Proverbs 26",
+      "genre": "wisdom",
+      "sha256": "4361afec48477f0c71bcd12e6b87f17150c46afb7c230b787473eaf40b47be57",
+      "bytes": 2216,
+      "words": 439
+    },
+    {
+      "id": "a-wisdom-proverbs-31",
+      "ref": "Proverbs 31",
+      "genre": "wisdom",
+      "sha256": "37986c1c50e7d87e1ae4af1583b8519b0de88b21cd6368bab2b54471ed937dbb",
+      "bytes": 2396,
+      "words": 456
+    },
+    {
+      "id": "a-wisdom-ecclesiastes-1",
+      "ref": "Ecclesiastes 1",
+      "genre": "wisdom",
+      "sha256": "82ca60a31c9e72ae454877fb54a03de9a28883db9acb4262301e8385c0f2bde8",
+      "bytes": 1841,
+      "words": 343
+    },
+    {
+      "id": "a-wisdom-ecclesiastes-3",
+      "ref": "Ecclesiastes 3",
+      "genre": "wisdom",
+      "sha256": "fac10f680d756308b4327ad52ecb89dc2ed2479093485f6778fb5e3ca342a7bb",
+      "bytes": 2279,
+      "words": 470
+    },
+    {
+      "id": "a-wisdom-ecclesiastes-7",
+      "ref": "Ecclesiastes 7",
+      "genre": "wisdom",
+      "sha256": "be3d4561ddba7ff462cd73b70d4dfac5847ad6031783de5323489d9349be0159",
+      "bytes": 3028,
+      "words": 584
+    },
+    {
+      "id": "a-wisdom-ecclesiastes-12",
+      "ref": "Ecclesiastes 12",
+      "genre": "wisdom",
+      "sha256": "199d0c35e4353c74bf5d59dde5616d931c12103b23c6f861f596cd0f02307d5a",
+      "bytes": 1834,
+      "words": 333
+    },
+    {
+      "id": "a-wisdom-job-3",
+      "ref": "Job 3",
+      "genre": "wisdom",
+      "sha256": "c96d09873c512ba0da84a7b3c5823dc3421fc73becb3a5d19fef511842790b05",
+      "bytes": 2020,
+      "words": 402
+    },
+    {
+      "id": "a-wisdom-job-28",
+      "ref": "Job 28",
+      "genre": "wisdom",
+      "sha256": "2619e34e2fee7c78d41fe2e4b87d7c3c697e95cde41adc2f475e0e2d48b2b2cb",
+      "bytes": 2136,
+      "words": 407
+    },
+    {
+      "id": "a-wisdom-job-38",
+      "ref": "Job 38",
+      "genre": "wisdom",
+      "sha256": "a013a447663d3a0970ab80c1f34ab0caf32ed241984b7847057bcc5e8ac966b6",
+      "bytes": 3149,
+      "words": 609
+    },
+    {
+      "id": "a-wisdom-job-42",
+      "ref": "Job 42",
+      "genre": "wisdom",
+      "sha256": "1f15629e03500293617d3ea6616ced534e0114389ff1dcf05533e7950f5e75ce",
+      "bytes": 2034,
+      "words": 370
+    },
+    {
+      "id": "a-prophecy-isaiah-6",
+      "ref": "Isaiah 6",
+      "genre": "prophecy",
+      "sha256": "0bda9c5b4fe9f1b23547f382f3dbde46c3d5752cd7a3cb98c0c2880208b5aff5",
+      "bytes": 1824,
+      "words": 341
+    },
+    {
+      "id": "a-prophecy-isaiah-40",
+      "ref": "Isaiah 40",
+      "genre": "prophecy",
+      "sha256": "45ea862116d6b14b87c7c84ec6a739c17a8e835d78af7ac559013742671bf354",
+      "bytes": 3979,
+      "words": 751
+    },
+    {
+      "id": "a-prophecy-isaiah-53",
+      "ref": "Isaiah 53",
+      "genre": "prophecy",
+      "sha256": "018fd265aa240e793871dd65203ffbb074d43996191a66f0b71f6e4ce98e4e30",
+      "bytes": 1989,
+      "words": 383
+    },
+    {
+      "id": "a-prophecy-isaiah-55",
+      "ref": "Isaiah 55",
+      "genre": "prophecy",
+      "sha256": "0f1d9203be1021047ae5a9ccc51770c83cc6082b5e730b21a9dd2c1106fee81f",
+      "bytes": 1873,
+      "words": 360
+    },
+    {
+      "id": "a-prophecy-jeremiah-1",
+      "ref": "Jeremiah 1",
+      "genre": "prophecy",
+      "sha256": "043640e2fa6e3761db409a5dfc2506aaf1a24db87dadaec50ebf549d53274466",
+      "bytes": 2557,
+      "words": 486
+    },
+    {
+      "id": "a-prophecy-jeremiah-31",
+      "ref": "Jeremiah 31",
+      "genre": "prophecy",
+      "sha256": "e12c10068091abcdaac070a947f132b8ffd7356b82265e317b0596e360a86e63",
+      "bytes": 6361,
+      "words": 1191
+    },
+    {
+      "id": "a-prophecy-ezekiel-37",
+      "ref": "Ezekiel 37",
+      "genre": "prophecy",
+      "sha256": "c2990c72f75ef7694df7a2c242b386be0f3214db6269c74ce947110a945ffe9a",
+      "bytes": 4291,
+      "words": 840
+    },
+    {
+      "id": "a-prophecy-hosea-11",
+      "ref": "Hosea 11",
+      "genre": "prophecy",
+      "sha256": "cbca1f5c4a7cd029a7993b8fd3913cfa654df215e8138cccbf9a34bab44b3d7f",
+      "bytes": 1516,
+      "words": 298
+    },
+    {
+      "id": "a-prophecy-amos-5",
+      "ref": "Amos 5",
+      "genre": "prophecy",
+      "sha256": "ad38b6ba38e716874f523f7f233161dcc905bee638c1cf143862415d69c398ef",
+      "bytes": 3322,
+      "words": 631
+    },
+    {
+      "id": "a-prophecy-micah-6",
+      "ref": "Micah 6",
+      "genre": "prophecy",
+      "sha256": "6bfa8f8b6e6ea0ce9c819dbbc9fc07ffa6047d7050fb2c073f8bbb135f768d00",
+      "bytes": 2194,
+      "words": 412
+    },
+    {
+      "id": "a-prophecy-habakkuk-3",
+      "ref": "Habakkuk 3",
+      "genre": "prophecy",
+      "sha256": "58f179711e30cb39a9d53c6d609523ed3472667baca0c412e266870b403d3ffc",
+      "bytes": 2308,
+      "words": 427
+    },
+    {
+      "id": "a-prophecy-zephaniah-3",
+      "ref": "Zephaniah 3",
+      "genre": "prophecy",
+      "sha256": "2b90363332af714c9c6ef72582876ac6658b3799ebd223b3041c80868f03831a",
+      "bytes": 2954,
+      "words": 556
+    },
+    {
+      "id": "a-prophecy-haggai-1",
+      "ref": "Haggai 1",
+      "genre": "prophecy",
+      "sha256": "22dbf0f45f5d5eac5a5eeceea18a6e6016fbc0ba1d85d7c727714fef641bf8b7",
+      "bytes": 2269,
+      "words": 428
+    },
+    {
+      "id": "a-prophecy-zechariah-9",
+      "ref": "Zechariah 9",
+      "genre": "prophecy",
+      "sha256": "3c09e3e16c1bfbad2defb49f2eb33b33ccd2f07b8fd8abcee29df7ae819c1ef2",
+      "bytes": 2580,
+      "words": 496
+    },
+    {
+      "id": "a-prophecy-malachi-3",
+      "ref": "Malachi 3",
+      "genre": "prophecy",
+      "sha256": "636cba73ccf99d826c7037a67685d0dcdd6385b5cc7073d9c6f271f694199039",
+      "bytes": 2821,
+      "words": 527
+    },
+    {
+      "id": "a-gospel-matthew-5",
+      "ref": "Matthew 5",
+      "genre": "gospel",
+      "sha256": "e9fa29d70f9674b5a7ef2b4d7fede9aa13bf0428a2526661b3968e914032636e",
+      "bytes": 5203,
+      "words": 998
+    },
+    {
+      "id": "a-gospel-matthew-6",
+      "ref": "Matthew 6",
+      "genre": "gospel",
+      "sha256": "d7ac7eb530635d43228072de03dacdbf4402ae04a7c6b9e0a8445ed5b33cf1c9",
+      "bytes": 3870,
+      "words": 750
+    },
+    {
+      "id": "a-gospel-matthew-13",
+      "ref": "Matthew 13",
+      "genre": "gospel",
+      "sha256": "fd38cf5945cd376abe0a8a8dd3b862d676f54f8af96fc24bec4b6b208496c388",
+      "bytes": 6677,
+      "words": 1257
+    },
+    {
+      "id": "a-gospel-matthew-28",
+      "ref": "Matthew 28",
+      "genre": "gospel",
+      "sha256": "80b40e974109c9f24d3ba7765d6feb905f169f24ba3248c801c86d8708b3eb00",
+      "bytes": 2102,
+      "words": 398
+    },
+    {
+      "id": "a-gospel-mark-1",
+      "ref": "Mark 1",
+      "genre": "gospel",
+      "sha256": "08abc3ff36f243dd93309f48b209bc336db9fb03d081106f649010a4c7d65d1b",
+      "bytes": 4636,
+      "words": 854
+    },
+    {
+      "id": "a-gospel-mark-4",
+      "ref": "Mark 4",
+      "genre": "gospel",
+      "sha256": "05dbae48d138364a3b2535ce919f930bf677a821c6aef1e748539e84dd876942",
+      "bytes": 4446,
+      "words": 829
+    },
+    {
+      "id": "a-gospel-mark-15",
+      "ref": "Mark 15",
+      "genre": "gospel",
+      "sha256": "f665a1954af88b04b931868beae4d7dc4a61a9ac6f9111358abb0ffa2880f8a1",
+      "bytes": 4762,
+      "words": 882
+    },
+    {
+      "id": "a-gospel-luke-2",
+      "ref": "Luke 2",
+      "genre": "gospel",
+      "sha256": "5dac0a2ff5ab59496821b6a7814c917f83bc4f8784bc43a00e2670823b571eb9",
+      "bytes": 5519,
+      "words": 1035
+    },
+    {
+      "id": "a-gospel-luke-15",
+      "ref": "Luke 15",
+      "genre": "gospel",
+      "sha256": "98f2ff837f798d1d44a72b05b22157c30ab322948df077e12f05d2db1f393acb",
+      "bytes": 3612,
+      "words": 692
+    },
+    {
+      "id": "a-gospel-luke-24",
+      "ref": "Luke 24",
+      "genre": "gospel",
+      "sha256": "d75264d3df0a89b8b63f1db7c9a441a3e1df8c2527c5a99897e7ef1e93e14f1c",
+      "bytes": 5241,
+      "words": 968
+    },
+    {
+      "id": "a-gospel-john-1",
+      "ref": "John 1",
+      "genre": "gospel",
+      "sha256": "673809de0bcb3f0ce56e69da9bf0727c528061655f136a60e1c47092c30cd239",
+      "bytes": 5049,
+      "words": 943
+    },
+    {
+      "id": "a-gospel-john-3",
+      "ref": "John 3",
+      "genre": "gospel",
+      "sha256": "2fbf91d8c59b5b381e687a86d7f3ea788d530dd8a36cc2ff5e61a08e46f5c56d",
+      "bytes": 3891,
+      "words": 740
+    },
+    {
+      "id": "a-gospel-john-11",
+      "ref": "John 11",
+      "genre": "gospel",
+      "sha256": "a67eec1ef7d220065cc39b486acb1013fc54669035da25aa7a45b06de327df85",
+      "bytes": 5813,
+      "words": 1101
+    },
+    {
+      "id": "a-gospel-john-17",
+      "ref": "John 17",
+      "genre": "gospel",
+      "sha256": "d22bf667fe644c5c80fa584659f6af68895ba4d7841850da1fd97bbfef455997",
+      "bytes": 2997,
+      "words": 626
+    },
+    {
+      "id": "a-gospel-john-21",
+      "ref": "John 21",
+      "genre": "gospel",
+      "sha256": "5d0415b3ff090842de7e24460dda58dc5bf83c9a6a064a7e782bc571f848865a",
+      "bytes": 3560,
+      "words": 664
+    },
+    {
+      "id": "a-epistle-romans-8",
+      "ref": "Romans 8",
+      "genre": "epistle",
+      "sha256": "f490adc0e7e7287a72b49d2db35b32028dba755a28c8ebe1c1bada7c3773d74d",
+      "bytes": 4671,
+      "words": 910
+    },
+    {
+      "id": "a-epistle-romans-12",
+      "ref": "Romans 12",
+      "genre": "epistle",
+      "sha256": "a9d46284ef2a056fde28da7ddfbd2eb69c8f891823ec781d9acb3719656c116e",
+      "bytes": 2184,
+      "words": 408
+    },
+    {
+      "id": "a-epistle-1-corinthians-13",
+      "ref": "1 Corinthians 13",
+      "genre": "epistle",
+      "sha256": "ffca02670711eccbeb824d9aac5eaeea2e0f45f08a399c10032b0257da930c4f",
+      "bytes": 1351,
+      "words": 270
+    },
+    {
+      "id": "a-epistle-1-corinthians-15",
+      "ref": "1 Corinthians 15",
+      "genre": "epistle",
+      "sha256": "4026379d4fb2ff7c19432ad171837df3dad4853b6fe9b5ff323a416ee785ff5c",
+      "bytes": 6001,
+      "words": 1162
+    },
+    {
+      "id": "a-epistle-galatians-5",
+      "ref": "Galatians 5",
+      "genre": "epistle",
+      "sha256": "bbfcefe5b4d315e3cf5f50fa063179af56324812353a637674371c6831555652",
+      "bytes": 2543,
+      "words": 459
+    },
+    {
+      "id": "a-epistle-ephesians-2",
+      "ref": "Ephesians 2",
+      "genre": "epistle",
+      "sha256": "8cc3abd33b70a02af051036261b3cabfef087a9567637405ae66ec62048f3e53",
+      "bytes": 2431,
+      "words": 463
+    },
+    {
+      "id": "a-epistle-ephesians-6",
+      "ref": "Ephesians 6",
+      "genre": "epistle",
+      "sha256": "c0fcffaad8e27d88dcdc23a9dbc20ff43242e6353f9b068a28c00a01959d58e7",
+      "bytes": 2627,
+      "words": 497
+    },
+    {
+      "id": "a-epistle-philippians-2",
+      "ref": "Philippians 2",
+      "genre": "epistle",
+      "sha256": "8717df6fe04f7050437c4c7e087e55ea1578dba4dd5b0e8e58e7151b69512bb0",
+      "bytes": 2997,
+      "words": 584
+    },
+    {
+      "id": "a-epistle-colossians-1",
+      "ref": "Colossians 1",
+      "genre": "epistle",
+      "sha256": "e02ccb6e44c24a8cf804df6ed40b132df981ed5c145ec7d4ba36fefde723f238",
+      "bytes": 3375,
+      "words": 628
+    },
+    {
+      "id": "a-epistle-philemon-1",
+      "ref": "Philemon 1",
+      "genre": "epistle",
+      "sha256": "c97591ee7cb786d54dc85d5ee6cf74e730bfacba0c8183f708d42eb2270071db",
+      "bytes": 2299,
+      "words": 452
+    },
+    {
+      "id": "a-epistle-hebrews-11",
+      "ref": "Hebrews 11",
+      "genre": "epistle",
+      "sha256": "dd5f2db50ff884fbff0581ab5e953ef6652b12408f52f2e7d3ac3e007fef8e52",
+      "bytes": 4991,
+      "words": 906
+    },
+    {
+      "id": "a-epistle-james-1",
+      "ref": "James 1",
+      "genre": "epistle",
+      "sha256": "b9d85aea0697c41a7fd8076f85cb56c0817b593d6280e1ba2ec3708e82c06d47",
+      "bytes": 2908,
+      "words": 538
+    },
+    {
+      "id": "a-epistle-james-3",
+      "ref": "James 3",
+      "genre": "epistle",
+      "sha256": "cda2c5653de278fb8dedc855ee9ecffaf5a3b6357a356f1589e54c39a9d7a62d",
+      "bytes": 1994,
+      "words": 376
+    },
+    {
+      "id": "a-epistle-1-peter-1",
+      "ref": "1 Peter 1",
+      "genre": "epistle",
+      "sha256": "04fe26bb174cad2fb36829e4137c5cff95f5c094f43d4e91850237bb2d00ae44",
+      "bytes": 3173,
+      "words": 575
+    },
+    {
+      "id": "a-epistle-1-john-4",
+      "ref": "1 John 4",
+      "genre": "epistle",
+      "sha256": "6b3f8ee36c84ccab303bafe4cf197e02d7bcad07ad6cf3712be6ed07ecca532c",
+      "bytes": 2427,
+      "words": 488
+    },
+    {
+      "id": "a-apocalyptic-daniel-7",
+      "ref": "Daniel 7",
+      "genre": "apocalyptic",
+      "sha256": "d482b92315dae61030839f9711a99b20dffa87c0b4407e4324b05e0d447ab123",
+      "bytes": 4850,
+      "words": 903
+    },
+    {
+      "id": "a-apocalyptic-daniel-8",
+      "ref": "Daniel 8",
+      "genre": "apocalyptic",
+      "sha256": "670fbc52ab8b2487391b61e378fbc5457d3a10f39ae0a7ac25b21cec2064fa88",
+      "bytes": 4134,
+      "words": 785
+    },
+    {
+      "id": "a-apocalyptic-daniel-9",
+      "ref": "Daniel 9",
+      "genre": "apocalyptic",
+      "sha256": "7abc3b457b6fe8a12f7a32587ee3ae7f3edef4d4dcd2ea114564e35cd3d62c80",
+      "bytes": 4799,
+      "words": 891
+    },
+    {
+      "id": "a-apocalyptic-daniel-10",
+      "ref": "Daniel 10",
+      "genre": "apocalyptic",
+      "sha256": "223ec2a70bb18ec691fe0e67be15885a4caad30c50ee6931c63eaa8000649c98",
+      "bytes": 3061,
+      "words": 593
+    },
+    {
+      "id": "a-apocalyptic-daniel-12",
+      "ref": "Daniel 12",
+      "genre": "apocalyptic",
+      "sha256": "021f32d66189775cb687c98a5eedb7ddefb76aafc1e9fac44853d5aa5e8fb181",
+      "bytes": 2015,
+      "words": 374
+    },
+    {
+      "id": "a-apocalyptic-revelation-1",
+      "ref": "Revelation 1",
+      "genre": "apocalyptic",
+      "sha256": "b7cf762b15dbb049a289b385b438feed433ab4c65d7a5e692fe09645f84276dc",
+      "bytes": 2738,
+      "words": 539
+    },
+    {
+      "id": "a-apocalyptic-revelation-4",
+      "ref": "Revelation 4",
+      "genre": "apocalyptic",
+      "sha256": "59d35b1f724fd7c7243c96d2c41c57c5775cca7b25306e4aeab3e3be2a2744a3",
+      "bytes": 1723,
+      "words": 316
+    },
+    {
+      "id": "a-apocalyptic-revelation-5",
+      "ref": "Revelation 5",
+      "genre": "apocalyptic",
+      "sha256": "87fadd0ff7422d1ba14621a188208981f75b88648b39112bce77fe9a5862c7ac",
+      "bytes": 2143,
+      "words": 414
+    },
+    {
+      "id": "a-apocalyptic-revelation-12",
+      "ref": "Revelation 12",
+      "genre": "apocalyptic",
+      "sha256": "2e0a762c139eea822114ae0b6f498ff15cae1eb7f0033d6ce961422973f9953e",
+      "bytes": 2519,
+      "words": 497
+    },
+    {
+      "id": "a-apocalyptic-revelation-13",
+      "ref": "Revelation 13",
+      "genre": "apocalyptic",
+      "sha256": "6930a452d1f1884fd618cccfad94f1d2de3619a489adb34b814b9deb2155deac",
+      "bytes": 2637,
+      "words": 509
+    },
+    {
+      "id": "a-apocalyptic-revelation-19",
+      "ref": "Revelation 19",
+      "genre": "apocalyptic",
+      "sha256": "9992ac00c77ce91e99047e3785d19a13d6201b307f073ae74be85e2a1b195d7b",
+      "bytes": 3140,
+      "words": 594
+    },
+    {
+      "id": "a-apocalyptic-revelation-20",
+      "ref": "Revelation 20",
+      "genre": "apocalyptic",
+      "sha256": "560ada3aa59ca5104ac1d9d03d4c61e2330f1da0ea7b70628fa9380b19022636",
+      "bytes": 2385,
+      "words": 461
+    },
+    {
+      "id": "a-apocalyptic-revelation-21",
+      "ref": "Revelation 21",
+      "genre": "apocalyptic",
+      "sha256": "4e3b349ca05068439c112d4531850e7a130cfa2617a7cc7ee98c8d5b57f07cc6",
+      "bytes": 3565,
+      "words": 680
+    },
+    {
+      "id": "a-apocalyptic-revelation-22",
+      "ref": "Revelation 22",
+      "genre": "apocalyptic",
+      "sha256": "afdc6378932a58e54b795041832a703907f9c9a248c255a8d5188148d66b0c9e",
+      "bytes": 2867,
+      "words": 561
+    },
+    {
+      "id": "a-apocalyptic-daniel-11",
+      "ref": "Daniel 11",
+      "genre": "apocalyptic",
+      "sha256": "70da3c227740d391696565b1bf83f9b93ad64ebfebc33669bba2d1b5de3efb0a",
+      "bytes": 7154,
+      "words": 1370
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "design": "Twenty documents, each rated across the seven strata by every rater. Ten are the corpus specimens (public or context tier: the document carries its own substrate). Ten are drawn from the private working-markdown block (corpus tier: the rater reads the document and may search the knowledge base it belongs to). Telos and substrate are stated per document, so a rater never infers the frame.",
+  "selection_rule": "specimens: all ten. block-b: the first sampled id of every genre, plus the second sampled id of knowledge_patterns, tasks and emails.",
+  "documents": [
+    {
+      "id": "argumentative-dialectica-original",
+      "kind": "specimen",
+      "tier": "public",
+      "telos": "Deliver the central claim about defaults to a policy-interested general reader.",
+      "substrate": "public: general web literacy"
+    },
+    {
+      "id": "checklist-chunk-shape",
+      "kind": "specimen",
+      "tier": "context",
+      "telos": "Coordinate remaining work: reading the file tells you what to do next and what is blocked.",
+      "substrate": "context: the operation's shared knowledge, as carried by the document itself"
+    },
+    {
+      "id": "correspondence-short-chunk",
+      "kind": "specimen",
+      "tier": "context",
+      "telos": "Settle a date and sequence the Saturday work.",
+      "substrate": "context: the correspondents' shared history, as carried by the thread itself"
+    },
+    {
+      "id": "expository-all-stock",
+      "kind": "specimen",
+      "tier": "public",
+      "telos": "Teach the essential mechanism of photosynthesis to a biology student who knows basic biology.",
+      "substrate": "public: high-school chemistry literacy"
+    },
+    {
+      "id": "lyric-musica-original",
+      "kind": "specimen",
+      "tier": "public",
+      "telos": "Transmit the observation that dappled, irregular, mixed things point toward an unchanging source.",
+      "substrate": "public: English literacy, general devotional-lyric convention"
+    },
+    {
+      "id": "markup-heavy-strip-sensitivity",
+      "kind": "specimen",
+      "tier": "public",
+      "telos": "Reference: let a user look up a flag and its default without reading prose.",
+      "substrate": "public"
+    },
+    {
+      "id": "narrative-astronomia-arc",
+      "kind": "specimen",
+      "tier": "public",
+      "telos": "Transmit the investigation so a reader learns both the cause and the shape of the search.",
+      "substrate": "public"
+    },
+    {
+      "id": "nonascii-word-coverage",
+      "kind": "specimen",
+      "tier": "public",
+      "telos": "Explain to a general reader why borrowed words keep their accents.",
+      "substrate": "public"
+    },
+    {
+      "id": "reference-geometria-selected",
+      "kind": "specimen",
+      "tier": "public",
+      "telos": "Reference lookup: find one setting's type and default without reading anything else.",
+      "substrate": "public"
+    },
+    {
+      "id": "reflex-index-firing-test",
+      "kind": "specimen",
+      "tier": "context",
+      "telos": "Pre-retrieval availability: fire the rule before the reader would think to look it up.",
+      "substrate": "context: the operation's own runbooks, which the entries point at"
+    },
+    {
+      "id": "b-knowledge_patterns-001",
+      "kind": "block-b",
+      "tier": "corpus",
+      "telos": "Teach the captured pattern to a reader who was not present for the incident.",
+      "substrate": "corpus: the private knowledge base the document belongs to"
+    },
+    {
+      "id": "b-knowledge_patterns-002",
+      "kind": "block-b",
+      "tier": "corpus",
+      "telos": "Teach the captured pattern to a reader who was not present for the incident.",
+      "substrate": "corpus: the private knowledge base the document belongs to"
+    },
+    {
+      "id": "b-tasks-001",
+      "kind": "block-b",
+      "tier": "corpus",
+      "telos": "Let a later reader resume the work: state, next actions, and what is blocked.",
+      "substrate": "corpus: the private knowledge base the document belongs to"
+    },
+    {
+      "id": "b-tasks-002",
+      "kind": "block-b",
+      "tier": "corpus",
+      "telos": "Let a later reader resume the work: state, next actions, and what is blocked.",
+      "substrate": "corpus: the private knowledge base the document belongs to"
+    },
+    {
+      "id": "b-emails-001",
+      "kind": "block-b",
+      "tier": "corpus",
+      "telos": "Transmit the message's actionable content to its recipient.",
+      "substrate": "corpus: the recipient's working context"
+    },
+    {
+      "id": "b-emails-002",
+      "kind": "block-b",
+      "tier": "corpus",
+      "telos": "Transmit the message's actionable content to its recipient.",
+      "substrate": "corpus: the recipient's working context"
+    },
+    {
+      "id": "b-inbox_decisions-001",
+      "kind": "block-b",
+      "tier": "corpus",
+      "telos": "Frame a pending decision so its owner can rule.",
+      "substrate": "corpus: the private knowledge base the document belongs to"
+    },
+    {
+      "id": "b-inbox_investigations-001",
+      "kind": "block-b",
+      "tier": "corpus",
+      "telos": "Record a question and its evidence trail for later resolution.",
+      "substrate": "corpus: the private knowledge base the document belongs to"
+    },
+    {
+      "id": "b-skills-001",
+      "kind": "block-b",
+      "tier": "corpus",
+      "telos": "Load an operating discipline as reflex before work begins.",
+      "substrate": "corpus: the private knowledge base the document belongs to"
+    },
+    {
+      "id": "b-memory-001",
+      "kind": "block-b",
+      "tier": "corpus",
+      "telos": "Fire behavioral corrections before the reader would think to search.",
+      "substrate": "corpus: the private knowledge base and the surfaces loaded before work begins"
+    }
+  ]
+}

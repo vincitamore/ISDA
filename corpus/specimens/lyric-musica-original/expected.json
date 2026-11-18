@@ -1,0 +1,36 @@
+{
+  "written_by": "python -m isda.specimens pin: derived state, never hand-edited",
+  "sha256": "f052946fde285a1e128bb208cf5fff676b4c8df83f3176ad60112ea395cd52ce",
+  "raw_bytes": 577,
+  "prose_words": 81,
+  "measures": {
+    "arithmetica.propositional-density": 0.604938,
+    "astronomia.surprisal-slope": -5.894159,
+    "astronomia.surprisal-peak-position": 0.25,
+    "shape.block-kind-entropy": 0.0,
+    "inventory.prose-word-count": 81.0,
+    "musica.surprisal-variance": 38.604767,
+    "shape.paragraph-length-median": 30.0,
+    "shape.chunk-length-median": 30.0
+  },
+  "metrics": {
+    "SCR": 1.8,
+    "ND": 0.57,
+    "RI": 0.198
+  },
+  "compression_floor": {
+    "checked": true,
+    "C": 360,
+    "margin_bytes": 40.0
+  },
+  "verdicts": {
+    "musica-dominates-core": "PASSING",
+    "musica-share-near-half": "PASSING",
+    "full-ladder-exercised": "PASSING",
+    "scr-near-minimal": "PASSING",
+    "ri-not-zero": "PASSING",
+    "musica-top-quartile": "PASSING",
+    "sprung-rhythm-is-original": "UNTESTABLE",
+    "trajectory-is-conventional": "UNTESTABLE"
+  }
+}

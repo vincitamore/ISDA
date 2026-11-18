@@ -1,0 +1,44 @@
+{
+  "doc": "reference-geometria-selected",
+  "family": "grok",
+  "rater": "r2",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 55,
+      "intensity": "Stock",
+      "evidence": "Repeated template 'Integer, default `6`.' / 'Enum, default `\"mat\"`.' — terse tech-ref English; public literacy supplies syntax and register."
+    },
+    "dialectica": {
+      "compressed": 48,
+      "intensity": "Original",
+      "evidence": "Product rules not public: 'deferred, never truncated'; 'fails closed at startup'; 'Covered trays are always excluded from \"top\"' — asserted, not derived for type/default lookup."
+    },
+    "rhetorica": {
+      "compressed": 210,
+      "intensity": "Selected",
+      "evidence": "Curated inventory and order: [rack]→[watering]→[alerts]; humidity_threshold nested under skip_when_humid; each key its own heading with type+default lead — choice among reference layouts."
+    },
+    "arithmetica": {
+      "compressed": 290,
+      "intensity": "Original",
+      "evidence": "Atomic type/default pairs (rows int 6, mode enum mat, quiet_hours [21:00,06:00], email no default, etc.) — not in public substrate; core of one-setting lookup."
+    },
+    "geometria": {
+      "compressed": 85,
+      "intensity": "Selected",
+      "evidence": "H1 → intro → H2 TOML sections → H3 per setting → one H4 nest; self-contained heading blocks enable jump-to without reading siblings."
+    },
+    "musica": {
+      "compressed": 42,
+      "intensity": "Stock",
+      "evidence": "Uniform front-load cadence: type and default first clause, one gloss sentence after — stock man-page/scannable-ref rhythm."
+    },
+    "astronomia": {
+      "compressed": 58,
+      "intensity": "Selected",
+      "evidence": "Arc is promise ('Every setting below shows its default') then three equal catalog sections; flat intensity, no narrative climb — catalog trajectory chosen for lookup."
+    }
+  },
+  "notes": "Telos is single-setting type+default lookup; geometria/rhetorica carry most of that affordance; arithmetica holds the non-public facts."
+}

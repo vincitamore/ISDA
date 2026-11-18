@@ -1,0 +1,36 @@
+{
+  "doc": "b-emails-002",
+  "family": "grok",
+  "rater": "r1",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 42,
+      "intensity": "Stock"
+    },
+    "dialectica": {
+      "compressed": 58,
+      "intensity": "Selected"
+    },
+    "rhetorica": {
+      "compressed": 96,
+      "intensity": "Selected"
+    },
+    "arithmetica": {
+      "compressed": 236,
+      "intensity": "Original"
+    },
+    "geometria": {
+      "compressed": 38,
+      "intensity": "Stock"
+    },
+    "musica": {
+      "compressed": 34,
+      "intensity": "Selected"
+    },
+    "astronomia": {
+      "compressed": 48,
+      "intensity": "Selected"
+    }
+  }
+}

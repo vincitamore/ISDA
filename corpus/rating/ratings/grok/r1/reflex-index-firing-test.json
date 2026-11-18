@@ -1,0 +1,44 @@
+{
+  "doc": "reflex-index-firing-test",
+  "family": "grok",
+  "rater": "r1",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 100,
+      "intensity": "Selected",
+      "evidence": "Entry template `[Title](runbooks/…) — cause so rule; caveat`; compounds with so/because/never/only; blockquote of short declaratives."
+    },
+    "dialectica": {
+      "compressed": 125,
+      "intensity": "Implied",
+      "evidence": "Each `so` hinge: pressurises→sprays→kill manifold first; door vs window coords→silent mirror swap; uncalibrated→cancels watering when it matters."
+    },
+    "rhetorica": {
+      "compressed": 255,
+      "intensity": "Selected",
+      "evidence": "Blockquote: sparse, one-line, admit-after-mistake, remove-on-fixture; six chosen hooks (Water before wiring … Label the tray); pre-lookup frame not full procedure."
+    },
+    "arithmetica": {
+      "compressed": 175,
+      "intensity": "Stock",
+      "evidence": "Ops facts (manifold first; gauge pump-side; +4 days/basil −2; 3-week drift; water the mat; tray-edge labels) point at six named runbooks."
+    },
+    "geometria": {
+      "compressed": 48,
+      "intensity": "Selected",
+      "evidence": "H1 + single blockquote + one flat unordered list of six link-lines; no nested sections, TOC, or closing block."
+    },
+    "musica": {
+      "compressed": 85,
+      "intensity": "Selected",
+      "evidence": "Aphoristic titles; em-dash hinge; cascade cause→imperative→exception; stress peaks FIRST/never/only; no soft landing."
+    },
+    "astronomia": {
+      "compressed": 70,
+      "intensity": "Selected",
+      "evidence": "Opens with admission contract, then equal-weight domain sweep (hazard→geometry→time→sensor→method→identity); flat arc, no synthesis close."
+    }
+  },
+  "notes": "Context substrate (runbooks) not on disk here; Stock/Implied judged from the doc's own claim that procedure detail lives in the linked runbooks."
+}

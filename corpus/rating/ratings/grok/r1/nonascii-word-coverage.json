@@ -1,0 +1,44 @@
+{
+  "doc": "nonascii-word-coverage",
+  "family": "grok",
+  "rater": "r1",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 130,
+      "intensity": "Selected",
+      "evidence": "Elevated essay register with parallel loanword-lists as subjects and antithesis frames: 'A smörgåsbord is not quite a buffet, a fjord is not quite a bay'; 'A señora is not a senora'; semicolon/em-dash compounding throughout."
+    },
+    "dialectica": {
+      "compressed": 165,
+      "intensity": "Selected",
+      "evidence": "Why-chain: 'borrows faster than it naturalises' → façade 'last part to erode' → food 'further than philosophy' because 'not translatable' → accents 'not decoration' but 'passport' of remembered origin."
+    },
+    "rhetorica": {
+      "compressed": 230,
+      "intensity": "Selected",
+      "evidence": "Curated clusters ordered present→history→food→moral: café/jalapeño/résumé; Greek λόγος/τέχνη; sputnik/perestroika; phở/bánh mì/pączki/açaí/şiş; minimal pairs señora, über, garçon — from a vast loanword option space."
+    },
+    "arithmetica": {
+      "compressed": 280,
+      "intensity": "Stock",
+      "evidence": "Public facts as claims: named loanwords retain diacritics; Greek/Russian/Viet/Polish/Turkish origins; sputnik/perestroika; smörgåsbord≠buffet; plus few non-lookup lines ('borrows faster', 'food further than philosophy', passport)."
+    },
+    "geometria": {
+      "compressed": 40,
+      "intensity": "Stock",
+      "evidence": "Single H1 title-claim then four continuous prose paragraphs; no subheads, lists, or multi-section hierarchy — default short-essay page shape."
+    },
+    "musica": {
+      "compressed": 95,
+      "intensity": "Selected",
+      "evidence": "Local cadence via tricola and anaphora: 'résumé, cliché, entrée and protégé'; triple 'not quite'; closing maxim after paired antitheses ('señora… über… garçon') ending on em-dash 'passport'."
+    },
+    "astronomia": {
+      "compressed": 70,
+      "intensity": "Selected",
+      "evidence": "Arc: familiar EN café/jalapeño hook → pre-press Greek/Russian widening → food peak (phở…şiş) → thesis landing 'None of this is decoration… passport' — amplify-then-epigram trajectory."
+    }
+  },
+  "notes": "Explains via curated non-ASCII examples more than explicit linguistic mechanism; public substrate makes word-facts Stock while the passport frame is Selected."
+}

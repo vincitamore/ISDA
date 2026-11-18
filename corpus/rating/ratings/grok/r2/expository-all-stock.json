@@ -1,0 +1,44 @@
+{
+  "doc": "expository-all-stock",
+  "family": "grok",
+  "rater": "r2",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 50,
+      "intensity": "Stock",
+      "evidence": "Declarative multi-clause textbook prose throughout: 'Photosynthesis is the process by which…'; parenthetical glosses ('a sugar that the plant uses…'); no coinages or marked register."
+    },
+    "dialectica": {
+      "compressed": 110,
+      "intensity": "Stock",
+      "evidence": "Standard causal chain asserted, not derived: photon→excited e−→water split→ETC→H+ gradient→ATP synthase; NADPH; RuBisCO/Calvin→sugar. Public intro-bio mechanism, not novel inference."
+    },
+    "rhetorica": {
+      "compressed": 170,
+      "intensity": "Selected",
+      "evidence": "Classic order (overview+eq→chloroplast/photon→light rxns→Calvin) then optional expansions for telos: GOE/food chains, C3/C4/CAM, ~1% efficiency/ag research—chosen from textbook option space."
+    },
+    "arithmetica": {
+      "compressed": 300,
+      "intensity": "Stock",
+      "evidence": "Public facts: 6CO₂+6H₂O+light→C₆H₁₂O₆+6O₂; thylakoid/stroma; chlorophyll red/blue; NADP⁺/NADPH; RuBP/RuBisCO; 3 CO₂→one 3C sugar; 21% O₂/GOE; C4/CAM; ~1% crop efficiency."
+    },
+    "geometria": {
+      "compressed": 40,
+      "intensity": "Stock",
+      "evidence": "Six sequential plain paragraphs; no headings, lists, figures, or hierarchy beyond paragraph breaks—default expository block layout."
+    },
+    "musica": {
+      "compressed": 70,
+      "intensity": "Stock",
+      "evidence": "Even textbook cadence; mild triad 'from the air, water from the soil, and sunlight from above'; 'Meanwhile,' hinge; steady multi-clause pacing without marked figures."
+    },
+    "astronomia": {
+      "compressed": 95,
+      "intensity": "Stock",
+      "evidence": "Default textbook arc: definition→site/photon→light stage→Calvin→biosphere significance→pathway variants→efficiency limits; even intensity, no original trajectory."
+    }
+  },
+  "notes": "Named all-stock; content fully public intro-bio. Only rhetorica is Selected (scope beyond pure mechanism: GOE, C3/C4/CAM, efficiency)."
+}

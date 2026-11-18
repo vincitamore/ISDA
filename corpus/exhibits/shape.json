@@ -1,0 +1,834 @@
+{
+  "run": {
+    "script": "scripts/gate-shape.py",
+    "seed": 0,
+    "n_perm": 2000
+  },
+  "n_docs": 198,
+  "measures": {
+    "shape.heading-tree-depth": {
+      "status": "active",
+      "n": 196,
+      "quartiles": [
+        2.0,
+        2.0,
+        3.0
+      ],
+      "spread": {
+        "iqr": 1.0,
+        "range": 3.0
+      },
+      "genre_median": {
+        "emails": 2.0,
+        "inbox_decisions": 2.0,
+        "inbox_investigations": 2.0,
+        "knowledge_patterns": 2.0,
+        "memory": 2.0,
+        "skills": 2.5,
+        "tasks": 2.0
+      },
+      "discrimination": {
+        "claimed": false,
+        "omega2": 0.0883,
+        "p": 0.001,
+        "floor": 0.0513,
+        "threshold": 0.1,
+        "adequately_powered": true,
+        "passed": false,
+        "n": 196,
+        "k": 7
+      },
+      "discrimination_net_of_markup": {
+        "omega2": 0.0763,
+        "p": 0.0015,
+        "floor": 0.0518
+      },
+      "falsifiers": {
+        "results": [
+          {
+            "perturbation": "flatten_headings",
+            "expectation": "must_move",
+            "normalised_move": 1.0,
+            "passed": true
+          },
+          {
+            "perturbation": "shuffle_paragraphs",
+            "expectation": "must_not_move",
+            "normalised_move": 0.0,
+            "passed": true
+          },
+          {
+            "perturbation": "lowercase",
+            "expectation": "must_not_move",
+            "normalised_move": 0.0,
+            "passed": true
+          },
+          {
+            "perturbation": "whitespace_noise",
+            "expectation": "must_not_move",
+            "normalised_move": 0.0,
+            "passed": true
+          }
+        ],
+        "errors": [],
+        "passed": true
+      },
+      "median_move": {
+        "shuffle_paragraphs": {
+          "of_iqr": 0.0,
+          "of_range": 0.0,
+          "median_after": 2.0
+        },
+        "merge_paragraphs": {
+          "of_iqr": 1.0,
+          "of_range": 0.3333,
+          "median_after": 1.0
+        },
+        "resplit_paragraphs": {
+          "of_iqr": 1.0,
+          "of_range": 0.3333,
+          "median_after": 1.0
+        },
+        "flatten_headings": {
+          "of_iqr": 1.0,
+          "of_range": 0.3333,
+          "median_after": 1.0
+        },
+        "strip_headings": {
+          "of_iqr": 0.0,
+          "of_range": 0.0,
+          "median_after": 2.0
+        },
+        "equalize_sections": {
+          "of_iqr": 0.0,
+          "of_range": 0.0,
+          "median_after": 2.0
+        }
+      },
+      "spearman_vs": {
+        "shape.heading-branching": -0.077,
+        "shape.section-size-dispersion": 0.424,
+        "shape.block-kind-entropy": 0.212,
+        "shape.skipped-heading-levels": 0.386,
+        "inventory.prose-word-count": 0.529,
+        "shape.paragraph-length-median": -0.061,
+        "shape.chunk-length-median": 0.066,
+        "markup_fraction": 0.276
+      }
+    },
+    "shape.heading-branching": {
+      "status": "active",
+      "n": 167,
+      "quartiles": [
+        4.0,
+        5.0,
+        7.0
+      ],
+      "spread": {
+        "iqr": 3.0,
+        "range": 44.0
+      },
+      "genre_median": {
+        "emails": 1.857,
+        "inbox_decisions": 5.25,
+        "inbox_investigations": 5.0,
+        "knowledge_patterns": 5.0,
+        "memory": 4.0,
+        "skills": 7.0,
+        "tasks": 4.417
+      },
+      "discrimination": {
+        "claimed": false,
+        "omega2": 0.0079,
+        "p": 0.28136,
+        "floor": 0.058,
+        "threshold": 0.1,
+        "adequately_powered": true,
+        "passed": false,
+        "n": 167,
+        "k": 7
+      },
+      "discrimination_net_of_markup": {
+        "omega2": -0.006,
+        "p": 0.54873,
+        "floor": 0.0612
+      },
+      "falsifiers": {
+        "results": [
+          {
+            "perturbation": "flatten_headings",
+            "expectation": "must_move",
+            "normalised_move": 1.6667,
+            "passed": true
+          },
+          {
+            "perturbation": "lowercase",
+            "expectation": "must_not_move",
+            "normalised_move": 0.0,
+            "passed": true
+          },
+          {
+            "perturbation": "whitespace_noise",
+            "expectation": "must_not_move",
+            "normalised_move": 0.0,
+            "passed": true
+          }
+        ],
+        "errors": [],
+        "passed": true
+      },
+      "median_move": {
+        "shuffle_paragraphs": {
+          "of_iqr": 0.7778,
+          "of_range": 0.053,
+          "median_after": 2.0
+        },
+        "merge_paragraphs": {
+          "of_iqr": 2.4762,
+          "of_range": 0.1688,
+          "median_after": 0.0
+        },
+        "resplit_paragraphs": {
+          "of_iqr": 2.2222,
+          "of_range": 0.1515,
+          "median_after": 0.0
+        },
+        "flatten_headings": {
+          "of_iqr": 1.6667,
+          "of_range": 0.1136,
+          "median_after": 0.0
+        },
+        "strip_headings": {
+          "of_iqr": 0.8,
+          "of_range": 0.0545,
+          "median_after": 0.0
+        },
+        "equalize_sections": {
+          "of_iqr": 0.0,
+          "of_range": 0.0,
+          "median_after": 4.0
+        }
+      },
+      "spearman_vs": {
+        "shape.heading-tree-depth": -0.077,
+        "shape.section-size-dispersion": 0.065,
+        "shape.block-kind-entropy": 0.056,
+        "shape.skipped-heading-levels": -0.277,
+        "inventory.prose-word-count": 0.494,
+        "shape.paragraph-length-median": 0.015,
+        "shape.chunk-length-median": 0.106,
+        "markup_fraction": 0.213
+      }
+    },
+    "shape.section-size-dispersion": {
+      "status": "active",
+      "n": 157,
+      "quartiles": [
+        0.519,
+        0.863,
+        1.333
+      ],
+      "spread": {
+        "iqr": 0.8145,
+        "range": 15.0088
+      },
+      "genre_median": {
+        "emails": 2.293,
+        "inbox_decisions": 0.738,
+        "inbox_investigations": 0.887,
+        "knowledge_patterns": 0.483,
+        "memory": 0.546,
+        "skills": 1.308,
+        "tasks": 0.954
+      },
+      "discrimination": {
+        "claimed": true,
+        "omega2": 0.2276,
+        "p": 0.0005,
+        "floor": 0.0642,
+        "threshold": 0.1,
+        "adequately_powered": true,
+        "passed": true,
+        "n": 157,
+        "k": 7
+      },
+      "discrimination_net_of_markup": {
+        "omega2": 0.1817,
+        "p": 0.0005,
+        "floor": 0.0633
+      },
+      "falsifiers": {
+        "results": [
+          {
+            "perturbation": "equalize_sections",
+            "expectation": "must_move",
+            "normalised_move": 0.8205,
+            "passed": true
+          },
+          {
+            "perturbation": "lowercase",
+            "expectation": "must_not_move",
+            "normalised_move": 0.0,
+            "passed": true
+          },
+          {
+            "perturbation": "whitespace_noise",
+            "expectation": "must_not_move",
+            "normalised_move": 0.0,
+            "passed": true
+          }
+        ],
+        "errors": [],
+        "passed": true
+      },
+      "median_move": {
+        "shuffle_paragraphs": {
+          "of_iqr": 1.5392,
+          "of_range": 0.0835,
+          "median_after": 2.145
+        },
+        "merge_paragraphs": {
+          "of_iqr": 4.5095,
+          "of_range": 0.2447,
+          "median_after": 6.145
+        },
+        "resplit_paragraphs": {
+          "of_iqr": 6.7644,
+          "of_range": 0.3671,
+          "median_after": 6.789
+        },
+        "flatten_headings": {
+          "of_iqr": 0.0,
+          "of_range": 0.0,
+          "median_after": 0.863
+        },
+        "strip_headings": {
+          "of_iqr": 13.9528,
+          "of_range": 0.7572,
+          "median_after": 13.46
+        },
+        "equalize_sections": {
+          "of_iqr": 0.8205,
+          "of_range": 0.0445,
+          "median_after": 0.115
+        }
+      },
+      "spearman_vs": {
+        "shape.heading-tree-depth": 0.424,
+        "shape.heading-branching": 0.065,
+        "shape.block-kind-entropy": 0.187,
+        "shape.skipped-heading-levels": 0.255,
+        "inventory.prose-word-count": 0.284,
+        "shape.paragraph-length-median": -0.037,
+        "shape.chunk-length-median": 0.023,
+        "markup_fraction": 0.38
+      }
+    },
+    "shape.block-kind-entropy": {
+      "status": "active",
+      "n": 198,
+      "quartiles": [
+        1.528,
+        1.739,
+        1.89
+      ],
+      "spread": {
+        "iqr": 0.3623,
+        "range": 1.689
+      },
+      "genre_median": {
+        "emails": 1.825,
+        "inbox_decisions": 1.734,
+        "inbox_investigations": 1.781,
+        "knowledge_patterns": 1.81,
+        "memory": 1.54,
+        "skills": 1.872,
+        "tasks": 1.496
+      },
+      "discrimination": {
+        "claimed": false,
+        "omega2": 0.1448,
+        "p": 0.0005,
+        "floor": 0.0508,
+        "threshold": 0.1,
+        "adequately_powered": true,
+        "passed": true,
+        "n": 198,
+        "k": 7
+      },
+      "discrimination_net_of_markup": {
+        "omega2": 0.0998,
+        "p": 0.0005,
+        "floor": 0.053
+      },
+      "falsifiers": {
+        "results": [
+          {
+            "perturbation": "merge_paragraphs",
+            "expectation": "must_move",
+            "normalised_move": 1.4666,
+            "passed": true
+          },
+          {
+            "perturbation": "lowercase",
+            "expectation": "must_not_move",
+            "normalised_move": 0.0,
+            "passed": true
+          },
+          {
+            "perturbation": "whitespace_noise",
+            "expectation": "must_not_move",
+            "normalised_move": 0.0,
+            "passed": true
+          }
+        ],
+        "errors": [],
+        "passed": true
+      },
+      "median_move": {
+        "shuffle_paragraphs": {
+          "of_iqr": 0.0502,
+          "of_range": 0.0108,
+          "median_after": 1.737
+        },
+        "merge_paragraphs": {
+          "of_iqr": 1.4666,
+          "of_range": 0.3146,
+          "median_after": 1.149
+        },
+        "resplit_paragraphs": {
+          "of_iqr": 3.4459,
+          "of_range": 0.7392,
+          "median_after": 0.544
+        },
+        "flatten_headings": {
+          "of_iqr": 0.0,
+          "of_range": 0.0,
+          "median_after": 1.739
+        },
+        "strip_headings": {
+          "of_iqr": 1.2459,
+          "of_range": 0.2673,
+          "median_after": 1.241
+        },
+        "equalize_sections": {
+          "of_iqr": 0.8604,
+          "of_range": 0.1846,
+          "median_after": 1.45
+        }
+      },
+      "spearman_vs": {
+        "shape.heading-tree-depth": 0.212,
+        "shape.heading-branching": 0.056,
+        "shape.section-size-dispersion": 0.187,
+        "shape.skipped-heading-levels": 0.111,
+        "inventory.prose-word-count": 0.078,
+        "shape.paragraph-length-median": -0.105,
+        "shape.chunk-length-median": -0.187,
+        "markup_fraction": 0.525
+      }
+    },
+    "shape.skipped-heading-levels": {
+      "status": "active",
+      "n": 196,
+      "quartiles": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "spread": {
+        "iqr": 0.0,
+        "range": 3.0
+      },
+      "genre_median": {
+        "emails": 0.0,
+        "inbox_decisions": 0.0,
+        "inbox_investigations": 0.0,
+        "knowledge_patterns": 0.0,
+        "memory": 0.0,
+        "skills": 0.0,
+        "tasks": 0.0
+      },
+      "discrimination": {
+        "claimed": true,
+        "omega2": 0.2027,
+        "p": 0.0005,
+        "floor": 0.0586,
+        "threshold": 0.1,
+        "adequately_powered": true,
+        "passed": true,
+        "n": 196,
+        "k": 7
+      },
+      "discrimination_net_of_markup": {
+        "omega2": 0.2009,
+        "p": 0.0005,
+        "floor": 0.06
+      },
+      "falsifiers": {
+        "results": [],
+        "errors": [],
+        "passed": true
+      },
+      "median_move": {
+        "shuffle_paragraphs": {
+          "of_iqr": null,
+          "of_range": 0.0,
+          "median_after": 0.0
+        },
+        "merge_paragraphs": {
+          "of_iqr": null,
+          "of_range": 0.0,
+          "median_after": 0.0
+        },
+        "resplit_paragraphs": {
+          "of_iqr": null,
+          "of_range": 0.0,
+          "median_after": 0.0
+        },
+        "flatten_headings": {
+          "of_iqr": null,
+          "of_range": 0.0,
+          "median_after": 0.0
+        },
+        "strip_headings": {
+          "of_iqr": null,
+          "of_range": 0.0,
+          "median_after": 0.0
+        },
+        "equalize_sections": {
+          "of_iqr": null,
+          "of_range": 0.0,
+          "median_after": 0.0
+        }
+      },
+      "spearman_vs": {
+        "shape.heading-tree-depth": 0.386,
+        "shape.heading-branching": -0.277,
+        "shape.section-size-dispersion": 0.255,
+        "shape.block-kind-entropy": 0.111,
+        "inventory.prose-word-count": 0.135,
+        "shape.paragraph-length-median": -0.034,
+        "shape.chunk-length-median": 0.028,
+        "markup_fraction": 0.046
+      }
+    },
+    "inventory.prose-word-count": {
+      "status": "active",
+      "n": 198,
+      "quartiles": [
+        296.25,
+        658.5,
+        1125.25
+      ],
+      "spread": {
+        "iqr": 829.0,
+        "range": 15137.0
+      },
+      "genre_median": {
+        "emails": 253.0,
+        "inbox_decisions": 672.0,
+        "inbox_investigations": 455.5,
+        "knowledge_patterns": 615.0,
+        "memory": 737.5,
+        "skills": 2024.0,
+        "tasks": 576.5
+      },
+      "discrimination": {
+        "claimed": false,
+        "omega2": 0.148,
+        "p": 0.0005,
+        "floor": 0.0466,
+        "threshold": 0.1,
+        "adequately_powered": true,
+        "passed": true,
+        "n": 198,
+        "k": 7
+      },
+      "discrimination_net_of_markup": {
+        "omega2": 0.1487,
+        "p": 0.0005,
+        "floor": 0.0466
+      },
+      "falsifiers": {
+        "results": [],
+        "errors": [],
+        "passed": true
+      },
+      "median_move": {
+        "shuffle_paragraphs": {
+          "of_iqr": 0.0205,
+          "of_range": 0.0011,
+          "median_after": 691.5
+        },
+        "merge_paragraphs": {
+          "of_iqr": 0.0253,
+          "of_range": 0.0014,
+          "median_after": 527.0
+        },
+        "resplit_paragraphs": {
+          "of_iqr": 0.0585,
+          "of_range": 0.0032,
+          "median_after": 549.5
+        },
+        "flatten_headings": {
+          "of_iqr": 0.0,
+          "of_range": 0.0,
+          "median_after": 658.5
+        },
+        "strip_headings": {
+          "of_iqr": 0.0,
+          "of_range": 0.0,
+          "median_after": 658.5
+        },
+        "equalize_sections": {
+          "of_iqr": 0.0121,
+          "of_range": 0.0007,
+          "median_after": 507.0
+        }
+      },
+      "spearman_vs": {
+        "shape.heading-tree-depth": 0.529,
+        "shape.heading-branching": 0.494,
+        "shape.section-size-dispersion": 0.284,
+        "shape.block-kind-entropy": 0.078,
+        "shape.skipped-heading-levels": 0.135,
+        "shape.paragraph-length-median": 0.374,
+        "shape.chunk-length-median": 0.472,
+        "markup_fraction": -0.016
+      }
+    },
+    "shape.paragraph-length-median": {
+      "status": "active",
+      "n": 198,
+      "quartiles": [
+        21.0,
+        31.5,
+        44.0
+      ],
+      "spread": {
+        "iqr": 23.0,
+        "range": 290.0
+      },
+      "genre_median": {
+        "emails": 13.0,
+        "inbox_decisions": 29.75,
+        "inbox_investigations": 30.25,
+        "knowledge_patterns": 36.5,
+        "memory": 54.25,
+        "skills": 34.0,
+        "tasks": 25.5
+      },
+      "discrimination": {
+        "claimed": false,
+        "omega2": 0.0125,
+        "p": 0.17341,
+        "floor": 0.0514,
+        "threshold": 0.1,
+        "adequately_powered": true,
+        "passed": false,
+        "n": 198,
+        "k": 7
+      },
+      "discrimination_net_of_markup": {
+        "omega2": 0.0081,
+        "p": 0.24038,
+        "floor": 0.0542
+      },
+      "falsifiers": {
+        "results": [
+          {
+            "perturbation": "merge_paragraphs",
+            "expectation": "must_move",
+            "normalised_move": 3.6739,
+            "passed": true
+          },
+          {
+            "perturbation": "resplit_paragraphs",
+            "expectation": "must_move",
+            "normalised_move": 2.3804,
+            "passed": true
+          },
+          {
+            "perturbation": "shuffle_paragraphs",
+            "expectation": "must_not_move",
+            "normalised_move": 0.0,
+            "passed": true
+          },
+          {
+            "perturbation": "lowercase",
+            "expectation": "must_not_move",
+            "normalised_move": 0.0,
+            "passed": true
+          },
+          {
+            "perturbation": "whitespace_noise",
+            "expectation": "must_not_move",
+            "normalised_move": 0.0,
+            "passed": true
+          }
+        ],
+        "errors": [],
+        "passed": true
+      },
+      "median_move": {
+        "shuffle_paragraphs": {
+          "of_iqr": 0.0,
+          "of_range": 0.0,
+          "median_after": 31.0
+        },
+        "merge_paragraphs": {
+          "of_iqr": 3.6739,
+          "of_range": 0.2914,
+          "median_after": 113.0
+        },
+        "resplit_paragraphs": {
+          "of_iqr": 2.3804,
+          "of_range": 0.1888,
+          "median_after": 87.5
+        },
+        "flatten_headings": {
+          "of_iqr": 0.0,
+          "of_range": 0.0,
+          "median_after": 31.5
+        },
+        "strip_headings": {
+          "of_iqr": 0.5652,
+          "of_range": 0.0448,
+          "median_after": 13.0
+        },
+        "equalize_sections": {
+          "of_iqr": 3.087,
+          "of_range": 0.2448,
+          "median_after": 107.0
+        }
+      },
+      "spearman_vs": {
+        "shape.heading-tree-depth": -0.061,
+        "shape.heading-branching": 0.015,
+        "shape.section-size-dispersion": -0.037,
+        "shape.block-kind-entropy": -0.105,
+        "shape.skipped-heading-levels": -0.034,
+        "inventory.prose-word-count": 0.374,
+        "shape.chunk-length-median": 0.687,
+        "markup_fraction": -0.394
+      }
+    },
+    "shape.chunk-length-median": {
+      "status": "active",
+      "n": 198,
+      "quartiles": [
+        20.0,
+        29.0,
+        40.75
+      ],
+      "spread": {
+        "iqr": 20.75,
+        "range": 157.5
+      },
+      "genre_median": {
+        "emails": 11.5,
+        "inbox_decisions": 25.75,
+        "inbox_investigations": 30.25,
+        "knowledge_patterns": 30.0,
+        "memory": 53.0,
+        "skills": 35.0,
+        "tasks": 27.5
+      },
+      "discrimination": {
+        "claimed": true,
+        "omega2": 0.125,
+        "p": 0.0005,
+        "floor": 0.055,
+        "threshold": 0.1,
+        "adequately_powered": true,
+        "passed": true,
+        "n": 198,
+        "k": 7
+      },
+      "discrimination_net_of_markup": {
+        "omega2": 0.1078,
+        "p": 0.0005,
+        "floor": 0.0527
+      },
+      "falsifiers": {
+        "results": [
+          {
+            "perturbation": "merge_paragraphs",
+            "expectation": "must_move",
+            "normalised_move": 30.3253,
+            "passed": true
+          },
+          {
+            "perturbation": "resplit_paragraphs",
+            "expectation": "must_move",
+            "normalised_move": 3.5181,
+            "passed": true
+          },
+          {
+            "perturbation": "shuffle_paragraphs",
+            "expectation": "must_not_move",
+            "normalised_move": 0.0,
+            "passed": true
+          },
+          {
+            "perturbation": "lowercase",
+            "expectation": "must_not_move",
+            "normalised_move": 0.0,
+            "passed": true
+          },
+          {
+            "perturbation": "whitespace_noise",
+            "expectation": "must_not_move",
+            "normalised_move": 0.0,
+            "passed": true
+          }
+        ],
+        "errors": [],
+        "passed": true
+      },
+      "median_move": {
+        "shuffle_paragraphs": {
+          "of_iqr": 0.0,
+          "of_range": 0.0,
+          "median_after": 29.0
+        },
+        "merge_paragraphs": {
+          "of_iqr": 30.3253,
+          "of_range": 3.9952,
+          "median_after": 661.0
+        },
+        "resplit_paragraphs": {
+          "of_iqr": 3.5181,
+          "of_range": 0.4635,
+          "median_after": 104.0
+        },
+        "flatten_headings": {
+          "of_iqr": 0.0,
+          "of_range": 0.0,
+          "median_after": 29.0
+        },
+        "strip_headings": {
+          "of_iqr": 0.0,
+          "of_range": 0.0,
+          "median_after": 29.0
+        },
+        "equalize_sections": {
+          "of_iqr": 0.7349,
+          "of_range": 0.0968,
+          "median_after": 25.5
+        }
+      },
+      "spearman_vs": {
+        "shape.heading-tree-depth": 0.066,
+        "shape.heading-branching": 0.106,
+        "shape.section-size-dispersion": 0.023,
+        "shape.block-kind-entropy": -0.187,
+        "shape.skipped-heading-levels": 0.028,
+        "inventory.prose-word-count": 0.472,
+        "shape.paragraph-length-median": 0.687,
+        "markup_fraction": -0.208
+      }
+    }
+  }
+}

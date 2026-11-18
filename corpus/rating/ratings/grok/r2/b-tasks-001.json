@@ -1,0 +1,36 @@
+{
+  "doc": "b-tasks-001",
+  "family": "grok",
+  "rater": "r2",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 55,
+      "intensity": "Stock"
+    },
+    "dialectica": {
+      "compressed": 900,
+      "intensity": "Original"
+    },
+    "rhetorica": {
+      "compressed": 230,
+      "intensity": "Selected"
+    },
+    "arithmetica": {
+      "compressed": 3200,
+      "intensity": "Original"
+    },
+    "geometria": {
+      "compressed": 130,
+      "intensity": "Selected"
+    },
+    "musica": {
+      "compressed": 50,
+      "intensity": "Stock"
+    },
+    "astronomia": {
+      "compressed": 160,
+      "intensity": "Selected"
+    }
+  }
+}

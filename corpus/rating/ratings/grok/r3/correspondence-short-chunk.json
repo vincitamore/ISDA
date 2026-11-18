@@ -1,0 +1,44 @@
+{
+  "doc": "correspondence-short-chunk",
+  "family": "grok",
+  "rater": "r3",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 72,
+      "intensity": "Stock",
+      "evidence": "Casual email register: 'Morning! Two questions before the weekend.'; short confirmatory templates 'Saturday works, eight is fine.'; 'All agreed. Saturday, eight, ladder in the truck.'"
+    },
+    "dialectica": {
+      "compressed": 210,
+      "intensity": "Original",
+      "evidence": "Theo: rewire Sat 'with the pressure already down' vs separate trip; Mara: 'Relay first, then trays — wiring with the rack empty beats wiring around seedlings'; Friday haul so porch wait avoided."
+    },
+    "rhetorica": {
+      "compressed": 130,
+      "intensity": "Selected",
+      "evidence": "Mara dual Q (free Sat + vermiculite); Theo expands agenda (relay rewire, measure north pane); Mara locks order relay→trays and adds label prep—curation among project tasks."
+    },
+    "arithmetica": {
+      "compressed": 265,
+      "intensity": "Original",
+      "evidence": "Sat 8am agreed; vermiculite two bags ship Mon/land Thu/haul Fri; misting relay parts Thu; north pane cracked; second stepladder; sequence relay then trays; tray labels printed tonight."
+    },
+    "geometria": {
+      "compressed": 38,
+      "intensity": "Stock",
+      "evidence": "Three From/Sent message blocks separated by '---'; short paragraphs; title '# Thread: Saturday bench day?'—standard thread layout."
+    },
+    "musica": {
+      "compressed": 48,
+      "intensity": "Stock",
+      "evidence": "Staccato parallel confirmations ('Saturday, eight, ladder in the truck'); mid-thread multi-clause logistics block on shipping/relay; dash asides for reason tags."
+    },
+    "astronomia": {
+      "compressed": 88,
+      "intensity": "Selected",
+      "evidence": "Arc: dual-question open → confirm date/time + scope expand → full lock with explicit sequence and prep; date settles mid-thread, work order only in closing turn."
+    }
+  },
+  "notes": "Context substrate is the thread itself; early-turn facts and sequencing inferences are non-retrievable until stated, so arithmetica/dialectica dominate as Original."
+}

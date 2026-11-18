@@ -1,0 +1,36 @@
+{
+  "written_by": "python -m isda.specimens pin: derived state, never hand-edited",
+  "sha256": "0332bd577f0873b17584381d23ba911521f892fbcb063667ad6b7ecf7513d28c",
+  "raw_bytes": 1909,
+  "prose_words": 136,
+  "measures": {
+    "arithmetica.propositional-density": 0.470588,
+    "astronomia.surprisal-slope": -1.267789,
+    "astronomia.surprisal-peak-position": 0.15,
+    "shape.heading-tree-depth": 2.0,
+    "shape.heading-branching": 2.0,
+    "shape.section-size-dispersion": 0.413043,
+    "shape.block-kind-entropy": 2.074165,
+    "shape.skipped-heading-levels": 0.0,
+    "inventory.prose-word-count": 136.0,
+    "musica.surprisal-variance": 34.567595,
+    "shape.paragraph-length-median": 16.5,
+    "shape.chunk-length-median": 11.5
+  },
+  "metrics": {
+    "SCR": 12.73,
+    "ND": 0.16,
+    "RI": 0.467
+  },
+  "compression_floor": {
+    "checked": true,
+    "C": 902,
+    "margin_bytes": 752.0
+  },
+  "verdicts": {
+    "layout-chunks-run-short": "PASSING",
+    "prose-survives-stripping": "PASSING",
+    "geometria-dominates": "PASSING",
+    "markup-fraction-is-a-comparability-parameter": "UNTESTABLE"
+  }
+}

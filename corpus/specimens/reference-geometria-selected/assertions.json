@@ -1,0 +1,27 @@
+{
+  "specimen": "reference-geometria-selected",
+  "source_of_claims": "the Geometria stratum: document architecture read mechanically by the shape measures",
+  "assertions": [
+    {
+      "id": "geometria-dominates",
+      "claim": "A settings reference's work is architectural: the heading hierarchy is the lookup path, and finding a setting without reading prose is the point. Geometria dominates the core.",
+      "kind": "ledger",
+      "property": "dominant_stratum",
+      "equals": "geometria"
+    },
+    {
+      "id": "sections-run-short",
+      "claim": "Deep hierarchy over short sections: headings and two-line bodies keep the layout-chunk median in single digits, the opposite end of the spectrum from narrative prose.",
+      "kind": "measure",
+      "measure": "shape.chunk-length-median",
+      "max": 10
+    },
+    {
+      "id": "heading-tree-is-deep",
+      "claim": "The page's heading tree is four levels deep, and the heading-tree measure reads at least three.",
+      "kind": "measure",
+      "measure": "shape.heading-tree-depth",
+      "min": 3
+    }
+  ]
+}

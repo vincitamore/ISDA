@@ -1,0 +1,44 @@
+{
+  "doc": "checklist-chunk-shape",
+  "family": "grok",
+  "rater": "r1",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 72,
+      "intensity": "Stock",
+      "evidence": "Imperative fragments ('Order vermiculite — two bags, not one'), markdown checkbox lines, two longer compound Notes sentences; standard checklist register."
+    },
+    "dialectica": {
+      "compressed": 155,
+      "intensity": "Original",
+      "evidence": "Contingency: if glazier slips past planting week → basil to row 2, slower start; causal 'min-gap… saved the cucurbits twice'; blocked items name external waits."
+    },
+    "rhetorica": {
+      "compressed": 170,
+      "intensity": "Selected",
+      "evidence": "Split into Before seed order / Planting week / Blocked / Notes; status glyphs [x][/][ ][!][>]; [!] elevates no top-water; goal line frames all tasks."
+    },
+    "arithmetica": {
+      "compressed": 610,
+      "intensity": "Original",
+      "evidence": "Atomic ops: rows 5–6 bleach done; drip row 3 WIP; vermiculite×2; basil=window exclusive; dome peppers; pane/glazier; misting relay Thu; min-gap one empty cell."
+    },
+    "geometria": {
+      "compressed": 88,
+      "intensity": "Selected",
+      "evidence": "YAML frontmatter → H1 → Goal → three ## phase sections + ## Notes; uniform - [status] bullet lists under each section."
+    },
+    "musica": {
+      "compressed": 48,
+      "intensity": "Stock",
+      "evidence": "Staccato one-line tasks; em-dash asides; Notes as longer comma/colon cadence; [!] as local stress on the prohibition line."
+    },
+    "astronomia": {
+      "compressed": 100,
+      "intensity": "Selected",
+      "evidence": "Arc: metadata → goal → prep (partially done) → planting (open+[!]) → blocked (external) → standing rule + glazier contingency; next-vs-stuck last."
+    }
+  },
+  "notes": "Context substrate only (no external corpus); document is self-contained spring-rotation ops checklist."
+}

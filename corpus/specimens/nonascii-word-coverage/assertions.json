@@ -1,0 +1,25 @@
+{
+  "specimen": "nonascii-word-coverage",
+  "source_of_claims": "Unicode-aware word tokenization (isda.core.tokens)",
+  "assertions": [
+    {
+      "id": "tokenizer-counts-accented-words",
+      "claim": "The word count stays within 10% of the whitespace-token count (305) on space-delimited non-ASCII text: words containing non-ASCII letters are counted.",
+      "kind": "measure",
+      "measure": "inventory.prose-word-count",
+      "between": [275, 335]
+    },
+    {
+      "id": "rhetorica-dominates",
+      "claim": "The essay's work is curatorial: which loanwords, from which languages, in which order. Rhetorica is the dominant stratum of the core.",
+      "kind": "ledger",
+      "property": "dominant_stratum",
+      "equals": "rhetorica"
+    },
+    {
+      "id": "examples-selected-not-original",
+      "claim": "The accent-as-provenance framing is Selected curation from a visible option space, not an Original claim: every linguistic fact in the piece is retrievable from a public substrate.",
+      "kind": "judgment"
+    }
+  ]
+}

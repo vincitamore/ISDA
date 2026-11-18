@@ -1,0 +1,32 @@
+{
+  "specimen": "markup-heavy-strip-sensitivity",
+  "source_of_claims": "the markup exclusion (SKILL.md, 'Markdown is excluded from prose statistics by default')",
+  "assertions": [
+    {
+      "id": "layout-chunks-run-short",
+      "claim": "Tables, fences and flag rows break the page into short layout chunks: the raw-source chunk median sits far below prose norms.",
+      "kind": "measure",
+      "measure": "shape.chunk-length-median",
+      "max": 15
+    },
+    {
+      "id": "prose-survives-stripping",
+      "claim": "The prose view still reads as prose after markup exclusion: the prose-paragraph median stays above the table-row scale.",
+      "kind": "measure",
+      "measure": "shape.paragraph-length-median",
+      "min": 12
+    },
+    {
+      "id": "geometria-dominates",
+      "claim": "The reference page's work is architectural: tables, fences, flag layout. Geometria is the dominant stratum of the core.",
+      "kind": "ledger",
+      "property": "dominant_stratum",
+      "equals": "geometria"
+    },
+    {
+      "id": "markup-fraction-is-a-comparability-parameter",
+      "claim": "Over half of this document's whitespace tokens are markup (136 prose words of 316 source tokens), so a measure sensitive to markup handling is comparable across documents only under one stated strip-or-keep setting.",
+      "kind": "judgment"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "doc": "b-skills-001",
+  "family": "grok",
+  "rater": "r2",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 220,
+      "intensity": "Stock"
+    },
+    "dialectica": {
+      "compressed": 540,
+      "intensity": "Selected"
+    },
+    "rhetorica": {
+      "compressed": 820,
+      "intensity": "Selected"
+    },
+    "arithmetica": {
+      "compressed": 480,
+      "intensity": "Stock"
+    },
+    "geometria": {
+      "compressed": 140,
+      "intensity": "Stock"
+    },
+    "musica": {
+      "compressed": 150,
+      "intensity": "Stock"
+    },
+    "astronomia": {
+      "compressed": 260,
+      "intensity": "Selected"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "doc": "argumentative-dialectica-original",
+  "family": "grok",
+  "rater": "r3",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 160,
+      "intensity": "Stock",
+      "evidence": "Public essay English: multi-clause setups then short correctives ('This is wrong.'); 'by inertia, by A/B tests, by legacy'; no coinages; register fully within general web literacy."
+    },
+    "dialectica": {
+      "compressed": 900,
+      "intensity": "Original",
+      "evidence": "Chain is made not derived: unnoticed→two strengths→disproportionate moral weight→not no-defaults→revealed-interest paternalism→who-loses test→living hypothesis→combo explosion→crypto-params as governance failure."
+    },
+    "rhetorica": {
+      "compressed": 450,
+      "intensity": "Selected",
+      "evidence": "Ordered frames: blank page/font → retirement 30/90 → newsletter/tax → telemetry/ballots/organs → form abandonment → crypto hashes; policy examples chosen from large visible option space."
+    },
+    "arithmetica": {
+      "compressed": 680,
+      "intensity": "Selected",
+      "evidence": "Atoms mix public-retrievable (opt-in ~30% vs opt-out ~90%; organ donation; choice as scarce resource) with essay-specific claims (Tuesday meeting; living hypothesis; combo instrumentation); value in which claims held."
+    },
+    "geometria": {
+      "compressed": 85,
+      "intensity": "Stock",
+      "evidence": "Unsectioned continuous prose, ~11 paragraphs, no heads/lists/tables; linear thesis-to-closing column—standard public essay page shape."
+    },
+    "musica": {
+      "compressed": 190,
+      "intensity": "Selected",
+      "evidence": "Local cadence: paragraph-final maxims ('the choices no one notices making'); tricola ('paralysis, or avoidance, or a choice...'); stress on short pivots after long setup clauses."
+    },
+    "astronomia": {
+      "compressed": 300,
+      "intensity": "Selected",
+      "evidence": "Arc: define+claim → two mechanisms → raise moral stakes → block 'no defaults' → design criterion → heterogeneity → iterate → interactions → measure → invisible labor/incentives → crypto/governance close."
+    }
+  },
+  "notes": "Telos is claim-delivery to policy readers; dialectica carries the original work—rhetorica/astronomia are selection of known essay moves around public nudge facts."
+}

@@ -1,0 +1,44 @@
+{
+  "doc": "correspondence-short-chunk",
+  "family": "grok",
+  "rater": "r1",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 85,
+      "intensity": "Stock",
+      "evidence": "Informal email register throughout: short questions (\"Are you free Saturday morning…\"), terse acceptances (\"Saturday works, eight is fine.\"), compound logistics clauses with dashes—no novel syntax."
+    },
+    "dialectica": {
+      "compressed": 175,
+      "intensity": "Original",
+      "evidence": "New warrants for sequence: \"rather do it Saturday with the pressure already down\"; \"Relay first, then trays — wiring with the rack empty beats wiring around seedlings.\""
+    },
+    "rhetorica": {
+      "compressed": 130,
+      "intensity": "Selected",
+      "evidence": "Mara opens with dual Q (date + vermiculite) + ladder offer; Theo expands agenda (relay, north pane); Mara selects close order \"Relay first, then trays\" and labels."
+    },
+    "arithmetica": {
+      "compressed": 280,
+      "intensity": "Original",
+      "evidence": "Atomic settles: Sat/eight agreed; vermiculite Mon ship, two bags, Thu; haul Fri; relay parts Thu; pane measure; \"Relay first, then trays\"; labels tonight—project nouns pointerable, facts new."
+    },
+    "geometria": {
+      "compressed": 50,
+      "intensity": "Stock",
+      "evidence": "Standard thread shape: H1 subject \"Saturday bench day?\", From/Sent headers, three bodies separated by ---, chronological."
+    },
+    "musica": {
+      "compressed": 55,
+      "intensity": "Stock",
+      "evidence": "Coordination cadence: one-beat confirms (\"Bring the ladder.\"); denser mid-thread logistics; closing staccato \"All agreed. Saturday, eight, ladder in the truck.\""
+    },
+    "astronomia": {
+      "compressed": 85,
+      "intensity": "Selected",
+      "evidence": "Arc for telos: 09:41 open questions → 12:03 accept + expand tasks → 12:47 \"All agreed\" + lock sequence—proposal/response/confirm shape."
+    }
+  },
+  "notes": "Short three-turn thread; substrate is thread-carried context so project nouns compress, schedule/sequence facts do not."
+}

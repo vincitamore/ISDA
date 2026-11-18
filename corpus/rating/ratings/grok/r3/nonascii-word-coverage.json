@@ -1,0 +1,44 @@
+{
+  "doc": "nonascii-word-coverage",
+  "family": "grok",
+  "rater": "r3",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 135,
+      "intensity": "Selected",
+      "evidence": "Literary-expository templates: 'X is not quite Y'; semicolon loanword cascades; elevated lexis (naturalises, arrived bruised, façade of a borrowed word)."
+    },
+    "dialectica": {
+      "compressed": 190,
+      "intensity": "Selected",
+      "evidence": "Chain: borrow>naturalise → surface last to erode → multi-script history → food>philosophy → accent as origin-memory not décor (¶1 open, ¶4 close)."
+    },
+    "rhetorica": {
+      "compressed": 255,
+      "intensity": "Selected",
+      "evidence": "Exemplar sets: café/jalapeño/résumé; λόγος/спутник; phở/pączki/açaí/şiş; order present→history→food→passport frame."
+    },
+    "arithmetica": {
+      "compressed": 240,
+      "intensity": "Stock",
+      "evidence": "Atomic orthography facts (café, résumé, cliché, sputnik, phở, açaí keep marks) are public-retrievable; thesis atoms few relative to examples."
+    },
+    "geometria": {
+      "compressed": 55,
+      "intensity": "Stock",
+      "evidence": "One H1 title plus four unheaded continuous paragraphs; plain short-essay page with no lists, notes, or subheads."
+    },
+    "musica": {
+      "compressed": 100,
+      "intensity": "Selected",
+      "evidence": "Short opener then catalogue swell; tricolon résumé/cliché/entrée; dash-epigram close 'The accent is the word's passport' + balanced proof clauses."
+    },
+    "astronomia": {
+      "compressed": 130,
+      "intensity": "Selected",
+      "evidence": "Arc withholds explicit why until final graf: pace-gap hook → historicize → food peak → passport answer; intensity rises then resolves."
+    }
+  },
+  "notes": "Public-substrate literary essay; telos answered late via passport metaphor; non-ASCII exemplars point into public orthography rather than inventing facts."
+}

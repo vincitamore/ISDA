@@ -1,0 +1,208 @@
+{
+  "run": {
+    "script": "scripts/rating-agreement.py",
+    "seed": 0,
+    "draws": 20000
+  },
+  "raters": {
+    "grok": [
+      "r1",
+      "r2",
+      "r3"
+    ]
+  },
+  "per_stratum_log2_sd_median": {
+    "grammatica": 0.391,
+    "dialectica": 0.416,
+    "rhetorica": 0.293,
+    "arithmetica": 0.326,
+    "geometria": 0.304,
+    "musica": 0.28,
+    "astronomia": 0.287
+  },
+  "n_docs_rated_by_2plus": 20,
+  "monte_carlo_metric_sd_median": {
+    "SCR": 0.263,
+    "ND": 0.051,
+    "RI": 0.065
+  },
+  "monte_carlo_metric_sd_per_doc": {
+    "argumentative-dialectica-original": {
+      "SCR": 0.263,
+      "ND": 0.144,
+      "RI": 0.092
+    },
+    "checklist-chunk-shape": {
+      "SCR": 0.05,
+      "ND": 0.031,
+      "RI": 0.019
+    },
+    "correspondence-short-chunk": {
+      "SCR": 0.122,
+      "ND": 0.091,
+      "RI": 0.071
+    },
+    "expository-all-stock": {
+      "SCR": 1.041,
+      "ND": 0.029,
+      "RI": 0.096
+    },
+    "lyric-musica-original": {},
+    "markup-heavy-strip-sensitivity": {
+      "SCR": 0.205,
+      "ND": 0.058,
+      "RI": 0.066
+    },
+    "narrative-astronomia-arc": {
+      "SCR": 0.037,
+      "ND": 0.051,
+      "RI": 0.04
+    },
+    "nonascii-word-coverage": {
+      "SCR": 0.107,
+      "ND": 0.019,
+      "RI": 0.065
+    },
+    "reference-geometria-selected": {
+      "SCR": 0.206,
+      "ND": 0.046,
+      "RI": 0.052
+    },
+    "reflex-index-firing-test": {
+      "SCR": 0.23,
+      "ND": 0.016,
+      "RI": 0.052
+    },
+    "b-knowledge_patterns-001": {
+      "SCR": 1.008,
+      "ND": 0.212,
+      "RI": 0.213
+    },
+    "b-knowledge_patterns-002": {
+      "SCR": 0.144,
+      "ND": 0.033,
+      "RI": 0.034
+    },
+    "b-tasks-001": {
+      "SCR": 0.971,
+      "ND": 0.024,
+      "RI": 0.009
+    },
+    "b-tasks-002": {
+      "SCR": 0.544,
+      "ND": 0.094,
+      "RI": 0.058
+    },
+    "b-emails-001": {
+      "SCR": 0.916,
+      "ND": 0.179,
+      "RI": 0.179
+    },
+    "b-emails-002": {
+      "SCR": 0.876,
+      "ND": 0.176,
+      "RI": 0.18
+    },
+    "b-inbox_decisions-001": {
+      "SCR": 0.271,
+      "ND": 0.1,
+      "RI": 0.113
+    },
+    "b-inbox_investigations-001": {
+      "SCR": 0.101,
+      "ND": 0.031,
+      "RI": 0.04
+    },
+    "b-skills-001": {
+      "SCR": 1.805,
+      "ND": 0.032,
+      "RI": 0.11
+    },
+    "b-memory-001": {
+      "SCR": 0.545,
+      "ND": 0.065,
+      "RI": 0.054
+    }
+  },
+  "human_rated_docs": 0,
+  "kappa_per_stratum": {
+    "grammatica": {
+      "fleiss_kappa": 0.801,
+      "raw_agreement": 0.9,
+      "tag_distribution": {
+        "Stock": 48,
+        "Selected": 9,
+        "Original": 3
+      },
+      "modal_tag_share": 0.8,
+      "kappa_unreadable_prevalence_skew": false
+    },
+    "dialectica": {
+      "fleiss_kappa": 0.38,
+      "raw_agreement": 0.45,
+      "tag_distribution": {
+        "Original": 29,
+        "Implied": 19,
+        "Selected": 7,
+        "Stock": 5
+      },
+      "modal_tag_share": 0.483,
+      "kappa_unreadable_prevalence_skew": false
+    },
+    "rhetorica": {
+      "fleiss_kappa": -0.017,
+      "raw_agreement": 0.95,
+      "tag_distribution": {
+        "Selected": 59,
+        "Stock": 1
+      },
+      "modal_tag_share": 0.983,
+      "kappa_unreadable_prevalence_skew": true
+    },
+    "arithmetica": {
+      "fleiss_kappa": 0.645,
+      "raw_agreement": 0.75,
+      "tag_distribution": {
+        "Original": 37,
+        "Stock": 19,
+        "Selected": 3,
+        "Implied": 1
+      },
+      "modal_tag_share": 0.617,
+      "kappa_unreadable_prevalence_skew": false
+    },
+    "geometria": {
+      "fleiss_kappa": 0.531,
+      "raw_agreement": 0.65,
+      "tag_distribution": {
+        "Stock": 32,
+        "Selected": 28
+      },
+      "modal_tag_share": 0.533,
+      "kappa_unreadable_prevalence_skew": false
+    },
+    "musica": {
+      "fleiss_kappa": 0.629,
+      "raw_agreement": 0.7,
+      "tag_distribution": {
+        "Stock": 32,
+        "Selected": 25,
+        "Original": 3
+      },
+      "modal_tag_share": 0.533,
+      "kappa_unreadable_prevalence_skew": false
+    },
+    "astronomia": {
+      "fleiss_kappa": 0.417,
+      "raw_agreement": 0.7,
+      "tag_distribution": {
+        "Selected": 48,
+        "Stock": 7,
+        "Original": 3,
+        "Implied": 2
+      },
+      "modal_tag_share": 0.8,
+      "kappa_unreadable_prevalence_skew": false
+    }
+  }
+}

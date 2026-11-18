@@ -1,0 +1,12 @@
+{
+  "raw_bytes": 6552,
+  "strata": {
+    "grammatica": {"compressed": 30, "intensity": "Stock"},
+    "dialectica": {"compressed": 1400, "intensity": "Original"},
+    "rhetorica": {"compressed": 60, "intensity": "Selected"},
+    "arithmetica": {"compressed": 15, "intensity": "Stock"},
+    "geometria": {"compressed": 40, "intensity": "Stock"},
+    "musica": {"compressed": 25, "intensity": "Selected"},
+    "astronomia": {"compressed": 40, "intensity": "Selected"}
+  }
+}

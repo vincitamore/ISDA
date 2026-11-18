@@ -1,0 +1,153 @@
+{
+  "measure": "arithmetica.propositional-density",
+  "run": {
+    "script": "scripts/gate-propositional-density.py",
+    "seed": 0,
+    "n_perm": 2000
+  },
+  "n_docs": 198,
+  "guard_excluded": [
+    {
+      "id": "b-emails-009",
+      "genre": "emails",
+      "prose_words": 4129,
+      "marker_rate": 0.004
+    },
+    {
+      "id": "b-emails-014",
+      "genre": "emails",
+      "prose_words": 353,
+      "marker_rate": 0.031
+    },
+    {
+      "id": "b-emails-016",
+      "genre": "emails",
+      "prose_words": 1480,
+      "marker_rate": 0.028
+    },
+    {
+      "id": "b-emails-017",
+      "genre": "emails",
+      "prose_words": 1501,
+      "marker_rate": 0.027
+    },
+    {
+      "id": "b-emails-024",
+      "genre": "emails",
+      "prose_words": 235,
+      "marker_rate": 0.03
+    }
+  ],
+  "discrimination": {
+    "omega2": 0.1439,
+    "p": 0.0005,
+    "floor": 0.0546,
+    "threshold": 0.1,
+    "adequately_powered": true,
+    "passed": true,
+    "n": 193,
+    "k": 7
+  },
+  "falsifiers": {
+    "spread_iqr": 0.0381,
+    "results": [
+      {
+        "perturbation": "scramble_words",
+        "expectation": "must_move",
+        "normalised_move": 0.593,
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "perturbation": "scramble_within_sentence",
+        "expectation": "must_move",
+        "normalised_move": 0.4521,
+        "passed": true,
+        "reason": ""
+      }
+    ],
+    "errors": [],
+    "passed": true
+  },
+  "rho_vs_content_word_ratio": -0.437,
+  "content_word_ratio_discrimination": {
+    "omega2": 0.3095,
+    "p": 0.0005,
+    "floor": 0.0513
+  },
+  "depid": {
+    "omega2": 0.1511,
+    "p": 0.0005,
+    "floor": 0.0533,
+    "rho_vs_cpidr": 0.459,
+    "n": 193
+  },
+  "observed": {
+    "specimens": {
+      "argumentative-dialectica-original": {
+        "cpidr": 0.493,
+        "content_word_ratio": 0.533
+      },
+      "checklist-chunk-shape": {
+        "cpidr": 0.444,
+        "content_word_ratio": 0.724
+      },
+      "correspondence-short-chunk": {
+        "cpidr": 0.415,
+        "content_word_ratio": 0.629
+      },
+      "expository-all-stock": {
+        "cpidr": 0.514,
+        "content_word_ratio": 0.614
+      },
+      "lyric-musica-original": {
+        "cpidr": 0.605,
+        "content_word_ratio": 0.679
+      },
+      "markup-heavy-strip-sensitivity": {
+        "cpidr": 0.471,
+        "content_word_ratio": 0.647
+      },
+      "narrative-astronomia-arc": {
+        "cpidr": 0.494,
+        "content_word_ratio": 0.592
+      },
+      "nonascii-word-coverage": {
+        "cpidr": 0.467,
+        "content_word_ratio": 0.575
+      },
+      "reference-geometria-selected": {
+        "cpidr": 0.481,
+        "content_word_ratio": 0.711
+      },
+      "reflex-index-firing-test": {
+        "cpidr": 0.468,
+        "content_word_ratio": 0.564
+      }
+    },
+    "block_a_genre_medians": {
+      "apocalyptic": 0.506,
+      "epistle": 0.523,
+      "gospel": 0.521,
+      "law": 0.5,
+      "narrative": 0.511,
+      "poetry": 0.488,
+      "prophecy": 0.484,
+      "wisdom": 0.503
+    },
+    "block_b_genre_medians": {
+      "emails": 0.437,
+      "inbox_decisions": 0.459,
+      "inbox_investigations": 0.468,
+      "knowledge_patterns": 0.469,
+      "memory": 0.484,
+      "skills": 0.456,
+      "tasks": 0.456
+    },
+    "block_b_quartiles": [
+      0.441,
+      0.463,
+      0.479
+    ]
+  }
+}

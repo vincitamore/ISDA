@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "purpose": "The measurement corpus for the falsifier harness and the discrimination, redundancy and null gates. Authored intent and derived state never share a file.",
+  "blocks": {
+    "block-a": {
+      "role": "public block: genre varies maximally while translator and markup stay constant",
+      "authored": "block-a.json (chapter references and genre labels)",
+      "derived": "block-a.lock.json (content hashes; written by `python -m isda.corpus build-a`)",
+      "text": "corpus/cache/block-a/ (never committed; rebuilt from the public-domain source)"
+    },
+    "block-b": {
+      "role": "private block: working markdown of the kind the tool is run against, sampled from a private document tree",
+      "authored": "block-b.config.json (local only, never committed)",
+      "derived": "block-b.json (opaque ids, genre labels, content hashes, sizes)",
+      "text": "corpus/cache/block-b/ (never committed; the documents are not published)"
+    },
+    "specimens": {
+      "role": "named specimens carrying their framework claims as executable assertions",
+      "layout": "specimens/<name>/{text.md, ledger.json, assertions.json, expected.json, analysis.md}"
+    }
+  }
+}

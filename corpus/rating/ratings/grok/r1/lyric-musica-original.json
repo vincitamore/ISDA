@@ -1,0 +1,44 @@
+{
+  "doc": "lyric-musica-original",
+  "family": "grok",
+  "rater": "r1",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 210,
+      "intensity": "Original",
+      "evidence": "Coinages couple-colour, rose-moles, Fresh-firecoal, fathers-forth; stress marks áll trádes; asyndetic For-catalog; parenthetical (who knows how?)"
+    },
+    "dialectica": {
+      "compressed": 95,
+      "intensity": "Implied",
+      "evidence": "After freckled/opposites: 'He fathers-forth whose beauty is past change' — mutable variety → immutable source; standard creation-theology inference"
+    },
+    "rhetorica": {
+      "compressed": 260,
+      "intensity": "Selected",
+      "evidence": "Chosen dapples: brinded cow, trout stipple, chestnut-falls, finches, fold/fallow/plough, trades' gear; then counter/spare/strange; God delayed to l.10"
+    },
+    "arithmetica": {
+      "compressed": 300,
+      "intensity": "Selected",
+      "evidence": "Claims: glory for dappled things; listed pied instances; counter/original/spare/strange; fickle/freckled; swift-slow etc.; He fathers-forth; beauty past change; Praise him"
+    },
+    "geometria": {
+      "compressed": 70,
+      "intensity": "Selected",
+      "evidence": "Two blocks (6-line catalog / shorter resolution); stepped indents on For-lines; 'Praise him.' isolated with wide leading spaces"
+    },
+    "musica": {
+      "compressed": 190,
+      "intensity": "Original",
+      "evidence": "Alliterative clusters (Fresh-firecoal chestnut-falls; finches'); paired antitheses swift,slow; sweet,sour; adazzle,dim; fickle/freckled; sprung cadence to Praise him"
+    },
+    "astronomia": {
+      "compressed": 120,
+      "intensity": "Selected",
+      "evidence": "Arc: opening doxology → concrete catalog ascending domains → abstract all-counter/opposites → volta unchanging father → hush of two-word praise"
+    }
+  },
+  "notes": "Hopkins Pied Beauty; telos maps tightly to the volta couplet; musica/grammatica carry the original load."
+}

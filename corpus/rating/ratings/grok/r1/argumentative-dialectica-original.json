@@ -1,0 +1,44 @@
+{
+  "doc": "argumentative-dialectica-original",
+  "family": "grok",
+  "rater": "r1",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 95,
+      "intensity": "Stock",
+      "evidence": "Policy-essay English: multi-clause declaratives, parallel openers ('A text editor… A new document… A web form…'), short rebukes ('This is wrong.'); no coinages; public register."
+    },
+    "dialectica": {
+      "compressed": 780,
+      "intensity": "Original",
+      "evidence": "Chain from 'defaults are the strongest choices… no one notices making' through moral weight, anti-zero-defaults, revealed-interest paternalism, 80/20 harm shape, living hypothesis, combo explosion, to crypto-parameter governance—not a mechanical public derivation."
+    },
+    "rhetorica": {
+      "compressed": 340,
+      "intensity": "Selected",
+      "evidence": "Chose retirement 30%/90%, newsletter/tax endorsement, triad telemetry/ballots/organs, 10→1000 configs, crypto analogy close; ordered mechanism→ethics→method→incentives over dark-patterns or GDPR leads."
+    },
+    "arithmetica": {
+      "compressed": 520,
+      "intensity": "Original",
+      "evidence": "Atoms beyond stock pointers: defaults strongest because unnoticed; moral weight 'out of proportion'; choice as spendable resource; default as 'living hypothesis'; treat like 'cryptographic parameters'; 'quieter governance failures.'"
+    },
+    "geometria": {
+      "compressed": 55,
+      "intensity": "Stock",
+      "evidence": "Unheaded linear multi-paragraph essay only; no lists, sections, or apparatus—standard public op-ed/essay page shape."
+    },
+    "musica": {
+      "compressed": 115,
+      "intensity": "Selected",
+      "evidence": "Punch lines ('This is wrong.'; 'The incentives are wrong.') alternate with long expansions; tricola of cases; measured multi-clause close on 'quieter governance failures.'"
+    },
+    "astronomia": {
+      "compressed": 280,
+      "intensity": "Selected",
+      "evidence": "Arc: redefine→refute passive view→two strength sources→moral triad→reject no-defaults→which/for whom→heterogeneity→iterate→interactions→measure→invisible labor→crypto/governance indictment."
+    }
+  },
+  "notes": "Public substrate already carries nudge/retirement and organ-donation default facts; dialectica and arithmetica originality sit in the engineering-governance synthesis, not those stock premises."
+}

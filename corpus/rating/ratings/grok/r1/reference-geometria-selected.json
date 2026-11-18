@@ -1,0 +1,44 @@
+{
+  "doc": "reference-geometria-selected",
+  "family": "grok",
+  "rater": "r1",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 38,
+      "intensity": "Stock",
+      "evidence": "Uniform openings: 'Integer, default `6`.', 'Enum, default `\"mat\"`.', 'Boolean, default `true`.' — stock tech-reference type/default sentence template."
+    },
+    "dialectica": {
+      "compressed": 24,
+      "intensity": "Original",
+      "evidence": "Product policies beyond type/default: 'deferred, never truncated'; 'fails closed at startup…not at first alert'; 'Covered trays are always excluded from `\"top\"`'."
+    },
+    "rhetorica": {
+      "compressed": 168,
+      "intensity": "Selected",
+      "evidence": "Curates three TOML tables, one ### per key, type+default first; frames as 'configuration reference' where 'Every setting below shows its default' — choice among table/flat/narrative options."
+    },
+    "arithmetica": {
+      "compressed": 310,
+      "intensity": "Original",
+      "evidence": "Atomic type/default claims not public: rows int 6; cells_per_row int 8; mode enum mat/top/manual default mat; window [07:00,09:00]; channel enum log/email/none; email no default; etc."
+    },
+    "geometria": {
+      "compressed": 132,
+      "intensity": "Selected",
+      "evidence": "Hierarchy: H1 → intro → ## [rack]|[watering]|[alerts] → ### setting → #### humidity_threshold under skip_when_humid; isolates one setting's block for lookup."
+    },
+    "musica": {
+      "compressed": 34,
+      "intensity": "Stock",
+      "evidence": "Local cadence: punchy type/default clause, then one gloss sentence per setting — standard reference scansion, little prosodic variation."
+    },
+    "astronomia": {
+      "compressed": 68,
+      "intensity": "Selected",
+      "evidence": "Flat random-access arc (rack → watering → alerts) after a short how-to-read preface; intensity stays even so one setting can be read without the rest."
+    }
+  },
+  "notes": "Telos is single-setting type+default lookup; geometria/rhetorica do the isolation work; arithmetica holds non-public facts; dialectica policies barely serve the telos."
+}

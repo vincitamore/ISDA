@@ -1,0 +1,25 @@
+{
+  "specimen": "checklist-chunk-shape",
+  "source_of_claims": "the genre separation of shape.chunk-length-median on block B (working markdown)",
+  "assertions": [
+    {
+      "id": "chunks-run-short",
+      "claim": "A task file breaks the page into checkbox items: the layout-chunk median sits at the short end of the working-markdown spectrum.",
+      "kind": "measure",
+      "measure": "shape.chunk-length-median",
+      "max": 15
+    },
+    {
+      "id": "rhetorica-dominates",
+      "claim": "The checklist's work is scope: what made the list, what is blocked, what got the urgent mark. Rhetorica dominates the core.",
+      "kind": "ledger",
+      "property": "dominant_stratum",
+      "equals": "rhetorica"
+    },
+    {
+      "id": "items-are-pointers",
+      "claim": "Each item is a pointer into shared context ('the reference brick', 'the min-gap rule'), not self-contained instruction. Against the operation's own substrate the items read Stock; only the curation is Selected.",
+      "kind": "judgment"
+    }
+  ]
+}

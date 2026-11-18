@@ -1,0 +1,771 @@
+{
+  "generated_by": "python -m isda measures --write: derived from the registry, never hand-edited",
+  "corpus": "interpretations cite block A (public-domain prose, genre-varied) and block B (working markdown), the corpus blocks described in corpus/manifest.json",
+  "harness": {
+    "move_threshold": 0.25,
+    "still_threshold": 0.05,
+    "spread": "iqr"
+  },
+  "measures": [
+    {
+      "id": "arithmetica.content-word-ratio",
+      "version": "2.0.0",
+      "kind": "claim",
+      "status": "retired",
+      "construct": "Fraction of tokens carrying lexical content rather than grammatical function: a lexical register statistic, not a measure of propositional density.",
+      "requires": [
+        "prose.word_multiset"
+      ],
+      "strata": [
+        "arithmetica"
+      ],
+      "must_move_under": [
+        {
+          "name": "scramble_words",
+          "structure_destroyed": "propositional content",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.chunk_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_multiset",
+            "prose.paragraph_sequence",
+            "prose.sentence_multiset",
+            "prose.sentence_sequence",
+            "prose.text",
+            "prose.word_sequence"
+          ]
+        }
+      ],
+      "must_not_move_under": [
+        {
+          "name": "duplicate_document",
+          "structure_destroyed": "document length (not content)",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.bytes",
+            "doc.chunk_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_multiset",
+            "prose.paragraph_sequence",
+            "prose.sentence_multiset",
+            "prose.sentence_sequence",
+            "prose.text",
+            "prose.word_multiset",
+            "prose.word_sequence"
+          ]
+        }
+      ],
+      "null": {
+        "kind": "synthetic",
+        "derived_from": "text drawn from the function-word list alone, giving a ratio near zero",
+        "expected_range": null
+      },
+      "discrimination": null,
+      "interpretation": "Retained as a retirement record. The quantity is well defined and varies by register; it is not a stratum measure.",
+      "retired_because": "Invariant under a global word scramble, so it cannot be reading propositions: the scramble destroys every proposition and preserves the word multiset the measure counts. It is a content-word ratio, a lexical register statistic."
+    },
+    {
+      "id": "arithmetica.propositional-density",
+      "version": "1.0.0",
+      "kind": "claim",
+      "status": "active",
+      "construct": "Propositional density: propositions per word via CPIDR (the operationalization reference.md §4 names for the Arithmetica stratum), over the prose view. English-only by declaration; input the guard cannot affirm as English prose returns no value.",
+      "requires": [
+        "prose.text"
+      ],
+      "strata": [
+        "arithmetica"
+      ],
+      "must_move_under": [
+        {
+          "name": "scramble_words",
+          "structure_destroyed": "propositional content",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.chunk_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_multiset",
+            "prose.paragraph_sequence",
+            "prose.sentence_multiset",
+            "prose.sentence_sequence",
+            "prose.text",
+            "prose.word_sequence"
+          ]
+        },
+        {
+          "name": "scramble_within_sentence",
+          "structure_destroyed": "syntax within sentences",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.chunk_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.sentence_multiset",
+            "prose.sentence_sequence",
+            "prose.text",
+            "prose.word_sequence"
+          ]
+        }
+      ],
+      "must_not_move_under": [],
+      "null": {
+        "kind": "permutation",
+        "derived_from": "the same document with word order destroyed (scramble_words): CPIDR's proposition rules read syntax, so order-free text is the no-propositions expectation",
+        "expected_range": null
+      },
+      "discrimination": {
+        "groups_by": "genre",
+        "min_omega_squared": 0.1,
+        "max_p": 0.01
+      },
+      "interpretation": "A rule-conditioned quantity: values are comparable only under the identical backend and tagger versions recorded in params. Computed on the prose view. None means the language guard refused, not zero density. Separates the seven block B genres: omega-squared 0.1439, p = 5e-4, n = 193 after the guard (corpus/exhibits/propositional-density.json).",
+      "params": {
+        "backend": "ideadensity",
+        "backend_version": "0.5.1",
+        "algorithm": "cpidr",
+        "spacy_model": "en_core_web_sm",
+        "spacy_model_version": "3.8.0",
+        "language": "en",
+        "scope": "prose",
+        "english_guard_min_rate": 0.05,
+        "english_guard_min_words": 20
+      }
+    },
+    {
+      "id": "astronomia.surprisal-peak-position",
+      "version": "1.0.0",
+      "kind": "claim",
+      "status": "active",
+      "construct": "Global-scale UID deviation, location: the normalized position (0-1) of the decile with the highest mean surprisal. Takes one of ten values.",
+      "requires": [
+        "prose.text"
+      ],
+      "strata": [
+        "astronomia"
+      ],
+      "must_move_under": [
+        {
+          "name": "shuffle_paragraphs",
+          "structure_destroyed": "paragraph order",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_sequence",
+            "prose.sentence_sequence",
+            "prose.text",
+            "prose.word_sequence"
+          ]
+        },
+        {
+          "name": "reverse_paragraphs",
+          "structure_destroyed": "paragraph direction",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_sequence",
+            "prose.sentence_sequence",
+            "prose.text",
+            "prose.word_sequence"
+          ]
+        }
+      ],
+      "must_not_move_under": [],
+      "null": {
+        "kind": "permutation",
+        "derived_from": "the same document with paragraph order destroyed (shuffle_paragraphs): the trajectory of order-free text is the no-arc expectation the observed shape is read against",
+        "expected_range": null
+      },
+      "discrimination": null,
+      "interpretation": "Model-conditioned: comparable only under the identical model, revision and binning in params. Computed on the prose view, so markup weight does not register as an arc (rho with markup fraction is -0.08 for the slope and -0.11 for the peak position on block B, n = 198). Mean surprisal is raised at the start of any text, where the model has least context, so read a value against the same document with its paragraphs shuffled, not against zero. No genre claim is registered: both measures differ across block B genres (omega-squared 0.22 and 0.19), and the slope also tracks document length (rho 0.44 with prose word count).",
+      "params": {
+        "model": "gpt2",
+        "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+        "window": 1024,
+        "stride": 512,
+        "bins": 10,
+        "unit": "bits",
+        "scope": "prose",
+        "min_tokens": 60
+      }
+    },
+    {
+      "id": "astronomia.surprisal-slope",
+      "version": "1.0.0",
+      "kind": "claim",
+      "status": "active",
+      "construct": "Global-scale UID deviation, direction: the signed least-squares slope of per-decile mean surprisal (bits) against normalized document position. Positive means the document becomes more surprising as it proceeds.",
+      "requires": [
+        "prose.text"
+      ],
+      "strata": [
+        "astronomia"
+      ],
+      "must_move_under": [
+        {
+          "name": "shuffle_paragraphs",
+          "structure_destroyed": "paragraph order",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_sequence",
+            "prose.sentence_sequence",
+            "prose.text",
+            "prose.word_sequence"
+          ]
+        },
+        {
+          "name": "reverse_paragraphs",
+          "structure_destroyed": "paragraph direction",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_sequence",
+            "prose.sentence_sequence",
+            "prose.text",
+            "prose.word_sequence"
+          ]
+        }
+      ],
+      "must_not_move_under": [],
+      "null": {
+        "kind": "permutation",
+        "derived_from": "the same document with paragraph order destroyed (shuffle_paragraphs): the trajectory of order-free text is the no-arc expectation the observed shape is read against",
+        "expected_range": null
+      },
+      "discrimination": null,
+      "interpretation": "Model-conditioned: comparable only under the identical model, revision and binning in params. Computed on the prose view, so markup weight does not register as an arc (rho with markup fraction is -0.08 for the slope and -0.11 for the peak position on block B, n = 198). Mean surprisal is raised at the start of any text, where the model has least context, so read a value against the same document with its paragraphs shuffled, not against zero. No genre claim is registered: both measures differ across block B genres (omega-squared 0.22 and 0.19), and the slope also tracks document length (rho 0.44 with prose word count).",
+      "params": {
+        "model": "gpt2",
+        "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+        "window": 1024,
+        "stride": 512,
+        "bins": 10,
+        "unit": "bits",
+        "scope": "prose",
+        "min_tokens": 60
+      }
+    },
+    {
+      "id": "inventory.prose-word-count",
+      "version": "1.0.0",
+      "kind": "description",
+      "status": "active",
+      "construct": "The number of word tokens in the document's prose view, markup excluded. An inventory count, not a stratum measure.",
+      "requires": [
+        "prose.word_sequence"
+      ],
+      "strata": [],
+      "must_move_under": [],
+      "must_not_move_under": [],
+      "null": null,
+      "discrimination": null,
+      "interpretation": "Unicode-aware: a word containing non-ASCII letters counts as a word. On space-delimited scripts this tracks the whitespace-token count to within a few percent; a large gap indicates the tokenizer is dropping words."
+    },
+    {
+      "id": "musica.surprisal-variance",
+      "version": "1.0.0",
+      "kind": "claim",
+      "status": "active",
+      "construct": "Deviation from uniform information density at local scale: the variance of per-token surprisal (bits) under a fixed small causal LM (GPT-2-small), over the prose view. Uniform delivery scores low; prosody that concentrates information at stressed points scores high.",
+      "requires": [
+        "prose.text"
+      ],
+      "strata": [
+        "musica"
+      ],
+      "must_move_under": [
+        {
+          "name": "scramble_within_sentence",
+          "structure_destroyed": "syntax within sentences",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.chunk_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.sentence_multiset",
+            "prose.sentence_sequence",
+            "prose.text",
+            "prose.word_sequence"
+          ]
+        },
+        {
+          "name": "scramble_words",
+          "structure_destroyed": "propositional content",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.chunk_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_multiset",
+            "prose.paragraph_sequence",
+            "prose.sentence_multiset",
+            "prose.sentence_sequence",
+            "prose.text",
+            "prose.word_sequence"
+          ]
+        }
+      ],
+      "must_not_move_under": [],
+      "null": {
+        "kind": "permutation",
+        "derived_from": "the same document with word order destroyed (scramble_words): the surprisal profile of order-free text is the no-prosody expectation the observed variance is read against",
+        "expected_range": null
+      },
+      "discrimination": null,
+      "interpretation": "A model-conditioned quantity: values are comparable only under the identical model, revision and windowing recorded in params. Computed on the prose view, so markup weight does not register as rhythm (rho with markup fraction is -0.05 on block B, n = 198). No genre claim: omega-squared across block B genres is 0.0857 (p = 0.0015, label-noise floor 0.0523), significant but below the 0.10 claim threshold. The lyric specimen ranks at quantile 0.96 of block B against a gate of 0.75 (corpus/exhibits/surprisal-variance.json).",
+      "params": {
+        "model": "gpt2",
+        "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+        "window": 1024,
+        "stride": 512,
+        "unit": "bits",
+        "scope": "prose"
+      }
+    },
+    {
+      "id": "shape.block-kind-entropy",
+      "version": "1.0.0",
+      "kind": "claim",
+      "status": "active",
+      "construct": "How mixed the page's material is: Shannon entropy of the non-blank block-kind distribution (prose, headings, list items, tables, code fences). Pure prose reads near 0; working documentation that alternates kinds reads high.",
+      "requires": [
+        "doc.block_kind_multiset"
+      ],
+      "strata": [
+        "geometria"
+      ],
+      "must_move_under": [
+        {
+          "name": "merge_paragraphs",
+          "structure_destroyed": "paragraph boundaries",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.chunk_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_multiset",
+            "prose.paragraph_sequence",
+            "prose.text"
+          ]
+        }
+      ],
+      "must_not_move_under": [
+        {
+          "name": "lowercase",
+          "structure_destroyed": "capitalisation",
+          "destroys": [
+            "doc.source",
+            "prose.text"
+          ]
+        },
+        {
+          "name": "whitespace_noise",
+          "structure_destroyed": "whitespace layout",
+          "destroys": [
+            "doc.bytes",
+            "doc.source",
+            "prose.text"
+          ]
+        }
+      ],
+      "null": {
+        "kind": "synthetic",
+        "derived_from": "merged documents collapsed to a single prose block, where the kind distribution is degenerate and entropy is near 0 by construction",
+        "expected_range": null
+      },
+      "discrimination": null,
+      "interpretation": "Material mix of the page. No genre claim is registered: it differs across block B genres (omega-squared 0.1448, p = 5e-4, label-noise floor 0.051), but rho against markup fraction is +0.53, over the 0.50 limit, and with markup fraction fitted out the separation is 0.0998, under the 0.10 a claim needs."
+    },
+    {
+      "id": "shape.chunk-length-median",
+      "version": "1.0.0",
+      "kind": "claim",
+      "status": "active",
+      "construct": "The typical size of the author's layout chunk: how much material sits between blank lines, counting list items, headings and prose alike. A property of how the author breaks the page, not of what the words say.",
+      "requires": [
+        "doc.chunk_multiset"
+      ],
+      "strata": [
+        "geometria"
+      ],
+      "must_move_under": [
+        {
+          "name": "merge_paragraphs",
+          "structure_destroyed": "paragraph boundaries",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.chunk_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_multiset",
+            "prose.paragraph_sequence",
+            "prose.text"
+          ]
+        },
+        {
+          "name": "resplit_paragraphs",
+          "structure_destroyed": "paragraph boundary placement",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.chunk_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_multiset",
+            "prose.paragraph_sequence",
+            "prose.sentence_multiset",
+            "prose.sentence_sequence",
+            "prose.text"
+          ]
+        }
+      ],
+      "must_not_move_under": [
+        {
+          "name": "shuffle_paragraphs",
+          "structure_destroyed": "paragraph order",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_sequence",
+            "prose.sentence_sequence",
+            "prose.text",
+            "prose.word_sequence"
+          ]
+        },
+        {
+          "name": "lowercase",
+          "structure_destroyed": "capitalisation",
+          "destroys": [
+            "doc.source",
+            "prose.text"
+          ]
+        },
+        {
+          "name": "whitespace_noise",
+          "structure_destroyed": "whitespace layout",
+          "destroys": [
+            "doc.bytes",
+            "doc.source",
+            "prose.text"
+          ]
+        }
+      ],
+      "null": {
+        "kind": "permutation",
+        "derived_from": "documents with blank-line boundaries removed, so no layout chunk exists to measure (not from the distribution of the corpus being judged)",
+        "expected_range": null
+      },
+      "discrimination": {
+        "groups_by": "genre",
+        "min_omega_squared": 0.1,
+        "max_p": 0.01
+      },
+      "interpretation": "Separates the seven block B genres: omega-squared 0.125 (p = 5e-4, label-noise floor 0.055, n = 198) against the 0.10 discrimination gate. Prose-heavy genres run long chunks, list-heavy genres run short ones."
+    },
+    {
+      "id": "shape.heading-branching",
+      "version": "1.0.0",
+      "kind": "claim",
+      "status": "active",
+      "construct": "How wide the outline fans: mean immediate subsections per sectioning heading that has any. Flat outlines read 0.",
+      "requires": [
+        "doc.heading_level_sequence"
+      ],
+      "strata": [
+        "geometria"
+      ],
+      "must_move_under": [
+        {
+          "name": "flatten_headings",
+          "structure_destroyed": "heading hierarchy (levels, not titles)",
+          "destroys": [
+            "doc.bytes",
+            "doc.heading_level_sequence",
+            "doc.source",
+            "prose.text"
+          ]
+        }
+      ],
+      "must_not_move_under": [
+        {
+          "name": "lowercase",
+          "structure_destroyed": "capitalisation",
+          "destroys": [
+            "doc.source",
+            "prose.text"
+          ]
+        },
+        {
+          "name": "whitespace_noise",
+          "structure_destroyed": "whitespace layout",
+          "destroys": [
+            "doc.bytes",
+            "doc.source",
+            "prose.text"
+          ]
+        }
+      ],
+      "null": {
+        "kind": "synthetic",
+        "derived_from": "documents with every heading flattened to level 1, where no parent-child relation exists and branching is 0 by construction",
+        "expected_range": null
+      },
+      "discrimination": null,
+      "interpretation": "Fan-out of the outline tree, read beside depth: a deep narrow tree and a shallow wide one differ at the same heading count. Carries no genre claim: omega-squared is 0.0079 at power (p = 0.28, block B). Order-invariance is not claimed: a paragraph shuffle reorders the level sequence and re-parents subtrees."
+    },
+    {
+      "id": "shape.heading-tree-depth",
+      "version": "1.0.0",
+      "kind": "claim",
+      "status": "active",
+      "construct": "How deep the document's sectioning hierarchy nests: the deepest heading level in use. A property of the outline's shape, independent of what any section says.",
+      "requires": [
+        "doc.heading_level_sequence"
+      ],
+      "strata": [
+        "geometria"
+      ],
+      "must_move_under": [
+        {
+          "name": "flatten_headings",
+          "structure_destroyed": "heading hierarchy (levels, not titles)",
+          "destroys": [
+            "doc.bytes",
+            "doc.heading_level_sequence",
+            "doc.source",
+            "prose.text"
+          ]
+        }
+      ],
+      "must_not_move_under": [
+        {
+          "name": "shuffle_paragraphs",
+          "structure_destroyed": "paragraph order",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_sequence",
+            "prose.sentence_sequence",
+            "prose.text",
+            "prose.word_sequence"
+          ]
+        },
+        {
+          "name": "lowercase",
+          "structure_destroyed": "capitalisation",
+          "destroys": [
+            "doc.source",
+            "prose.text"
+          ]
+        },
+        {
+          "name": "whitespace_noise",
+          "structure_destroyed": "whitespace layout",
+          "destroys": [
+            "doc.bytes",
+            "doc.source",
+            "prose.text"
+          ]
+        }
+      ],
+      "null": {
+        "kind": "synthetic",
+        "derived_from": "documents with every heading flattened to level 1, where depth is 1 by construction (not from the corpus being judged)",
+        "expected_range": null
+      },
+      "discrimination": null,
+      "interpretation": "Depth of the outline. Reordering sections cannot move it (the level multiset survives a shuffle); only re-levelling can. On block B, omega-squared is 0.0883 (p = 0.001, label-noise floor 0.051), below the 0.10 discrimination gate, so no genre claim is carried."
+    },
+    {
+      "id": "shape.paragraph-length-median",
+      "version": "2.0.0",
+      "kind": "claim",
+      "status": "active",
+      "construct": "The typical size of the author's prose paragraph: how much material is packed between paragraph breaks in running prose, headings and list items excluded. A shape property of the document, independent of what the words say.",
+      "requires": [
+        "prose.paragraph_multiset"
+      ],
+      "strata": [
+        "geometria"
+      ],
+      "must_move_under": [
+        {
+          "name": "merge_paragraphs",
+          "structure_destroyed": "paragraph boundaries",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.chunk_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_multiset",
+            "prose.paragraph_sequence",
+            "prose.text"
+          ]
+        },
+        {
+          "name": "resplit_paragraphs",
+          "structure_destroyed": "paragraph boundary placement",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.chunk_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_multiset",
+            "prose.paragraph_sequence",
+            "prose.sentence_multiset",
+            "prose.sentence_sequence",
+            "prose.text"
+          ]
+        }
+      ],
+      "must_not_move_under": [
+        {
+          "name": "shuffle_paragraphs",
+          "structure_destroyed": "paragraph order",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.heading_level_sequence",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_sequence",
+            "prose.sentence_sequence",
+            "prose.text",
+            "prose.word_sequence"
+          ]
+        },
+        {
+          "name": "lowercase",
+          "structure_destroyed": "capitalisation",
+          "destroys": [
+            "doc.source",
+            "prose.text"
+          ]
+        },
+        {
+          "name": "whitespace_noise",
+          "structure_destroyed": "whitespace layout",
+          "destroys": [
+            "doc.bytes",
+            "doc.source",
+            "prose.text"
+          ]
+        }
+      ],
+      "null": {
+        "kind": "permutation",
+        "derived_from": "documents with paragraph boundaries removed, so no compositional unit exists to measure (not from the distribution of the corpus being judged)",
+        "expected_range": null
+      },
+      "discrimination": null,
+      "interpretation": "Valid as a construct (its falsifiers move it, its invariances hold) and not a genre discriminator: prose-paragraph size is close to constant across the seven block B genres (omega-squared 0.0125, p = 0.17, n = 198). The genre signal belongs to layout chunks, which shape.chunk-length-median reads."
+    },
+    {
+      "id": "shape.section-size-dispersion",
+      "version": "1.0.0",
+      "kind": "claim",
+      "status": "active",
+      "construct": "How unevenly material is distributed across sections: interquartile range over median of words-per-section. Uniform sectioning reads near 0; a page with one giant section among stubs reads high.",
+      "requires": [
+        "doc.section_word_counts"
+      ],
+      "strata": [
+        "geometria"
+      ],
+      "must_move_under": [
+        {
+          "name": "equalize_sections",
+          "structure_destroyed": "section-size unevenness",
+          "destroys": [
+            "doc.block_kind_multiset",
+            "doc.bytes",
+            "doc.chunk_multiset",
+            "doc.section_word_counts",
+            "doc.source",
+            "prose.paragraph_multiset",
+            "prose.paragraph_sequence",
+            "prose.sentence_multiset",
+            "prose.sentence_sequence",
+            "prose.text"
+          ]
+        }
+      ],
+      "must_not_move_under": [
+        {
+          "name": "lowercase",
+          "structure_destroyed": "capitalisation",
+          "destroys": [
+            "doc.source",
+            "prose.text"
+          ]
+        },
+        {
+          "name": "whitespace_noise",
+          "structure_destroyed": "whitespace layout",
+          "destroys": [
+            "doc.bytes",
+            "doc.source",
+            "prose.text"
+          ]
+        }
+      ],
+      "null": {
+        "kind": "synthetic",
+        "derived_from": "documents with material dealt equally across their headings, where dispersion is 0 by construction (not the judged corpus's own distribution)",
+        "expected_range": null
+      },
+      "discrimination": {
+        "groups_by": "genre",
+        "min_omega_squared": 0.1,
+        "max_p": 0.01
+      },
+      "interpretation": "Evenness of the sectioning: how the author budgets material, not what the material says. The strongest shape discriminator measured on block B: omega-squared 0.2276 (p = 5e-4, label-noise floor 0.064, n = 157 of 198; the measure abstains below three sections or on a zero median)."
+    },
+    {
+      "id": "shape.skipped-heading-levels",
+      "version": "1.0.0",
+      "kind": "description",
+      "status": "active",
+      "construct": "How often the outline skips levels on the way down: a count of heading transitions that deepen by two or more. An inventory of outline discipline; most documents count 0.",
+      "requires": [
+        "doc.heading_level_sequence"
+      ],
+      "strata": [
+        "geometria"
+      ],
+      "must_move_under": [],
+      "must_not_move_under": [],
+      "null": null,
+      "discrimination": {
+        "groups_by": "genre",
+        "min_omega_squared": 0.1,
+        "max_p": 0.01
+      },
+      "interpretation": "Outline discipline by genre: omega-squared 0.2027 (p = 5e-4, label-noise floor 0.059) on block B; informal genres skip levels, curated ones do not. Read as a count, not a quality score."
+    }
+  ]
+}

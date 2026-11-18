@@ -1,0 +1,44 @@
+{
+  "doc": "checklist-chunk-shape",
+  "family": "grok",
+  "rater": "r2",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 110,
+      "intensity": "Stock",
+      "evidence": "Imperative fragments + markdown checkbox lines ('Empty and bleach…', 'Order vermiculite — two bags, not one'); stock ops-checklist register; notes as longer compounds."
+    },
+    "dialectica": {
+      "compressed": 210,
+      "intensity": "Original",
+      "evidence": "Contingency: 'If the glazier slips past planting week, move the window-row basil to row 2…'; min-gap justified 'it saved the cucurbits twice' — neither follows from general literacy."
+    },
+    "rhetorica": {
+      "compressed": 240,
+      "intensity": "Selected",
+      "evidence": "Order Before seed order → Planting week → Blocked → Notes; keep [x] items visible; elevate 'Do not top-water' as [!] and waits as [>] out of ordinary [ ] todos."
+    },
+    "arithmetica": {
+      "compressed": 400,
+      "intensity": "Original",
+      "evidence": "Atomic states: r5–6 bleached done; drip coupler [/]; vermiculite two bags; basil window-only; pane→glazier; relay parts Thursday; min-gap one empty cell — current-work facts."
+    },
+    "geometria": {
+      "compressed": 95,
+      "intensity": "Selected",
+      "evidence": "YAML frontmatter; H1; Goal line; three H2 checklist chunks + Notes prose; flat - [state] lists — shape chosen to surface next vs blocked."
+    },
+    "musica": {
+      "compressed": 55,
+      "intensity": "Stock",
+      "evidence": "Staccato parallel checklist lines; single stressed prohibition '[!] Do not top-water…'; Notes cadence with colon and trailing clause."
+    },
+    "astronomia": {
+      "compressed": 90,
+      "intensity": "Selected",
+      "evidence": "Arc: goal → prep with mixed [x]/[/]/[ ] → planting rules + ban → external [>] blocks → fallback Notes; paced so next work and blockers read in one pass."
+    }
+  },
+  "notes": "Context substrate: operational shared knowledge only; no corpus lookup. Nonstandard checkbox glyphs ([/],[!],[>]) treated as local form, not public stock."
+}

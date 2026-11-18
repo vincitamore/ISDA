@@ -1,0 +1,44 @@
+{
+  "doc": "reflex-index-firing-test",
+  "family": "grok",
+  "rater": "r3",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 170,
+      "intensity": "Selected",
+      "evidence": "Template: `[Aphorism](runbook) — cause so hazard; FIRST/never imperatives` with semicolon chains. Register is ops-imperative; packing into one multi-clause fire-line is a form choice, not runbook prose."
+    },
+    "dialectica": {
+      "compressed": 240,
+      "intensity": "Stock",
+      "evidence": "Door-vs-window rack coords → silent mirror swap; panel gauge reads pump side not line; packets assume bottom heat. Causal chains live in linked runbooks; index only surfaces them."
+    },
+    "rhetorica": {
+      "compressed": 280,
+      "intensity": "Selected",
+      "evidence": "Blockquote: sparse by design; fire before lookup; admit only after a mistake; remove when a fixture obsolete. Six entries ordered water→rack→seed→sensor→dome→label."
+    },
+    "arithmetica": {
+      "compressed": 220,
+      "intensity": "Stock",
+      "evidence": "Atomic claims (manifold first; +4 days / basil −2; three weeks drift; brick on the 1st; water the mat; tray-edge label) are the runbook payload the links point at."
+    },
+    "geometria": {
+      "compressed": 95,
+      "intensity": "Selected",
+      "evidence": "Shape: H1 title, one lead blockquote, flat six-bullet list of link—summary lines; no nested sections, numbers, or TOC hierarchy."
+    },
+    "musica": {
+      "compressed": 140,
+      "intensity": "Selected",
+      "evidence": "Short title punch then em-dash long run; stress on FIRST/never/only (e.g. 'manifold FIRST… never trust the panel gauge alone'); parallel cadence across all six lines."
+    },
+    "astronomia": {
+      "compressed": 130,
+      "intensity": "Selected",
+      "evidence": "Arc: policy frame first, then six equal-weight independent traps (safety→orientation→planning→sense→water→label); no rising climax—each entry fires alone."
+    }
+  },
+  "notes": "Context substrate: runbook targets not opened; Stock tags rest on the doc's claim that procedure detail lives in those links."
+}

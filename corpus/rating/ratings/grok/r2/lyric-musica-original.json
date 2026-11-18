@@ -1,0 +1,44 @@
+{
+  "doc": "lyric-musica-original",
+  "family": "grok",
+  "rater": "r2",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 200,
+      "intensity": "Original",
+      "evidence": "Coinages and compounds not in public stock: \"fathers-forth\", \"couple-colour\", \"Fresh-firecoal chestnut-falls\", \"rose-moles all in stipple\"; stress-marked \"áll trádes\"; dense \"For…\" catalog syntax."
+    },
+    "dialectica": {
+      "compressed": 100,
+      "intensity": "Selected",
+      "evidence": "Hinge from \"All things counter, original, spare, strange\" / \"fickle, freckled\" and opposite pairs to \"He fathers-forth whose beauty is past change\"—immutability-via-creation chosen from devotional option space."
+    },
+    "rhetorica": {
+      "compressed": 230,
+      "intensity": "Selected",
+      "evidence": "Exemplar set and order: couple-colour skies/brinded cow; trout rose-moles; chestnut-falls; finches' wings; fold, fallow, plough; trades' gear; then abstract pairs; then praise."
+    },
+    "arithmetica": {
+      "compressed": 300,
+      "intensity": "Selected",
+      "evidence": "Claim set: glory for dappled things; listed natural/trade particulars; counter/spare/strange; fickle/freckled; swift–slow, sweet–sour, adazzle–dim; He fathers-forth; beauty past change; Praise him."
+    },
+    "geometria": {
+      "compressed": 80,
+      "intensity": "Selected",
+      "evidence": "Title \"Pied Beauty\"; two blocks (catalog then turn); stepped three-depth indents; volta line flush; \"Praise him.\" isolated far right."
+    },
+    "musica": {
+      "compressed": 165,
+      "intensity": "Original",
+      "evidence": "Local sound made, not stock meter: alliterative \"Fresh-firecoal\"/\"fold, fallow\"; \"fickle, freckled (who knows how?)\"; ternary cadence \"swift, slow; sweet, sour; adazzle, dim\"."
+    },
+    "astronomia": {
+      "compressed": 110,
+      "intensity": "Selected",
+      "evidence": "Global arc: opening doxology → expanding dappled catalog → abstract irregularity climax → unchanging-source volta → terminal \"Praise him.\""
+    }
+  },
+  "notes": "Hopkins Pied Beauty; public substrate so sprung-rhythm grammar/music rate Original; telos hinge is Selected from devotional natural-theology options."
+}

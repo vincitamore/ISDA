@@ -1,0 +1,44 @@
+{
+  "doc": "markup-heavy-strip-sensitivity",
+  "family": "grok",
+  "rater": "r2",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 85,
+      "intensity": "Stock",
+      "evidence": "Short CLI-doc declaratives (\"Builds a fourteen-day tray layout…\"); table cells as bare fragments (`path`, `trays.toml`, `false`)."
+    },
+    "dialectica": {
+      "compressed": 140,
+      "intensity": "Original",
+      "evidence": "Exit `3` still writes partial layout; `EARLY` trays never moved by `--apply`; dry-run when `--apply` omitted—tool rules not public."
+    },
+    "rhetorica": {
+      "compressed": 200,
+      "intensity": "Selected",
+      "evidence": "Chose Flag|Type|Default|Meaning tables; plan then rotate; lead line \"Values shown are the defaults\" frames lookup."
+    },
+    "arithmetica": {
+      "compressed": 340,
+      "intensity": "Original",
+      "evidence": "Nine flag rows (e.g. `--days` int `14`, `--format` enum `table`∈{table,json,ics}); exits 0/3/64; defaults `trays.toml`/`rack.json`."
+    },
+    "geometria": {
+      "compressed": 110,
+      "intensity": "Selected",
+      "evidence": "YAML front matter; H1→intro; per-verb H2 + 4-col table + code fence + trailing notes; two symmetric verb blocks."
+    },
+    "musica": {
+      "compressed": 45,
+      "intensity": "Stock",
+      "evidence": "One flag per table row, parallel columns; 1–2 sentence asides; bash lines paired with `#` dry-run comments."
+    },
+    "astronomia": {
+      "compressed": 70,
+      "intensity": "Selected",
+      "evidence": "Flat ref arc: purpose→plan flags/example/exits→rotate flags→EARLY edge→external link; no narrative build."
+    }
+  },
+  "notes": "Fictional potting-bench CLI; flag/default payload is Original under public substrate; markup (tables/fences) is structural not propositional."
+}

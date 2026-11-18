@@ -1,0 +1,44 @@
+{
+  "doc": "argumentative-dialectica-original",
+  "family": "grok",
+  "rater": "r2",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 210,
+      "intensity": "Stock",
+      "evidence": "Educated policy-essay English: medium-long multi-clause sentences; parallel tricola ('A software company... a municipality... a hospital'); short punches ('This is wrong.'); no coinages."
+    },
+    "dialectica": {
+      "compressed": 580,
+      "intensity": "Selected",
+      "evidence": "Path: unnoticed→dual strength (inertia+endorsement)→moral weight→reject zero-defaults→revealed-interest paternalism→heterogeneity→iterate→combinatorics→crypto/governance; not a single look-up or forced derivation."
+    },
+    "rhetorica": {
+      "compressed": 490,
+      "intensity": "Selected",
+      "evidence": "Opens editor/font/form; retirement ~30/90; newsletter/tax; telemetry/ballots/organs; choice-as-resource; 80/20; living hypothesis; 10→1000 combos; closes crypto parameters / quiet governance failure."
+    },
+    "arithmetica": {
+      "compressed": 820,
+      "intensity": "Implied",
+      "evidence": "Stock rates ('30 percent versus 90 percent'); endorsement and choice-overload claims; 'Choice is a resource'; default as 'living hypothesis'; engineers shape populations; crypto-parameter standard (few non-derivable atoms)."
+    },
+    "geometria": {
+      "compressed": 90,
+      "intensity": "Stock",
+      "evidence": "Single continuous unheaded essay: ~10 prose paragraphs, no lists/figures/sections; linear progressive block layout standard for longform op-ed."
+    },
+    "musica": {
+      "compressed": 180,
+      "intensity": "Selected",
+      "evidence": "Long setup then short stress lines ('This is wrong.'; 'The incentives are wrong.'; 'It is the checkbox's initial state.'); parallel list cadence; paragraph-final aphorisms."
+    },
+    "astronomia": {
+      "compressed": 300,
+      "intensity": "Selected",
+      "evidence": "Arc: ubiquity+thesis inversion→two mechanisms→stakes→false out (no defaults)→criterion→heterogeneity→iteration→interactions→invisible labor/incentives→crypto/governance crescendo."
+    }
+  },
+  "notes": "Public substrate carries nudge/choice-architecture facts; originality sits mainly in assembly and the crypto-governance close, not in novel empirical claims."
+}

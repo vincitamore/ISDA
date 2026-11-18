@@ -1,0 +1,44 @@
+{
+  "doc": "narrative-astronomia-arc",
+  "family": "grok",
+  "rater": "r2",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 210,
+      "intensity": "Selected",
+      "evidence": "Long multi-clause openers vs short verdicts ('Nothing had alarmed.'); mild system personification ('failed politely'); forensic past + British orthography ('centimetre')."
+    },
+    "dialectica": {
+      "compressed": 450,
+      "intensity": "Original",
+      "evidence": "Three-move elimination: valve cleared → `5:20` parse cleared (ran on 13th) → meter pressure@23:11 + pre-close guard holds valve; 'each subsystem... designed' interaction."
+    },
+    "rhetorica": {
+      "compressed": 280,
+      "intensity": "Selected",
+      "evidence": "Full false leads before cause (valve, then schedule); discovery framed 'by accident'; waterline kept as memorial coda; dual open (log + bench)."
+    },
+    "arithmetica": {
+      "compressed": 680,
+      "intensity": "Original",
+      "evidence": "23:12–05:20 vs 20 min; edit 12th `5:20`; pressure loss 23:11 frost mist; refuse-close-on-fault guard; fix close-then-fault; seedlings recovered."
+    },
+    "geometria": {
+      "compressed": 85,
+      "intensity": "Selected",
+      "evidence": "Single H1 + five unheaded paragraphs, blank-line spine only; no Symptoms/Cause/Fix sections or lists—continuous investigation essay."
+    },
+    "musica": {
+      "compressed": 170,
+      "intensity": "Selected",
+      "evidence": "Parallel 'first/second suspicion' openings; snap nulls ('explained nothing'); cause paragraph lengthens; close antithesis 'not fail loudly... failed politely'."
+    },
+    "astronomia": {
+      "compressed": 290,
+      "intensity": "Original",
+      "evidence": "Arc: dual-evidence cold open → boring-answer dead end → promising-parse dead end → accidental true cause → one-line fix + waterline moral; intensity for search-shape."
+    }
+  },
+  "notes": "Public substrate supplies failure-class and genre templates; incident facts, elimination chain, and search-arc are not retrievable."
+}

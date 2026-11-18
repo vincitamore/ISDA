@@ -1,0 +1,52 @@
+{
+  "specimen": "argumentative-dialectica-original",
+  "source_of_claims": "examples.md, Example 2: 'Why this test case' and 'Key findings'",
+  "assertions": [
+    {
+      "id": "dialectica-dominates-core",
+      "claim": "The essay's value rests on specific claims: Dialectica is the dominant stratum of the compressed core.",
+      "kind": "ledger",
+      "property": "dominant_stratum",
+      "equals": "dialectica"
+    },
+    {
+      "id": "dialectica-share-near-ninety",
+      "claim": "Dialectica's five original claims are 1,400 of the 1,610-byte core: about 87% of what is irreducible here is originated argument.",
+      "kind": "ledger",
+      "property": "stratum_share",
+      "stratum": "dialectica",
+      "between": [0.80, 0.92]
+    },
+    {
+      "id": "nd-high",
+      "claim": "ND is high: the core is mostly originated argument, and the dominant stratum sets the number almost alone.",
+      "kind": "metric",
+      "metric": "nd",
+      "min": 0.85
+    },
+    {
+      "id": "scr-argumentative-band",
+      "claim": "SCR sits in the 2-5 band the interpretation guide expects for well-developed argumentative prose.",
+      "kind": "metric",
+      "metric": "scr",
+      "between": [2.0, 5.0]
+    },
+    {
+      "id": "ri-low",
+      "claim": "RI is low: the core is almost entirely originated claims, with only Grammatica, Arithmetica and Geometria reading Stock.",
+      "kind": "metric",
+      "metric": "ri",
+      "max": 0.10
+    },
+    {
+      "id": "musica-selected-not-original",
+      "claim": "The rhetorical figures (tricolon, isocolon, anaphora, periodic build) come from a known inventory: Musica reads Selected, not Original. A well-placed anaphora is not new prosody.",
+      "kind": "judgment"
+    },
+    {
+      "id": "arc-conventional",
+      "claim": "The trajectory (thesis, mechanism, stakes, counterobjection, refinement, complication, closing) is a conventional argumentative arc: Astronomia reads Selected. The novelty lives in the Dialectica content filling the arc, not in the arc.",
+      "kind": "judgment"
+    }
+  ]
+}

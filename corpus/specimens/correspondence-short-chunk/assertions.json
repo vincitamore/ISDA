@@ -1,0 +1,25 @@
+{
+  "specimen": "correspondence-short-chunk",
+  "source_of_claims": "the genre separation of shape.chunk-length-median on block B (working markdown)",
+  "assertions": [
+    {
+      "id": "chunks-run-short",
+      "claim": "Correspondence runs one to three sentences per paragraph: the layout-chunk median sits at the short end of the working-markdown spectrum, alongside task files and far from skill files and memory indexes.",
+      "kind": "measure",
+      "measure": "shape.chunk-length-median",
+      "max": 15
+    },
+    {
+      "id": "rhetorica-dominates",
+      "claim": "The thread's core is curatorial: which questions get asked, which get answered, what gets added unprompted. Rhetorica dominates.",
+      "kind": "ledger",
+      "property": "dominant_stratum",
+      "equals": "rhetorica"
+    },
+    {
+      "id": "addressed-not-broadcast",
+      "claim": "The thread is addressed to one receiver with shared context ('the reference brick' needs no gloss between these two). Analyzed against a public substrate, that address reads as gaps: the substrate parameter changed, not the text.",
+      "kind": "judgment"
+    }
+  ]
+}

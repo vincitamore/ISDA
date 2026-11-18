@@ -1,0 +1,46 @@
+{
+  "specimen": "expository-all-stock",
+  "source_of_claims": "examples.md, Example 3: 'Why this test case' and 'Key findings'",
+  "assertions": [
+    {
+      "id": "all-seven-stock",
+      "claim": "A successful introductory passage on a settled topic reads Stock across every stratum against a discipline-literate substrate.",
+      "kind": "ledger",
+      "property": "uniform_intensity",
+      "equals": "Stock"
+    },
+    {
+      "id": "ri-exactly-ceiling",
+      "claim": "Seven Stock rows give RI exactly 1.0: the weighted sum equals the denominator.",
+      "kind": "metric",
+      "metric": "ri",
+      "equals": 1.0,
+      "tol": 0.0
+    },
+    {
+      "id": "nd-exactly-zero",
+      "claim": "ND is exactly zero: a textbook passage should contain no new claims.",
+      "kind": "metric",
+      "metric": "nd",
+      "equals": 0.0,
+      "tol": 0.0
+    },
+    {
+      "id": "scr-pedagogical-band",
+      "claim": "SCR runs to 20-30 for pedagogical elaboration and is correct there. The interpretation bands for expository prose apply, not the argumentative ones.",
+      "kind": "metric",
+      "metric": "scr",
+      "between": [20.0, 30.0]
+    },
+    {
+      "id": "rhythmically-flat",
+      "claim": "Musica reads Stock, not null: the passage has prosody in the sense any text does, and its prosody sits at the UID-smooth baseline for its genre.",
+      "kind": "judgment"
+    },
+    {
+      "id": "trajectory-predictable",
+      "claim": "Astronomia reads Stock: a textbook reader could predict what comes next at every point. This is the global-UID analog of Musica-Stock.",
+      "kind": "judgment"
+    }
+  ]
+}

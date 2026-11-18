@@ -1,0 +1,37 @@
+[project]
+name = "isda"
+version = "0.3.0"
+description = "Telos-relative semantic density measurement across seven strata"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+# The surprisal backend for the Musica and Astronomia measures: GPT-2-small on
+# CPU. Values are cached by content hash under corpus/cache/, so a machine
+# without this extra reads a warm cache and reports the measures unavailable
+# against a cold one.
+surprisal = ["torch>=2", "transformers>=4.40"]
+# The CPIDR backend for Arithmetica (also run `python -m spacy download
+# en_core_web_sm`; the measure pins model 3.8.0, which spaCy 3.8 downloads).
+# ideadensity is GPL-2.0. Only src/isda/measures/arithmetica_cpidr.py imports
+# it, and that file is GPL-2.0; the rest of the repository is MIT.
+nlp = ["spacy>=3.8,<3.9", "ideadensity==0.5.1"]
+
+[project.scripts]
+isda = "isda.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.pyright]
+include = ["src"]
+typeCheckingMode = "strict"

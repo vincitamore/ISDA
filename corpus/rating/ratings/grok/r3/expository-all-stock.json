@@ -1,0 +1,44 @@
+{
+  "doc": "expository-all-stock",
+  "family": "grok",
+  "rater": "r3",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 85,
+      "intensity": "Stock",
+      "evidence": "Multi-clause declarative textbook English throughout; e.g. 'When a chlorophyll molecule absorbs a photon, one of its electrons is boosted...' — no coinages, standard scientific register."
+    },
+    "dialectica": {
+      "compressed": 240,
+      "intensity": "Stock",
+      "evidence": "Standard light→ETC→ΔpH→ATP/NADPH→Calvin causal chain (¶3–4); ecological/O2 consequences (¶5); efficiency reasons (¶7). All textbook-derivable inferences, not novel arguments."
+    },
+    "rhetorica": {
+      "compressed": 160,
+      "intensity": "Stock",
+      "evidence": "Canonical intro-bio scope and order: definition+equation, chloroplast/chlorophyll, light stage, Calvin, ecology/GOE, C3/C4/CAM, efficiency — the stock curriculum outline for the topic."
+    },
+    "arithmetica": {
+      "compressed": 650,
+      "intensity": "Stock",
+      "evidence": "Atomic public facts: overall equation 6CO₂+6H₂O→C₆H₁₂O₆+6O₂; RuBP/RuBisCO; 3 CO₂→one triose, six turns→glucose; ~21% O₂; ~1% crop efficiency; half of O₂ from marine photosynthesizers."
+    },
+    "geometria": {
+      "compressed": 55,
+      "intensity": "Stock",
+      "evidence": "Six continuous unheaded paragraphs in linear sequence; no lists, tables, or hierarchical sectioning — plain essay block layout."
+    },
+    "musica": {
+      "compressed": 75,
+      "intensity": "Stock",
+      "evidence": "Even informational cadence; parenthetical glosses ('a sugar that the plant uses...'; most abundant enzyme on Earth'); mid-length compound sentences without rhetorical figures."
+    },
+    "astronomia": {
+      "compressed": 110,
+      "intensity": "Stock",
+      "evidence": "Arc def→site/pigment→light then dark stages→ecological/geologic widen→pathway variants→efficiency/limits; the stock pedagogy trajectory for a photosynthesis overview."
+    }
+  },
+  "notes": "All seven strata Stock: pure public textbook exposition of photosynthesis with no novel form, claim, or framing."
+}

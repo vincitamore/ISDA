@@ -1,0 +1,44 @@
+{
+  "doc": "checklist-chunk-shape",
+  "family": "grok",
+  "rater": "r3",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 70,
+      "intensity": "Stock",
+      "evidence": "Imperative checklist lines (“Order vermiculite — two bags, not one”, “Dome the peppers, vent daily”); short clauses; ops register; standard markdown task syntax."
+    },
+    "dialectica": {
+      "compressed": 190,
+      "intensity": "Original",
+      "evidence": "Contingency: “If the glazier slips past planting week, move the window-row basil to row 2…”. Causal note: min-gap “saved the cucurbits twice”. Blocked reasons (glazier / parts Thursday)."
+    },
+    "rhetorica": {
+      "compressed": 300,
+      "intensity": "Selected",
+      "evidence": "Grouped as Before seed order / Planting week / Blocked / Notes; statuses [x][/][ ][!][>]; [!] on top-water ban; done items kept for progress scan."
+    },
+    "arithmetica": {
+      "compressed": 560,
+      "intensity": "Original",
+      "evidence": "Atomic ops facts: rows 5–6 bleached; row-3 coupler; two bags vermiculite; basil window-only; dome peppers; north pane; misting relay Thursday; min-gap one empty cell; frost-date goal."
+    },
+    "geometria": {
+      "compressed": 85,
+      "intensity": "Selected",
+      "evidence": "YAML frontmatter → H1 → Goal line → three ## checkbox sections → ## Notes prose block; hierarchy chosen for next-action + blocked scan."
+    },
+    "musica": {
+      "compressed": 55,
+      "intensity": "Stock",
+      "evidence": "Staccato equal-weight checklist lines; corrective stress (“two bags, not one”, “nothing else does”); denser colon/conditional cadence only in Notes."
+    },
+    "astronomia": {
+      "compressed": 95,
+      "intensity": "Selected",
+      "evidence": "Arc: goal → finished/in-progress prep → open prep → planting constraints → blocked waits → fallback Notes; intensity shifts from inventory to constraints to contingency."
+    }
+  },
+  "notes": "Context substrate = document-carried ops knowledge; no external corpus lookup. Telos is remaining-work coordination, not horticultural treatise."
+}

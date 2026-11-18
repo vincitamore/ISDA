@@ -1,0 +1,25 @@
+{
+  "specimen": "narrative-astronomia-arc",
+  "source_of_claims": "the Astronomia stratum: trajectory is a property of order",
+  "assertions": [
+    {
+      "id": "astronomia-dominates",
+      "claim": "The investigation's value is its unfolding: symptom, boring answer cleared, promising answer falsified, cause from an unexpected log. Astronomia dominates the core; reorder the paragraphs and the document is destroyed.",
+      "kind": "ledger",
+      "property": "dominant_stratum",
+      "equals": "astronomia"
+    },
+    {
+      "id": "prose-paragraphs-run-long",
+      "claim": "Narrative runs long unbroken prose paragraphs, the opposite end of the layout spectrum from checklists and references.",
+      "kind": "measure",
+      "measure": "shape.paragraph-length-median",
+      "min": 40
+    },
+    {
+      "id": "arc-selected-not-original",
+      "claim": "The false-lead-then-reversal arc is the postmortem genre's conventional shape, deliberately deployed: Astronomia reads Selected, not Original.",
+      "kind": "judgment"
+    }
+  ]
+}

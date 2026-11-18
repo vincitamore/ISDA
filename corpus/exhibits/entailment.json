@@ -1,0 +1,552 @@
+{
+  "run": {
+    "scripts": [
+      "scripts/entailment-instruments.py",
+      "scripts/entailment-judge.py"
+    ],
+    "judge_protocol": "four pair-disjoint batches of 30 claims; each claim scored independently 0-100 for support against the substrate, with a mandatory evidence quote; the judge sees reference.md and nothing else; one pass, no best-of-n"
+  },
+  "n_pairs": 60,
+  "gate": "AUC >= 0.80",
+  "instruments": {
+    "zlib-zdict": {
+      "auc": 0.875,
+      "passed": true,
+      "auc_by_negation_type": {
+        "antonym": 1.0,
+        "negation-insert": 1.0,
+        "quantifier": 0.667,
+        "role-swap": 0.844,
+        "substitution": 0.765
+      }
+    },
+    "lzma-concat": {
+      "auc": 0.8,
+      "passed": true,
+      "auc_by_negation_type": {
+        "antonym": 0.881,
+        "negation-insert": 0.833,
+        "quantifier": 0.5,
+        "role-swap": 0.781,
+        "substitution": 0.765
+      }
+    },
+    "gpt2-cond": {
+      "auc": 0.883,
+      "passed": true,
+      "auc_by_negation_type": {
+        "antonym": 0.905,
+        "negation-insert": 1.0,
+        "quantifier": 1.0,
+        "role-swap": 0.812,
+        "substitution": 0.882
+      }
+    },
+    "gpt2-uncond": {
+      "auc": 0.567,
+      "passed": false,
+      "auc_by_negation_type": {
+        "antonym": 0.524,
+        "negation-insert": 0.667,
+        "quantifier": 1.0,
+        "role-swap": 0.5,
+        "substitution": 0.588
+      }
+    },
+    "lm-judge": {
+      "auc": 1.0,
+      "passed": true,
+      "auc_by_negation_type": {
+        "antonym": 1.0,
+        "negation-insert": 1.0,
+        "quantifier": 1.0,
+        "role-swap": 1.0,
+        "substitution": 1.0
+      },
+      "model": "claude-fable-5-2",
+      "batches": 4
+    }
+  },
+  "judge_rows": {
+    "pair-01-a": {
+      "support": 98,
+      "evidence": "no algorithm computes `K(x)` for all `x`"
+    },
+    "pair-01-n": {
+      "support": 0,
+      "evidence": "no algorithm computes `K(x)` for all `x`."
+    },
+    "pair-02-a": {
+      "support": 98,
+      "evidence": "the length of the shortest program producing `x`"
+    },
+    "pair-02-n": {
+      "support": 0,
+      "evidence": "the length of the shortest program producing `x`"
+    },
+    "pair-03-a": {
+      "support": 100,
+      "evidence": "machine-independent up to an additive constant `O(1)` depending only on the choice of `U`."
+    },
+    "pair-03-n": {
+      "support": 2,
+      "evidence": "machine-independent up to an additive constant `O(1)` depending only on the choice of `U`"
+    },
+    "pair-04-a": {
+      "support": 100,
+      "evidence": "Maximum `K` is achieved by pure noise."
+    },
+    "pair-04-n": {
+      "support": 3,
+      "evidence": "Maximum `K` is achieved by pure noise."
+    },
+    "pair-05-a": {
+      "support": 98,
+      "evidence": "3000 pages of uniformly random letters have higher `K` than a 3000-page encyclopedia"
+    },
+    "pair-05-n": {
+      "support": 0,
+      "evidence": "3000 pages of uniformly random letters have higher `K` than a 3000-page encyclopedia"
+    },
+    "pair-06-a": {
+      "support": 98,
+      "evidence": "Kolmogorov measures generative complexity, not value."
+    },
+    "pair-06-n": {
+      "support": 0,
+      "evidence": "Kolmogorov measures generative complexity, not value."
+    },
+    "pair-07-a": {
+      "support": 100,
+      "evidence": "for computable probability distributions, `E[K(x)] ≈ H(P)`."
+    },
+    "pair-07-n": {
+      "support": 2,
+      "evidence": "for computable probability distributions, `E[K(x)] ≈ H(P)`"
+    },
+    "pair-08-a": {
+      "support": 100,
+      "evidence": "The telos-relative complexity of document `d` for task `t` is the length of the shortest document that accomplishes `t`."
+    },
+    "pair-08-n": {
+      "support": 2,
+      "evidence": "is the length of the shortest document that accomplishes `t`"
+    },
+    "pair-09-a": {
+      "support": 98,
+      "evidence": "Under unspecified telos, `wᵢ = 1/7` (uniform)"
+    },
+    "pair-09-n": {
+      "support": 0,
+      "evidence": "Under unspecified telos, `wᵢ = 1/7` (uniform)."
+    },
+    "pair-10-a": {
+      "support": 98,
+      "evidence": "with `Σᵢ wᵢ(t) = 1`"
+    },
+    "pair-10-n": {
+      "support": 0,
+      "evidence": "with `Σᵢ wᵢ(t) = 1`"
+    },
+    "pair-11-a": {
+      "support": 100,
+      "evidence": "A technical proof is near-zero `K_τ` for a specialist and enormous for a novice."
+    },
+    "pair-11-n": {
+      "support": 2,
+      "evidence": "A technical proof is near-zero `K_τ` for a specialist and enormous for a novice"
+    },
+    "pair-12-a": {
+      "support": 100,
+      "evidence": "| Persuade | Rhetorica, Musica, Astronomia |"
+    },
+    "pair-12-n": {
+      "support": 3,
+      "evidence": "| Persuade | Rhetorica, Musica, Astronomia |"
+    },
+    "pair-13-a": {
+      "support": 97,
+      "evidence": "| Catalog | Arithmetica, Geometria |"
+    },
+    "pair-13-n": {
+      "support": 0,
+      "evidence": "| Catalog | Arithmetica, Geometria |"
+    },
+    "pair-14-a": {
+      "support": 98,
+      "evidence": "The 2x2 is first made explicit in Nicomachus's *Introduction to Arithmetic* I.2-3"
+    },
+    "pair-14-n": {
+      "support": 0,
+      "evidence": "The 2x2 is first made explicit in Nicomachus's *Introduction to Arithmetic* I.2-3"
+    },
+    "pair-15-a": {
+      "support": 100,
+      "evidence": "Boethius transmits this classification verbatim into the Latin tradition"
+    },
+    "pair-15-n": {
+      "support": 2,
+      "evidence": "Boethius transmits this classification verbatim into the Latin tradition"
+    },
+    "pair-16-a": {
+      "support": 100,
+      "evidence": "Proclus independently attributes the same structure to the Pythagoreans"
+    },
+    "pair-16-n": {
+      "support": 2,
+      "evidence": "Proclus independently attributes the same structure to the Pythagoreans"
+    },
+    "pair-17-a": {
+      "support": 98,
+      "evidence": "He does not combine it with a rest and motion axis to classify the mathematical sciences"
+    },
+    "pair-17-n": {
+      "support": 0,
+      "evidence": "He does not combine it with a rest and motion axis to classify the mathematical sciences."
+    },
+    "pair-18-a": {
+      "support": 95,
+      "evidence": "Propositional density is discrete (atomic countable units), at rest"
+    },
+    "pair-18-n": {
+      "support": 0,
+      "evidence": "Propositional density is discrete (atomic countable units), at rest"
+    },
+    "pair-19-a": {
+      "support": 100,
+      "evidence": "Musica (*number in proportion*)"
+    },
+    "pair-19-n": {
+      "support": 2,
+      "evidence": "Musica (*number in proportion*)"
+    },
+    "pair-20-a": {
+      "support": 100,
+      "evidence": "Astronomia (*magnitude mobile*)"
+    },
+    "pair-20-n": {
+      "support": 2,
+      "evidence": "that of size with motion is astronomy"
+    },
+    "pair-21-a": {
+      "support": 99,
+      "evidence": "The rest-and-motion axis is not kinematic"
+    },
+    "pair-21-n": {
+      "support": 0,
+      "evidence": "The rest-and-motion axis is not kinematic."
+    },
+    "pair-22-a": {
+      "support": 99,
+      "evidence": "In prose, the reader's traversal through the text is its \"motion\": reading-time is the text's temporal dimension."
+    },
+    "pair-22-n": {
+      "support": 0,
+      "evidence": "reading-time is the text's temporal dimension"
+    },
+    "pair-23-a": {
+      "support": 100,
+      "evidence": "His treatment is, by his own admission, an adaptation of Nicomachus"
+    },
+    "pair-23-n": {
+      "support": 2,
+      "evidence": "His treatment is, by his own admission, an adaptation of Nicomachus"
+    },
+    "pair-24-a": {
+      "support": 100,
+      "evidence": "The framework uses Grammatica in the narrow sense of sentence-level form"
+    },
+    "pair-24-n": {
+      "support": 2,
+      "evidence": "The framework uses Grammatica in the narrow sense of sentence-level form"
+    },
+    "pair-25-a": {
+      "support": 97,
+      "evidence": "Figures of speech belong to Musica"
+    },
+    "pair-25-n": {
+      "support": 0,
+      "evidence": "Figures of speech belong to Musica"
+    },
+    "pair-26-a": {
+      "support": 98,
+      "evidence": "Claims in the closure have zero marginal complexity"
+    },
+    "pair-26-n": {
+      "support": 0,
+      "evidence": "Claims in the closure have zero marginal complexity"
+    },
+    "pair-27-a": {
+      "support": 100,
+      "evidence": "The Shannon entropy of the document's curatorial decisions given the available decision space `Δ`."
+    },
+    "pair-27-n": {
+      "support": 3,
+      "evidence": "The Shannon entropy of the document's curatorial decisions given the available decision space"
+    },
+    "pair-28-a": {
+      "support": 100,
+      "evidence": "These are not separate top-level strata. They are the operational sub-stages of Rhetorica"
+    },
+    "pair-28-n": {
+      "support": 1,
+      "evidence": "These are not separate top-level strata. They are the operational sub-stages of Rhetorica"
+    },
+    "pair-29-a": {
+      "support": 99,
+      "evidence": "Memoria-as-substrate is not a stratum"
+    },
+    "pair-29-n": {
+      "support": 0,
+      "evidence": "Memoria-as-substrate is not a stratum"
+    },
+    "pair-30-a": {
+      "support": 98,
+      "evidence": "approximates Kintsch-Turner-Greene propositional counting from POS tags plus ~40 adjustment rules"
+    },
+    "pair-30-n": {
+      "support": 0,
+      "evidence": "approximates Kintsch-Turner-Greene propositional counting from POS tags plus ~40 adjustment rules"
+    },
+    "pair-31-a": {
+      "support": 100,
+      "evidence": "CPIDR's agreement with human consensus is r = 0.97, which exceeds the human-to-human baseline of r = 0.82."
+    },
+    "pair-31-n": {
+      "support": 2,
+      "evidence": "CPIDR's agreement with human consensus is r = 0.97, which exceeds the human-to-human baseline of r = 0.82"
+    },
+    "pair-32-a": {
+      "support": 100,
+      "evidence": "A text with many unrelated assertions is high-Arithmetica and low-Dialectica"
+    },
+    "pair-32-n": {
+      "support": 2,
+      "evidence": "A text with many unrelated assertions is high-Arithmetica and low-Dialectica"
+    },
+    "pair-33-a": {
+      "support": 98,
+      "evidence": "describable without time"
+    },
+    "pair-33-n": {
+      "support": 0,
+      "evidence": "static (not dependent on the reader's traversal order), and describable without time"
+    },
+    "pair-34-a": {
+      "support": 98,
+      "evidence": "Captures IMRaD structure in papers, TOC depth in manuals, stanza patterns in verse"
+    },
+    "pair-34-n": {
+      "support": 0,
+      "evidence": "Local prosodic units (syllables, stresses, metrical feet, rhetorical figures) are discrete countable atoms"
+    },
+    "pair-35-a": {
+      "support": 100,
+      "evidence": "Augustine's *De Musica* I.iv.5 defines musica as *scientia bene modulandi* (\"the science of well-measured movement\")"
+    },
+    "pair-35-n": {
+      "support": 2,
+      "evidence": "defines musica as *scientia bene modulandi* (\"the science of well-measured movement\")"
+    },
+    "pair-36-a": {
+      "support": 100,
+      "evidence": "all are compressible as short specifications that generate long local patterns"
+    },
+    "pair-36-n": {
+      "support": 2,
+      "evidence": "all are compressible as short specifications that generate long local patterns"
+    },
+    "pair-37-a": {
+      "support": 95,
+      "evidence": "`trajectory(d)` is a time-series of information intensity, argumentative weight, or emotional force over document position"
+    },
+    "pair-37-n": {
+      "support": 0,
+      "evidence": "Global trajectory is a continuous signal over document position whose essential property is sequential unfolding."
+    },
+    "pair-38-a": {
+      "support": 97,
+      "evidence": "leaves the genre-conditional prior `Τ_global` implicit or emergent. This framework requires it explicitly, as a named input"
+    },
+    "pair-38-n": {
+      "support": 0,
+      "evidence": "leaves the genre-conditional prior `Τ_global` implicit or emergent. This framework requires it explicitly"
+    },
+    "pair-39-a": {
+      "support": 100,
+      "evidence": "Wilmot and Keller 2020 (\"Modelling Suspense as Uncertainty Reduction over Neural Representation,\" ACL)"
+    },
+    "pair-39-n": {
+      "support": 3,
+      "evidence": "Modelling Suspense as Uncertainty Reduction over Neural Representation"
+    },
+    "pair-40-a": {
+      "support": 100,
+      "evidence": "the stratum's content is cheap to specify given the named substrate"
+    },
+    "pair-40-n": {
+      "support": 3,
+      "evidence": "the stratum's content is cheap to specify given the named substrate"
+    },
+    "pair-41-a": {
+      "support": 98,
+      "evidence": "the content is algorithmically random relative to full context"
+    },
+    "pair-41-n": {
+      "support": 0,
+      "evidence": "`K(Sᵢ \\| C) ≥ |Sᵢ| - O(1)`; the content is algorithmically random relative to full context"
+    },
+    "pair-42-a": {
+      "support": 98,
+      "evidence": "The intensity gets reported as a single dominant tag per stratum."
+    },
+    "pair-42-n": {
+      "support": 0,
+      "evidence": "A 28-cell matrix is rejected as the output format."
+    },
+    "pair-43-a": {
+      "support": 100,
+      "evidence": "A 28-cell matrix is rejected as the output format."
+    },
+    "pair-43-n": {
+      "support": 2,
+      "evidence": "A 28-cell matrix is rejected as the output format"
+    },
+    "pair-44-a": {
+      "support": 100,
+      "evidence": "Reliability compounds multiplicatively across joint stratum-intensity decisions."
+    },
+    "pair-44-n": {
+      "support": 5,
+      "evidence": "Reliability compounds multiplicatively across joint stratum-intensity decisions."
+    },
+    "pair-45-a": {
+      "support": 97,
+      "evidence": "are instances of the same pattern: conditional Kolmogorov complexity of an information-flow profile against a genre-conditional UID null"
+    },
+    "pair-45-n": {
+      "support": 0,
+      "evidence": "The framework has a single theoretical backbone for both temporal strata: Uniform Information Density (UID) tested at local and global scales."
+    },
+    "pair-46-a": {
+      "support": 99,
+      "evidence": "Hopkins is Musica-Original and Astronomia-Implied"
+    },
+    "pair-46-n": {
+      "support": 0,
+      "evidence": "Hopkins is Musica-Original and Astronomia-Implied"
+    },
+    "pair-47-a": {
+      "support": 100,
+      "evidence": "A text conforming to genre expectations at both scales has minimal Musica mass and minimal Astronomia mass: rhythmically flat and trajectory-flat"
+    },
+    "pair-47-n": {
+      "support": 2,
+      "evidence": "has minimal Musica mass and minimal Astronomia mass: rhythmically flat and trajectory-flat"
+    },
+    "pair-48-a": {
+      "support": 100,
+      "evidence": "Grounded in Aylett and Turk 2004 and Levy and Jaeger 2007."
+    },
+    "pair-48-n": {
+      "support": 4,
+      "evidence": "Grounded in Aylett and Turk 2004 and Levy and Jaeger 2007."
+    },
+    "pair-49-a": {
+      "support": 92,
+      "evidence": "SCR(d, t) = |d| / K_τ(d, t)"
+    },
+    "pair-49-n": {
+      "support": 0,
+      "evidence": "SCR(d, t) = |d| / K_τ(d, t)"
+    },
+    "pair-50-a": {
+      "support": 98,
+      "evidence": "`retrievable_weight` maps Stock to 1.0"
+    },
+    "pair-50-n": {
+      "support": 0,
+      "evidence": "`retrievable_weight` maps Stock to 1.0"
+    },
+    "pair-51-a": {
+      "support": 100,
+      "evidence": "an all-Stock ledger scores exactly 1.0, the ceiling"
+    },
+    "pair-51-n": {
+      "support": 2,
+      "evidence": "an all-Stock ledger scores exactly 1.0, the ceiling"
+    },
+    "pair-52-a": {
+      "support": 100,
+      "evidence": "it is not the fraction of the **document** that could be looked up"
+    },
+    "pair-52-n": {
+      "support": 2,
+      "evidence": "it is not the fraction of the **document** that could be looked up"
+    },
+    "pair-53-a": {
+      "support": 98,
+      "evidence": "Strata overlap on the same sentences, so raw length cannot be partitioned across them at all"
+    },
+    "pair-53-n": {
+      "support": 0,
+      "evidence": "Strata overlap on the same sentences, so raw length cannot be partitioned across them at all."
+    },
+    "pair-54-a": {
+      "support": 98,
+      "evidence": "`intensity_weight` maps Stock to 0.0, Implied to 0.1, Selected to 0.3, Original to 1.0"
+    },
+    "pair-54-n": {
+      "support": 0,
+      "evidence": "`intensity_weight` maps Stock to 0.0, Implied to 0.1, Selected to 0.3, Original to 1.0"
+    },
+    "pair-55-a": {
+      "support": 100,
+      "evidence": "The framework produces principled estimates, not measurements."
+    },
+    "pair-55-n": {
+      "support": 2,
+      "evidence": "The framework produces principled estimates, not measurements"
+    },
+    "pair-56-a": {
+      "support": 100,
+      "evidence": "CPIDR is English-specific. The POS-tag adjustment rules are calibrated on English."
+    },
+    "pair-56-n": {
+      "support": 1,
+      "evidence": "CPIDR is English-specific. The POS-tag adjustment rules are calibrated on English."
+    },
+    "pair-57-a": {
+      "support": 99,
+      "evidence": "A text with zero Original tags across all seven strata is a compilation, not a contribution"
+    },
+    "pair-57-n": {
+      "support": 0,
+      "evidence": "A text with zero Original tags across all seven strata is a compilation, not a contribution."
+    },
+    "pair-58-a": {
+      "support": 99,
+      "evidence": "Compilations are legitimate and necessary"
+    },
+    "pair-58-n": {
+      "support": 0,
+      "evidence": "Compilations are legitimate and necessary"
+    },
+    "pair-59-a": {
+      "support": 100,
+      "evidence": "The formal definitions are proposals, not established theorems."
+    },
+    "pair-59-n": {
+      "support": 1,
+      "evidence": "The formal definitions are proposals, not established theorems"
+    },
+    "pair-60-a": {
+      "support": 100,
+      "evidence": "the content follows mechanically from substrate plus inference rules"
+    },
+    "pair-60-n": {
+      "support": 3,
+      "evidence": "the content follows mechanically from substrate plus inference rules"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "doc": "reference-geometria-selected",
+  "family": "grok",
+  "rater": "r3",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 85,
+      "intensity": "Stock",
+      "evidence": "Fixed template across entries: \"Integer, default `6`.\"; \"Enum, default `\\\"mat\\\"`. One of...\"; \"Boolean, default `true`.\" — stock config-reference English."
+    },
+    "dialectica": {
+      "compressed": 35,
+      "intensity": "Stock",
+      "evidence": "Type/default never argued, only asserted (\"Integer, default `6`\"). Behavioral asides (fail-closed, deferred window) unused for pure type+default lookup."
+    },
+    "rhetorica": {
+      "compressed": 130,
+      "intensity": "Selected",
+      "evidence": "Preamble \"Every setting below shows its default\"; lead each key with type+default before gloss; three tables chosen/ordered [rack]→[watering]→[alerts]."
+    },
+    "arithmetica": {
+      "compressed": 400,
+      "intensity": "Original",
+      "evidence": "Ten non-public claims: rows int/6, cells_per_row int/8, mode enum mat|top|manual, window [07:00,09:00], channel log|email|none, quiet_hours [21:00,06:00], etc."
+    },
+    "geometria": {
+      "compressed": 95,
+      "intensity": "Selected",
+      "evidence": "H2 per TOML table (`## [rack]`), H3 per setting (`### rows`), one H4 nest (`#### humidity_threshold`) — jump-to-leaf layout over tables/prose dump."
+    },
+    "musica": {
+      "compressed": 55,
+      "intensity": "Stock",
+      "evidence": "Local beat: stressed type-default clause, then short gloss (\"Integer, default `6`. Rows the planner may use.\"). Parallel cadence on every leaf."
+    },
+    "astronomia": {
+      "compressed": 50,
+      "intensity": "Stock",
+      "evidence": "Flat catalog arc: file rule → rack → watering → alerts; no crescendo. Global order secondary to random-access headings for the lookup telos."
+    }
+  },
+  "notes": "Telos is single-setting type+default lookup; geometria/rhetorica carry the scannability, arithmetica the non-public payload."
+}

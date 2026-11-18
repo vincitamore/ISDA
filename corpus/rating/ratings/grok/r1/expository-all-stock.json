@@ -1,0 +1,44 @@
+{
+  "doc": "expository-all-stock",
+  "family": "grok",
+  "rater": "r1",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 48,
+      "intensity": "Stock",
+      "evidence": "Textbook multi-clause process sentences; technical appositives (e.g. 'NADPH, which carries high-energy electrons'); no coinages; standard science-expository register throughout."
+    },
+    "dialectica": {
+      "compressed": 110,
+      "intensity": "Stock",
+      "evidence": "Stock causal chain: photon→excited e−→ETC→H+ gradient→ATP synthase; ATP/NADPH power Calvin; C4 concentrates CO2 near RuBisCO; low yield from slow RuBisCO, excess light, stomatal tradeoff."
+    },
+    "rhetorica": {
+      "compressed": 240,
+      "intensity": "Selected",
+      "evidence": "Chooses classic teaching set and order: eq→chloroplast/chlorophyll→light reactions→Calvin/RuBisCO→food chains/GOE/fossil fuels→C3/C4/CAM→~1% efficiency/breeding; frames for essential-mechanism pedagogy."
+    },
+    "arithmetica": {
+      "compressed": 320,
+      "intensity": "Stock",
+      "evidence": "Look-uppable claims: 6CO2+6H2O+light→C6H12O6+6O2; thylakoid/chlorophyll red-blue; photolysis, NADPH, RuBP/RuBisCO, 6 turns→glucose; O2~21%, GOE; C3/C4/CAM; ~half marine O2; ~1% crop efficiency."
+    },
+    "geometria": {
+      "compressed": 42,
+      "intensity": "Stock",
+      "evidence": "Six untitled continuous paragraphs, one topical block each (definition, organelle, light stage, Calvin, stakes, variants, efficiency split across last two); no headings, lists, or figures."
+    },
+    "musica": {
+      "compressed": 55,
+      "intensity": "Stock",
+      "evidence": "Even textbook cadence: long process sentences paced by commas/and; mild parallelisms ('from the air… from the soil… from above'); appositive definitions slow the beat for terms."
+    },
+    "astronomia": {
+      "compressed": 88,
+      "intensity": "Stock",
+      "evidence": "Standard expand-out arc: definition+equation → locus/pigment → light stage → Calvin → planetary stakes → pathway diversity → efficiency ceiling/local optimum; intensity fairly level."
+    }
+  },
+  "notes": "Pure textbook restatement of public photosynthesis content; only Rhetorica rises above Stock as curatorial selection of a conventional teaching outline."
+}

@@ -1,0 +1,10 @@
+# Store and check out LF everywhere, on every platform. The corpus pins
+# documents by content hash and byte count, and a CRLF checkout would change
+# both.
+* text=auto eol=lf
+
+# Specimen bodies are byte-pinned: every ledger is scored against text.md's
+# exact byte count and every expected.json carries its sha256, so no EOL
+# conversion is applied to them at all. Last match wins; this rule stays
+# below the one above.
+corpus/specimens/** -text

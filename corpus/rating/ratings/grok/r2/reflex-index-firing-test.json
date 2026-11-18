@@ -1,0 +1,44 @@
+{
+  "doc": "reflex-index-firing-test",
+  "family": "grok",
+  "rater": "r2",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 145,
+      "intensity": "Selected",
+      "evidence": "Repeated template `[Hook](runbook) — cause so consequence; imperative, never X because Y`; shop register; not full-procedure prose. Titles like 'The rack has two north ends' as aphoristic hooks."
+    },
+    "dialectica": {
+      "compressed": 220,
+      "intensity": "Implied",
+      "evidence": "Each dash-clause derives first-action from a system fact already owned by the linked runbook (e.g. gauge reads pump side → never trust it alone; dual north ends → convert at whiteboard). Pre-fire packaging, not new causal law."
+    },
+    "rhetorica": {
+      "compressed": 420,
+      "intensity": "Selected",
+      "evidence": "Blockquote admits only post-mistake, one-line, remove when fixture obsolete; six chosen firings (water/wiring, rack, seeds, sensor, covered trays, labelling) from larger runbook space; order hazard-first then ops."
+    },
+    "arithmetica": {
+      "compressed": 160,
+      "intensity": "Stock",
+      "evidence": "Atomic ops claims (manifold first; +4 days/basil −2; three-week drift; water the mat; tray edge not shelf) are procedure detail the epigraph assigns to linked runbooks—index restates for fire, substrate already carries."
+    },
+    "geometria": {
+      "compressed": 70,
+      "intensity": "Selected",
+      "evidence": "Shape: H1 'Bench Notes Index', one design blockquote, flat six-item linked list; no nested sections or closing block—architecture chosen for scan-and-fire over TOC/FAQ/tree."
+    },
+    "musica": {
+      "compressed": 115,
+      "intensity": "Selected",
+      "evidence": "Local cadence: punchy title, em-dash, so/semicolon cascade, stressed close ('FIRST', 'never', 'only marker that counts'). Pacing packs cause then rule in one breath for pre-lookup stick."
+    },
+    "astronomia": {
+      "compressed": 100,
+      "intensity": "Selected",
+      "evidence": "Global arc is frame-then-flat-peers: policy, then six parallel fire-lines with no rising climax or coda—any entry can fire alone, matching pre-retrieval over narrative walkthrough."
+    }
+  },
+  "notes": "Context substrate (runbooks not in-tree); Stock/Implied judgments rest on the document's own claim that procedure detail lives in the linked runbooks."
+}

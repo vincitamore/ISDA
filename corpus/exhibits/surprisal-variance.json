@@ -1,0 +1,65 @@
+{
+  "measure": "musica.surprisal-variance",
+  "run": {
+    "script": "scripts/gate-surprisal-variance.py",
+    "seed": 0,
+    "n_perm": 2000
+  },
+  "n_docs": 198,
+  "discrimination": {
+    "omega2": 0.0857,
+    "p": 0.0015,
+    "floor": 0.0523,
+    "threshold": 0.1,
+    "adequately_powered": true,
+    "passed": false,
+    "n": 198,
+    "k": 7
+  },
+  "falsifiers": {
+    "spread_iqr": 9.6195,
+    "results": [
+      {
+        "perturbation": "scramble_within_sentence",
+        "expectation": "must_move",
+        "normalised_move": 0.5325,
+        "passed": true,
+        "reason": ""
+      },
+      {
+        "perturbation": "scramble_words",
+        "expectation": "must_move",
+        "normalised_move": 0.6665,
+        "passed": true,
+        "reason": ""
+      }
+    ],
+    "errors": [],
+    "passed": true
+  },
+  "lyric_specimen": {
+    "value": 38.605,
+    "quantile": 0.96,
+    "gate": ">= 0.75",
+    "passed": true,
+    "corpus_median": 27.313
+  },
+  "spearman_vs": {
+    "arithmetica.propositional-density": 0.073,
+    "astronomia.surprisal-slope": -0.14,
+    "astronomia.surprisal-peak-position": 0.001,
+    "shape.heading-tree-depth": -0.156,
+    "shape.heading-branching": -0.157,
+    "shape.section-size-dispersion": -0.12,
+    "shape.block-kind-entropy": 0.056,
+    "shape.skipped-heading-levels": -0.177,
+    "inventory.prose-word-count": -0.205,
+    "shape.paragraph-length-median": 0.127,
+    "shape.chunk-length-median": -0.004,
+    "markup_fraction": -0.05
+  },
+  "redundancy": {
+    "max_abs_rho_vs_measures": 0.205,
+    "rho_vs_markup": -0.05
+  }
+}

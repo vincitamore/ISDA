@@ -1,0 +1,44 @@
+{
+  "doc": "markup-heavy-strip-sensitivity",
+  "family": "grok",
+  "rater": "r1",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 55,
+      "intensity": "Stock",
+      "evidence": "CLI-ref register: short declaratives, table-cell fragments (\"Seed manifest to read\"), backtick flags, bash fence comments — standard public tech-doc English, no coinages of form."
+    },
+    "dialectica": {
+      "compressed": 50,
+      "intensity": "Implied",
+      "evidence": "Toward flag/default lookup little is argued; dry-run vs `--apply` and enum `table|json|ics` follow mechanically from bool-default and enum-type rows already stated."
+    },
+    "rhetorica": {
+      "compressed": 190,
+      "intensity": "Selected",
+      "evidence": "Chose Flag|Type|Default|Meaning tables over prose; plan before rotate; defaults in columns not buried; exit-code and EARLY blocks optional vs pure lookup; example under plan only."
+    },
+    "arithmetica": {
+      "compressed": 380,
+      "intensity": "Original",
+      "evidence": "Nine flag atoms not in public knowledge: e.g. `--days`/`14`, `--rack-rows`/`6`, `--manifest`/`trays.toml`, `--format`/`table`, `--state`/`rack.json`, plus type tags — potting-bench product facts."
+    },
+    "geometria": {
+      "compressed": 85,
+      "intensity": "Stock",
+      "evidence": "YAML front matter; H1; intro blurb; H2 per verb; 4-col markdown tables; fenced examples — stock public CLI-reference page skeleton, recoverable as a template."
+    },
+    "musica": {
+      "compressed": 40,
+      "intensity": "Stock",
+      "evidence": "Local pace is scannable table rows and flat tech cadence; longer only in EARLY sentence (ll.49–51). No distinctive stress or figure beyond ordinary man-page rhythm."
+    },
+    "astronomia": {
+      "compressed": 75,
+      "intensity": "Selected",
+      "evidence": "Arc opens with lookup contract (\"lists every flag… Values shown are the defaults\"), densest tables mid-page, edge-case prose and outlink at end — ordered for scan-first reference use."
+    }
+  },
+  "notes": "Synthetic CLI ref; markup (tables/fences) is heavy but arithmetica stays the non-public payload; exit/EARLY prose is off-telos relative to pure flag-default lookup."
+}

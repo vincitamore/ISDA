@@ -1,0 +1,44 @@
+{
+  "doc": "narrative-astronomia-arc",
+  "family": "grok",
+  "rater": "r3",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 140,
+      "intensity": "Stock",
+      "evidence": "Standard English technical-narrative clauses; long multi-clause openers then short closers ('Nothing had alarmed.'); no coinages—register is ordinary public forensic prose."
+    },
+    "dialectica": {
+      "compressed": 520,
+      "intensity": "Original",
+      "evidence": "Non-public causal chain: pressure-fault guard refuses close while frost misting holds line low all night—each correct alone, wrong together; valve and `5:20` leads eliminated first."
+    },
+    "rhetorica": {
+      "compressed": 300,
+      "intensity": "Selected",
+      "evidence": "Curated search shape: physical damage first, boring solenoid, afternoon schedule red herring, accidental meter log, then one-line fix and keep-the-waterline moral—not a flat root-cause dump."
+    },
+    "arithmetica": {
+      "compressed": 780,
+      "intensity": "Original",
+      "evidence": "Atomic claims absent from public KB: 23:12–05:20 vs 20 min; waterline 1 cm; 20 valve cycles; hand edit `5:20`; meter loss 23:11; misting frost; close-then-fault fix."
+    },
+    "geometria": {
+      "compressed": 80,
+      "intensity": "Selected",
+      "evidence": "Title plus four untitled paragraphs mapping stages (symptom → valve → schedule → cause/fix); continuous prose, no headings/lists—chosen over standard headed postmortem layout."
+    },
+    "musica": {
+      "compressed": 160,
+      "intensity": "Selected",
+      "evidence": "Local cadence craft: antitheses ('fail loudly'/'failed politely'; 'every component correct and the whole thing wrong'); damage listed with commas then a hard stop sentence."
+    },
+    "astronomia": {
+      "compressed": 340,
+      "intensity": "Selected",
+      "evidence": "Global arc stages search intensity: calm damage → cleared boring cause → deep false lead → accidental true cause → polite-failure lesson; telos is this trajectory of the hunt."
+    }
+  },
+  "notes": "Public substrate: incident facts and interaction argument cannot be retrieved; investigation-arc genre is Selected, not Original."
+}

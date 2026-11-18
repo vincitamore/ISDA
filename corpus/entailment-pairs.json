@@ -1,0 +1,426 @@
+{
+  "substrate": "reference.md (this repository)",
+  "design": "Each pair holds a claim reference.md asserts and a minimal negation of it. An instrument scores each text independently for support against the substrate; the paired AUC is the fraction of pairs where the assertion outscores its negation. Negation types vary so that an instrument reading only surface distance is exposed by the type-stratified results: a compressor prices the size of an edit, whether or not the edit changes the truth.",
+  "pairs": [
+    {
+      "id": "pair-01",
+      "section": "1",
+      "type": "antonym",
+      "assertion": "Kolmogorov complexity is uncomputable: no algorithm computes K(x) for all x.",
+      "negation": "Kolmogorov complexity is computable: an algorithm computes K(x) for all x."
+    },
+    {
+      "id": "pair-02",
+      "section": "1",
+      "type": "antonym",
+      "assertion": "K(x) is the length of the shortest program that produces x.",
+      "negation": "K(x) is the length of the longest program that produces x."
+    },
+    {
+      "id": "pair-03",
+      "section": "1",
+      "type": "negation-insert",
+      "assertion": "Kolmogorov complexity is machine-independent up to an additive constant.",
+      "negation": "Kolmogorov complexity is not machine-independent, even up to an additive constant."
+    },
+    {
+      "id": "pair-04",
+      "section": "1",
+      "type": "substitution",
+      "assertion": "Maximum Kolmogorov complexity is achieved by pure noise.",
+      "negation": "Maximum Kolmogorov complexity is achieved by highly structured text."
+    },
+    {
+      "id": "pair-05",
+      "section": "1",
+      "type": "antonym",
+      "assertion": "Three thousand pages of uniformly random letters have higher K than a three-thousand-page encyclopedia.",
+      "negation": "Three thousand pages of uniformly random letters have lower K than a three-thousand-page encyclopedia."
+    },
+    {
+      "id": "pair-06",
+      "section": "1",
+      "type": "role-swap",
+      "assertion": "Kolmogorov complexity measures generative complexity, not value.",
+      "negation": "Kolmogorov complexity measures value, not generative complexity."
+    },
+    {
+      "id": "pair-07",
+      "section": "1",
+      "type": "negation-insert",
+      "assertion": "For computable probability distributions, expected Kolmogorov complexity approximates Shannon entropy.",
+      "negation": "For computable probability distributions, expected Kolmogorov complexity does not approximate Shannon entropy."
+    },
+    {
+      "id": "pair-08",
+      "section": "2",
+      "type": "antonym",
+      "assertion": "The telos-relative complexity of a document is the length of the shortest document that accomplishes the task.",
+      "negation": "The telos-relative complexity of a document is the length of the longest document that accomplishes the task."
+    },
+    {
+      "id": "pair-09",
+      "section": "2",
+      "type": "substitution",
+      "assertion": "Under an unspecified telos the seven stratum weights are uniform.",
+      "negation": "Under an unspecified telos the seven stratum weights concentrate entirely on Musica."
+    },
+    {
+      "id": "pair-10",
+      "section": "2",
+      "type": "quantifier",
+      "assertion": "The telos weights across the seven strata sum to one.",
+      "negation": "The telos weights across the seven strata sum to seven."
+    },
+    {
+      "id": "pair-11",
+      "section": "2",
+      "type": "role-swap",
+      "assertion": "A technical proof is near-zero complexity for a specialist and enormous for a novice.",
+      "negation": "A technical proof is near-zero complexity for a novice and enormous for a specialist."
+    },
+    {
+      "id": "pair-12",
+      "section": "2",
+      "type": "substitution",
+      "assertion": "For a persuading telos the dominant strata are Rhetorica, Musica, and Astronomia.",
+      "negation": "For a persuading telos the dominant strata are Arithmetica, Geometria, and Grammatica."
+    },
+    {
+      "id": "pair-13",
+      "section": "2",
+      "type": "substitution",
+      "assertion": "For a cataloging telos the dominant strata are Arithmetica and Geometria.",
+      "negation": "For a cataloging telos the dominant strata are Musica and Astronomia."
+    },
+    {
+      "id": "pair-14",
+      "section": "3",
+      "type": "substitution",
+      "assertion": "The 2x2 classification is first made explicit in Nicomachus's Introduction to Arithmetic.",
+      "negation": "The 2x2 classification is first made explicit in Aristotle's Categories."
+    },
+    {
+      "id": "pair-15",
+      "section": "3",
+      "type": "antonym",
+      "assertion": "Boethius transmits the fourfold classification into the Latin tradition.",
+      "negation": "Boethius rejected the fourfold classification and kept it out of the Latin tradition."
+    },
+    {
+      "id": "pair-16",
+      "section": "3",
+      "type": "substitution",
+      "assertion": "Proclus independently attributes the fourfold structure to the Pythagoreans.",
+      "negation": "Proclus independently attributes the fourfold structure to the Stoics."
+    },
+    {
+      "id": "pair-17",
+      "section": "3",
+      "type": "role-swap",
+      "assertion": "Aristotle supplies the discrete-continuous axis but does not combine it with rest and motion.",
+      "negation": "Aristotle himself combines the discrete-continuous axis with rest and motion."
+    },
+    {
+      "id": "pair-18",
+      "section": "3",
+      "type": "substitution",
+      "assertion": "Arithmetica is discrete quantity at rest.",
+      "negation": "Arithmetica is continuous quantity in motion."
+    },
+    {
+      "id": "pair-19",
+      "section": "3",
+      "type": "substitution",
+      "assertion": "Musica is number in proportion.",
+      "negation": "Musica is magnitude immobile."
+    },
+    {
+      "id": "pair-20",
+      "section": "3",
+      "type": "antonym",
+      "assertion": "Astronomia studies magnitude in motion.",
+      "negation": "Astronomia studies magnitude at rest."
+    },
+    {
+      "id": "pair-21",
+      "section": "3",
+      "type": "antonym",
+      "assertion": "The rest-and-motion axis is not kinematic.",
+      "negation": "The rest-and-motion axis is strictly kinematic."
+    },
+    {
+      "id": "pair-22",
+      "section": "3",
+      "type": "substitution",
+      "assertion": "In prose, the reader's traversal through the text is its motion: reading-time is the text's temporal dimension.",
+      "negation": "In prose, page width is the text's temporal dimension."
+    },
+    {
+      "id": "pair-23",
+      "section": "3",
+      "type": "antonym",
+      "assertion": "Boethius's treatment is, by his own admission, an adaptation of Nicomachus.",
+      "negation": "Boethius's treatment is, by his own admission, an entirely original work owing nothing to Nicomachus."
+    },
+    {
+      "id": "pair-24",
+      "section": "4",
+      "type": "antonym",
+      "assertion": "The framework uses Grammatica in the narrow sense of sentence-level form.",
+      "negation": "The framework uses Grammatica in the broad medieval sense covering poetics and literary-ethical criticism."
+    },
+    {
+      "id": "pair-25",
+      "section": "4",
+      "type": "role-swap",
+      "assertion": "Figures of speech belong to Musica rather than Grammatica.",
+      "negation": "Figures of speech belong to Grammatica rather than Musica."
+    },
+    {
+      "id": "pair-26",
+      "section": "4",
+      "type": "antonym",
+      "assertion": "Claims in the deductive closure of the substrate have zero marginal complexity.",
+      "negation": "Claims in the deductive closure of the substrate have maximal marginal complexity."
+    },
+    {
+      "id": "pair-27",
+      "section": "4",
+      "type": "substitution",
+      "assertion": "Rhetorica is measured as the Shannon entropy of the document's curatorial decisions.",
+      "negation": "Rhetorica is measured as the proposition count of the document's curatorial decisions."
+    },
+    {
+      "id": "pair-28",
+      "section": "4",
+      "type": "role-swap",
+      "assertion": "The five canons are operational sub-stages of Rhetorica, not separate top-level strata.",
+      "negation": "The five canons are separate top-level strata, not operational sub-stages of Rhetorica."
+    },
+    {
+      "id": "pair-29",
+      "section": "4",
+      "type": "negation-insert",
+      "assertion": "Memoria-as-substrate is not a stratum.",
+      "negation": "Memoria-as-substrate is a stratum."
+    },
+    {
+      "id": "pair-30",
+      "section": "4",
+      "type": "substitution",
+      "assertion": "CPIDR approximates propositional counting from part-of-speech tags plus about forty adjustment rules.",
+      "negation": "CPIDR approximates propositional counting from character counts plus a single compression pass."
+    },
+    {
+      "id": "pair-31",
+      "section": "4",
+      "type": "antonym",
+      "assertion": "CPIDR's agreement with human consensus exceeds the human-to-human baseline.",
+      "negation": "CPIDR's agreement with human consensus falls far short of the human-to-human baseline."
+    },
+    {
+      "id": "pair-32",
+      "section": "4",
+      "type": "role-swap",
+      "assertion": "A text with many unrelated assertions is high-Arithmetica and low-Dialectica.",
+      "negation": "A text with many unrelated assertions is low-Arithmetica and high-Dialectica."
+    },
+    {
+      "id": "pair-33",
+      "section": "4",
+      "type": "antonym",
+      "assertion": "Document architecture is describable without time.",
+      "negation": "Document architecture requires time in its very definition."
+    },
+    {
+      "id": "pair-34",
+      "section": "4",
+      "type": "substitution",
+      "assertion": "Geometria captures IMRaD structure in papers and stanza patterns in verse.",
+      "negation": "Geometria captures syllable stress and metrical feet."
+    },
+    {
+      "id": "pair-35",
+      "section": "4",
+      "type": "substitution",
+      "assertion": "Augustine defines musica as the science of well-measured movement.",
+      "negation": "Augustine defines musica as the science of the celestial spheres."
+    },
+    {
+      "id": "pair-36",
+      "section": "4",
+      "type": "antonym",
+      "assertion": "Rhetorical figures are compressible as short specifications that generate long local patterns.",
+      "negation": "Rhetorical figures are incompressible noise with no generating specification."
+    },
+    {
+      "id": "pair-37",
+      "section": "4",
+      "type": "substitution",
+      "assertion": "Astronomia's trajectory is a time-series of information intensity over document position.",
+      "negation": "Astronomia's trajectory is a static histogram with no positional structure."
+    },
+    {
+      "id": "pair-38",
+      "section": "4",
+      "type": "role-swap",
+      "assertion": "The prior art leaves the genre-conditional trajectory prior implicit; this framework requires it as an explicit named input.",
+      "negation": "The prior art requires the genre-conditional trajectory prior explicitly; this framework leaves it implicit."
+    },
+    {
+      "id": "pair-39",
+      "section": "4",
+      "type": "substitution",
+      "assertion": "Wilmot and Keller model suspense as uncertainty reduction over neural representations.",
+      "negation": "Wilmot and Keller model suspense as vocabulary growth over document length."
+    },
+    {
+      "id": "pair-40",
+      "section": "5",
+      "type": "role-swap",
+      "assertion": "Stock content is cheap to specify given the named substrate.",
+      "negation": "Stock content is algorithmically random relative to the full context."
+    },
+    {
+      "id": "pair-41",
+      "section": "5",
+      "type": "role-swap",
+      "assertion": "Original content is algorithmically random relative to the full context.",
+      "negation": "Original content is cheap to specify given the named substrate."
+    },
+    {
+      "id": "pair-42",
+      "section": "5",
+      "type": "antonym",
+      "assertion": "Intensity is reported as one dominant tag per stratum.",
+      "negation": "Intensity is reported as a full twenty-eight-cell cross-tabulation."
+    },
+    {
+      "id": "pair-43",
+      "section": "5",
+      "type": "antonym",
+      "assertion": "A full 7x4 cross-tabulation is rejected as the output format.",
+      "negation": "A full 7x4 cross-tabulation is required as the output format."
+    },
+    {
+      "id": "pair-44",
+      "section": "5",
+      "type": "antonym",
+      "assertion": "Reliability compounds multiplicatively across joint stratum-intensity decisions.",
+      "negation": "Reliability improves multiplicatively across joint stratum-intensity decisions."
+    },
+    {
+      "id": "pair-45",
+      "section": "6",
+      "type": "antonym",
+      "assertion": "Musica and Astronomia are instances of one UID pattern at two scales.",
+      "negation": "Musica and Astronomia are unrelated quantities sharing no theoretical framework."
+    },
+    {
+      "id": "pair-46",
+      "section": "6",
+      "type": "role-swap",
+      "assertion": "Hopkins is Musica-Original and Astronomia-Implied.",
+      "negation": "Hopkins is Musica-Implied and Astronomia-Original."
+    },
+    {
+      "id": "pair-47",
+      "section": "6",
+      "type": "antonym",
+      "assertion": "A text conforming to genre expectations at both scales is rhythmically flat and trajectory-flat.",
+      "negation": "A text conforming to genre expectations at both scales is maximally marked at both scales."
+    },
+    {
+      "id": "pair-48",
+      "section": "6",
+      "type": "substitution",
+      "assertion": "Local UID is grounded in Aylett and Turk 2004.",
+      "negation": "Local UID is grounded in Reagan et al. 2016."
+    },
+    {
+      "id": "pair-49",
+      "section": "7",
+      "type": "role-swap",
+      "assertion": "SCR is raw length divided by the compressed core.",
+      "negation": "SCR is the compressed core divided by raw length."
+    },
+    {
+      "id": "pair-50",
+      "section": "7",
+      "type": "quantifier",
+      "assertion": "Stock maps to a retrievable weight of 1.0.",
+      "negation": "Stock maps to a retrievable weight of 0.0."
+    },
+    {
+      "id": "pair-51",
+      "section": "7",
+      "type": "quantifier",
+      "assertion": "An all-Stock ledger scores RI at exactly 1.0.",
+      "negation": "An all-Stock ledger scores RI at exactly 0.0."
+    },
+    {
+      "id": "pair-52",
+      "section": "7",
+      "type": "role-swap",
+      "assertion": "RI describes the compressed core, not the fraction of the document.",
+      "negation": "RI describes the fraction of the document, not the compressed core."
+    },
+    {
+      "id": "pair-53",
+      "section": "7",
+      "type": "antonym",
+      "assertion": "Strata overlap on the same sentences, so raw length cannot be partitioned across them.",
+      "negation": "Strata partition the document cleanly, so raw length divides exactly across them."
+    },
+    {
+      "id": "pair-54",
+      "section": "7",
+      "type": "role-swap",
+      "assertion": "Novelty density weights Original at 1.0 and Stock at 0.0.",
+      "negation": "Novelty density weights Original at 0.0 and Stock at 1.0."
+    },
+    {
+      "id": "pair-55",
+      "section": "9",
+      "type": "role-swap",
+      "assertion": "The framework produces principled estimates, not measurements.",
+      "negation": "The framework produces exact measurements, not estimates."
+    },
+    {
+      "id": "pair-56",
+      "section": "9",
+      "type": "antonym",
+      "assertion": "CPIDR is English-specific: its adjustment rules are calibrated on English.",
+      "negation": "CPIDR is language-independent: its adjustment rules apply to any language."
+    },
+    {
+      "id": "pair-57",
+      "section": "11",
+      "type": "role-swap",
+      "assertion": "A text with zero Original tags across all seven strata is a compilation, not a contribution.",
+      "negation": "A text with zero Original tags across all seven strata is a contribution, not a compilation."
+    },
+    {
+      "id": "pair-58",
+      "section": "11",
+      "type": "antonym",
+      "assertion": "Compilations are legitimate and necessary.",
+      "negation": "Compilations are illegitimate and unnecessary."
+    },
+    {
+      "id": "pair-59",
+      "section": "11",
+      "type": "role-swap",
+      "assertion": "The formal definitions are proposals, not established theorems.",
+      "negation": "The formal definitions are established theorems, not proposals."
+    },
+    {
+      "id": "pair-60",
+      "section": "5",
+      "type": "substitution",
+      "assertion": "Implied content follows mechanically from the substrate plus inference rules.",
+      "negation": "Implied content is chosen freely from a visible curatorial option space."
+    }
+  ]
+}

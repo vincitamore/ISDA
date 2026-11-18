@@ -1,0 +1,60 @@
+{
+  "specimen": "lyric-musica-original",
+  "source_of_claims": "examples.md, Example 1: 'Why this test case' and 'Key findings'",
+  "assertions": [
+    {
+      "id": "musica-dominates-core",
+      "claim": "Musica is the stratum where the text cannot compress: it is the dominant stratum of the compressed core.",
+      "kind": "ledger",
+      "property": "dominant_stratum",
+      "equals": "musica"
+    },
+    {
+      "id": "musica-share-near-half",
+      "claim": "Musica alone carries roughly 47% of the compressed core, so Musica-Original sets ND almost single-handedly.",
+      "kind": "ledger",
+      "property": "stratum_share",
+      "stratum": "musica",
+      "between": [0.40, 0.55]
+    },
+    {
+      "id": "full-ladder-exercised",
+      "claim": "The intensity ladder exercises all four rungs in one poem: Stock, Implied, Selected, Original each appear.",
+      "kind": "ledger",
+      "property": "intensity_rungs",
+      "equals": 4
+    },
+    {
+      "id": "scr-near-minimal",
+      "claim": "SCR is near-minimal for an observation-transmission telos: under 2 on the argumentative bands, close to irreducible.",
+      "kind": "metric",
+      "metric": "scr",
+      "between": [1.5, 2.0]
+    },
+    {
+      "id": "ri-not-zero",
+      "claim": "RI is not zero: Arithmetica is Stock and two strata are Implied, so about a fifth of the core is substrate-reachable.",
+      "kind": "metric",
+      "metric": "ri",
+      "between": [0.15, 0.25]
+    },
+    {
+      "id": "musica-top-quartile",
+      "claim": "The Musica-Original worked example ranks in the top quartile of block B (working markdown) on the mechanical Musica measure.",
+      "kind": "quantile",
+      "measure": "musica.surprisal-variance",
+      "block": "block-b",
+      "min_quantile": 0.75
+    },
+    {
+      "id": "sprung-rhythm-is-original",
+      "claim": "Sprung rhythm was historically new prosody: Musica reads Original, not Selected. The rhythm is originated, not chosen from a known inventory.",
+      "kind": "judgment"
+    },
+    {
+      "id": "trajectory-is-conventional",
+      "claim": "Astronomia reads Implied, not Original: the praise-poem arc (laudes, exempla, causa, laudes) is conventional for devotional lyric. The novelty is in the rhythm, not the arc.",
+      "kind": "judgment"
+    }
+  ]
+}

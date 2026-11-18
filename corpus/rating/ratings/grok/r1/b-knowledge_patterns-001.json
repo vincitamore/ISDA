@@ -1,0 +1,36 @@
+{
+  "doc": "b-knowledge_patterns-001",
+  "family": "grok",
+  "rater": "r1",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 90,
+      "intensity": "Stock"
+    },
+    "dialectica": {
+      "compressed": 520,
+      "intensity": "Original"
+    },
+    "rhetorica": {
+      "compressed": 240,
+      "intensity": "Selected"
+    },
+    "arithmetica": {
+      "compressed": 980,
+      "intensity": "Original"
+    },
+    "geometria": {
+      "compressed": 75,
+      "intensity": "Stock"
+    },
+    "musica": {
+      "compressed": 145,
+      "intensity": "Selected"
+    },
+    "astronomia": {
+      "compressed": 170,
+      "intensity": "Selected"
+    }
+  }
+}

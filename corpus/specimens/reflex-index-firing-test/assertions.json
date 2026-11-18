@@ -1,0 +1,33 @@
+{
+  "specimen": "reflex-index-firing-test",
+  "source_of_claims": "SKILL.md, 'Reflex-loaded prose' (the third SCR reading and the firing test)",
+  "assertions": [
+    {
+      "id": "rhetorica-dominates",
+      "claim": "In a reflex index the curation is the artifact: which entries exist, what each one-line rule says, what was refused admission. Rhetorica dominates the core.",
+      "kind": "ledger",
+      "property": "dominant_stratum",
+      "equals": "rhetorica"
+    },
+    {
+      "id": "rhetorica-carries-half-the-core",
+      "claim": "Rhetorica carries about half the compressed core, the profile SKILL.md's genre table gives for a reflex index.",
+      "kind": "ledger",
+      "property": "stratum_share",
+      "stratum": "rhetorica",
+      "between": [0.40, 0.60]
+    },
+    {
+      "id": "chunks-run-long",
+      "claim": "Reflex entries pack a rule, its trigger and its riders into one unbroken chunk, so the layout-chunk median runs long: the memory-index end of the working-markdown chunk-length spectrum.",
+      "kind": "measure",
+      "measure": "shape.chunk-length-median",
+      "min": 30
+    },
+    {
+      "id": "firing-test-not-ri",
+      "claim": "This genre is read with the firing test, not RI: high retrievability is the function, not waste, and the editorial number is the fire rate, which is analyst judgment with no mechanical instrument.",
+      "kind": "judgment"
+    }
+  ]
+}

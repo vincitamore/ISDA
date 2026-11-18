@@ -1,0 +1,44 @@
+{
+  "doc": "narrative-astronomia-arc",
+  "family": "grok",
+  "rater": "r1",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 240,
+      "intensity": "Selected",
+      "evidence": "Long multi-clause leads vs short verdicts ('Nothing had alarmed.', 'It explained nothing:'); British technical register; config lines as 'stanza'; colon- and em-dash pivots."
+    },
+    "dialectica": {
+      "compressed": 580,
+      "intensity": "Original",
+      "evidence": "Eliminates stuck valve then unpadded '5:20' schedule parse; derives true cause as designed interaction: frost misting drops pressure, close-guard holds valve open all night."
+    },
+    "rhetorica": {
+      "compressed": 420,
+      "intensity": "Selected",
+      "evidence": "Orders full scene (log+flooded bench) first; two false leads given real weight before accidental meter-log reveal; ends with one-line fix and kept waterline scar."
+    },
+    "arithmetica": {
+      "compressed": 720,
+      "intensity": "Original",
+      "evidence": "Atomic claims: 23:12–05:20 vs 20 min; pressure loss 23:11; frost misting adjacent bench; refuse-close-on-pressure-fault guard; close-then-fault fix; seedlings recovered."
+    },
+    "geometria": {
+      "compressed": 90,
+      "intensity": "Selected",
+      "evidence": "Single H1; five continuous paragraphs, no subheads/lists/timeline; only layout emphasis is inline `5:20`/`05:20` in the second false-lead block."
+    },
+    "musica": {
+      "compressed": 200,
+      "intensity": "Selected",
+      "evidence": "Each false lead builds then snaps shut in a short clause; close cadence 'failed politely' / 'every component correct and the whole thing wrong' paces the moral."
+    },
+    "astronomia": {
+      "compressed": 310,
+      "intensity": "Original",
+      "evidence": "Global arc: aftermath → boring hypothesis fails → clever hypothesis fails → accidental interaction cause → minimal fix + memorial; intensity peaks on schedule red herring then pivots."
+    }
+  },
+  "notes": "Public substrate: incident facts and interaction dialectic are made; form/order strata are curatorial selections from postmortem/detective option space."
+}

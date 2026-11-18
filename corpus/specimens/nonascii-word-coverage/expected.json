@@ -1,0 +1,33 @@
+{
+  "written_by": "python -m isda.specimens pin: derived state, never hand-edited",
+  "sha256": "724c971e64f4638c892148c3dbf11c3ee86de0f774cfe021608aeb5965dcd0a7",
+  "raw_bytes": 1878,
+  "prose_words": 307,
+  "measures": {
+    "arithmetica.propositional-density": 0.46732,
+    "astronomia.surprisal-slope": 0.64098,
+    "astronomia.surprisal-peak-position": 0.75,
+    "shape.heading-tree-depth": 1.0,
+    "shape.block-kind-entropy": 0.721928,
+    "shape.skipped-heading-levels": 0.0,
+    "inventory.prose-word-count": 307.0,
+    "musica.surprisal-variance": 31.396015,
+    "shape.paragraph-length-median": 80.0,
+    "shape.chunk-length-median": 80.0
+  },
+  "metrics": {
+    "SCR": 11.74,
+    "ND": 0.122,
+    "RI": 0.594
+  },
+  "compression_floor": {
+    "checked": true,
+    "C": 1106,
+    "margin_bytes": 946.0
+  },
+  "verdicts": {
+    "tokenizer-counts-accented-words": "PASSING",
+    "rhetorica-dominates": "PASSING",
+    "examples-selected-not-original": "UNTESTABLE"
+  }
+}

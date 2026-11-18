@@ -1,0 +1,44 @@
+{
+  "doc": "nonascii-word-coverage",
+  "family": "grok",
+  "rater": "r2",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 105,
+      "intensity": "Selected",
+      "evidence": "Elevated essay English: semicolon-linked multi-clause lines; parallel loanword lists; 'X is not quite Y' tricolon (smörgåsbord/fjord/Göttingen); not plain how-to prose."
+    },
+    "dialectica": {
+      "compressed": 155,
+      "intensity": "Implied",
+      "evidence": "Chain: retention outlasts naturalisation → diacritics not decoration → mark origin/memory ('passport'); food>philosophy; follows from public loanword orthography facts."
+    },
+    "rhetorica": {
+      "compressed": 290,
+      "intensity": "Selected",
+      "evidence": "Chosen set/order: café–jalapeño–résumé… then Greek/Russian, then phở–bánh mì–pączki–açaí–şiş, close señora/über/garçon; domain filter food over abstract."
+    },
+    "arithmetica": {
+      "compressed": 210,
+      "intensity": "Stock",
+      "evidence": "Atomic public facts: café/jalapeño/résumé accents; sputnik/perestroika; phở/açaí/şiş marks; señora≠senora; plus few thesis lines (façade last; passport)."
+    },
+    "geometria": {
+      "compressed": 48,
+      "intensity": "Selected",
+      "evidence": "Title-as-thesis + four short prose paragraphs, no subheads/lists; domains split para-wise (English / history / food / moral)."
+    },
+    "musica": {
+      "compressed": 88,
+      "intensity": "Selected",
+      "evidence": "Stacked diacritic names as beat; balanced 'not quite' and 'is not a' pairs; closing epigram cadence on 'passport' / 'for a while, to remember where.'"
+    },
+    "astronomia": {
+      "compressed": 95,
+      "intensity": "Selected",
+      "evidence": "Arc: concrete English hooks → pre-press/transliteration depth → food intensifies → lands on passport thesis; intensity rises then seals."
+    }
+  },
+  "notes": "Public-substrate literary micro-essay; no Original stratum under conservative ladder—craft is selection/implication over novel content."
+}

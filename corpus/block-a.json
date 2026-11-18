@@ -1,0 +1,51 @@
+{
+  "source": {
+    "name": "Berean Standard Bible",
+    "url": "https://bereanbible.com/bsb.txt",
+    "license": "public domain",
+    "format": "tab-separated verse-per-line; chapters assembled as running prose with verse numbers dropped"
+  },
+  "design": "Genre varies maximally while translator and markup are held constant, so any between-genre signal is genre, not markup or authorial idiom. Fifteen chapters per genre puts the per-genre cell above the small-sample floor of the discrimination test.",
+  "genres": {
+    "law": [
+      "Exodus 20", "Leviticus 1", "Leviticus 11", "Leviticus 16", "Leviticus 19",
+      "Leviticus 23", "Leviticus 25", "Numbers 6", "Deuteronomy 4", "Deuteronomy 5",
+      "Deuteronomy 6", "Deuteronomy 15", "Deuteronomy 24", "Deuteronomy 28", "Deuteronomy 30"
+    ],
+    "narrative": [
+      "Genesis 1", "Genesis 12", "Genesis 22", "Genesis 37", "Genesis 45",
+      "Exodus 3", "Exodus 14", "Ruth 1", "1 Samuel 17", "2 Samuel 11",
+      "1 Kings 18", "Nehemiah 2", "Esther 4", "Acts 2", "Acts 27"
+    ],
+    "poetry": [
+      "Psalm 1", "Psalm 8", "Psalm 19", "Psalm 23", "Psalm 42",
+      "Psalm 46", "Psalm 51", "Psalm 90", "Psalm 103", "Psalm 104",
+      "Psalm 121", "Psalm 137", "Psalm 139", "Psalm 148", "Song of Solomon 2"
+    ],
+    "wisdom": [
+      "Proverbs 1", "Proverbs 3", "Proverbs 8", "Proverbs 10", "Proverbs 15",
+      "Proverbs 26", "Proverbs 31", "Ecclesiastes 1", "Ecclesiastes 3", "Ecclesiastes 7",
+      "Ecclesiastes 12", "Job 3", "Job 28", "Job 38", "Job 42"
+    ],
+    "prophecy": [
+      "Isaiah 6", "Isaiah 40", "Isaiah 53", "Isaiah 55", "Jeremiah 1",
+      "Jeremiah 31", "Ezekiel 37", "Hosea 11", "Amos 5", "Micah 6",
+      "Habakkuk 3", "Zephaniah 3", "Haggai 1", "Zechariah 9", "Malachi 3"
+    ],
+    "gospel": [
+      "Matthew 5", "Matthew 6", "Matthew 13", "Matthew 28", "Mark 1",
+      "Mark 4", "Mark 15", "Luke 2", "Luke 15", "Luke 24",
+      "John 1", "John 3", "John 11", "John 17", "John 21"
+    ],
+    "epistle": [
+      "Romans 8", "Romans 12", "1 Corinthians 13", "1 Corinthians 15", "Galatians 5",
+      "Ephesians 2", "Ephesians 6", "Philippians 2", "Colossians 1", "Philemon 1",
+      "Hebrews 11", "James 1", "James 3", "1 Peter 1", "1 John 4"
+    ],
+    "apocalyptic": [
+      "Daniel 7", "Daniel 8", "Daniel 9", "Daniel 10", "Daniel 12",
+      "Revelation 1", "Revelation 4", "Revelation 5", "Revelation 12", "Revelation 13",
+      "Revelation 19", "Revelation 20", "Revelation 21", "Revelation 22", "Daniel 11"
+    ]
+  }
+}

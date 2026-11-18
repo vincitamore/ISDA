@@ -1,0 +1,44 @@
+{
+  "doc": "correspondence-short-chunk",
+  "family": "grok",
+  "rater": "r2",
+  "model": "grok-4.5-build",
+  "ledger": {
+    "grammatica": {
+      "compressed": 62,
+      "intensity": "Stock",
+      "evidence": "Short SVO confirmations (“Saturday works, eight is fine.”), light imperatives (“Bring the ladder.”), casual email register throughout."
+    },
+    "dialectica": {
+      "compressed": 95,
+      "intensity": "Implied",
+      "evidence": "Mara’s “Relay first, then trays — wiring with the rack empty beats wiring around seedlings” derives order from the joint agenda Theo opened; acceptance closes the date."
+    },
+    "rhetorica": {
+      "compressed": 115,
+      "intensity": "Selected",
+      "evidence": "Theo expands beyond yes/no (adds relay rewire + north-pane measure); Mara curates close as ordered plan + labels, not bare assent; vermiculite becomes Friday haul not a blocker."
+    },
+    "arithmetica": {
+      "compressed": 240,
+      "intensity": "Original",
+      "evidence": "New atoms: Sat 8 confirmed; verm shipped Mon/2 bags/Thu land/Fri haul; relay parts Thu; rewire Sat; measure cracked north pane; ladder in truck; relay≻trays; labels tonight."
+    },
+    "geometria": {
+      "compressed": 48,
+      "intensity": "Stock",
+      "evidence": "Standard three-message email thread: # title, From/Sent headers, body, --- separators; pure chronological stack."
+    },
+    "musica": {
+      "compressed": 58,
+      "intensity": "Stock",
+      "evidence": "Brisk logistics cadence: one-line confirms, em-dash elaborations, parallel “Relay first, then trays”; ordinary practical-email rhythm."
+    },
+    "astronomia": {
+      "compressed": 72,
+      "intensity": "Selected",
+      "evidence": "Arc: Mara’s two open Qs → Theo confirms date and widens Saturday scope → Mara locks sequence and prep; telos resolved only on the third beat."
+    }
+  },
+  "notes": "Context substrate = thread-carried shared history; greenhouse jargon compresses to pointers, schedule/sequence atoms do not."
+}
